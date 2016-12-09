@@ -256,11 +256,13 @@ h1, h2, h3, h4, h5, h6,
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
+  color: inherit;
   cursor: pointer;
   white-space: nowrap;
-  padding: 14px 20px;
+  padding: 12px 20px;
   margin: 0;
   border: 1px solid #e5e5e5;
+  border-radius: 6px;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 

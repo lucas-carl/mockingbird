@@ -12,11 +12,13 @@
 	font-weight: normal;
 	text-align: center;
 	vertical-align: middle;
+	color: inherit;
 	cursor: pointer;
 	white-space: nowrap;
-	padding: $padding-base-vert $padding-lg-horiz;
+	padding: $padding-sm-vert $padding-lg-horiz;
 	margin: 0;
 	border: 1px solid $border-color;
+	border-radius: $border-radius-lg;
 	box-shadow: 0 0 2px rgba(0,0,0,.2);
 	&:hover,
 	&:focus {
