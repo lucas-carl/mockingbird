@@ -25,11 +25,12 @@
 		background: $btn-hover-base;
 		color: $text-color;
 		text-decoration: none;
+		outline: none;
 	}
 	&:active,
 	&.active {
 		background-image: none;
-		outline: 0;
+		outline: none;
 	}
 	&[disabled],
 	&.disabled {

@@ -21,7 +21,7 @@
 	&:focus,
 	&:active,
 	&.active {
-		background-color: mix($bg,$btn-hover-base,50%);
+		background-color: darken($bg,5%);
 		color: $color;
 		border-color: darken($bg,15%);
 	}
