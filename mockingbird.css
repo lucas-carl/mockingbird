@@ -249,6 +249,35 @@ h1, h2, h3, h4, h5, h6,
 /*!
  * mockingbird buttons.css v1.0.0 12/2016
  */
+.btn {
+  background-image: none;
+  display: inline-block;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 14px 20px;
+  margin: 0;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover, .btn:focus {
+  background: #f2f2f2;
+  color: #343434;
+  text-decoration: none;
+}
+
+.btn:active, .btn.active {
+  background-image: none;
+  outline: 0;
+}
+
+.btn[disabled], .btn.disabled {
+  cursor: not-allowed;
+}
+
 /*!
  * mockingbird utilities.css v1.0.0 12/2016
  */

@@ -16,6 +16,6 @@
  * mockingbird grid.css v1.0.0 12/2016
  */.container,.container-sm,.container-xs,.container-fluid{position:relative;display:block;margin:auto}.container{max-width:960px}.container-sm{max-width:720px}.container-xs{max-width:600px}/*!
  * mockingbird buttons.css v1.0.0 12/2016
- *//*!
+ */.btn{background-image:none;display:inline-block;font-weight:400;text-align:center;vertical-align:middle;cursor:pointer;white-space:nowrap;padding:14px 20px;margin:0;border:1px solid #e6e6e6;box-shadow:0 0 2px rgba(0,0,0,.2)}.btn:hover,.btn:focus{background:#f2f2f2;color:#343434;text-decoration:none}.btn:active,.btn.active{background-image:none;outline:0}.btn[disabled],.btn.disabled{cursor:not-allowed}/*!
  * mockingbird utilities.css v1.0.0 12/2016
  */.clearfix:before,.clearfix:after{content:'';display:table}.clearfix:after{clear:both}.center-block{display:block;margin:auto}.right-block{float:right!important}.left-block{float:left!important}.hide{display:none!important}.show{display:block!important}.invisible{visibility:hidden}

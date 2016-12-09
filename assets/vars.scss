@@ -63,7 +63,14 @@ $padding-lg-horiz: $font-size-h4;
 $padding-sm-vert: $font-size-xs2;
 $padding-sm-vert: $font-size-xs;
 
-// responsive
+// border-radius
+// ----
+
+$border-radius-base: 4px;
+$border-radius-lg: 6px;
+$border-radius-sm: 3px;
+
+// responsive breakpoints
 // ----
 
 $res-break-1: 1200px;
@@ -72,6 +79,23 @@ $res-break-3: 720px;
 $res-break-4: 600px;
 $res-break-5: 480px;
 $res-break-6: 360px;
+
+// buttons
+// ----
+
+$btn-border-default: darken($body-bg,10%);
+$btn-border-primary: darken($brand-primary,10%);
+$btn-border-success: darken($brand-success,10%);
+$btn-border-info: darken($brand-info,10%);
+$btn-border-warning: darken($brand-warning,10%);
+$btn-border-danger: darken($brand-danger,10%);
+
+$btn-hover-base: #f2f2f2;
+$btn-hover-primary: mix($brand-primary, $btn-hover-base,50%);
+$btn-hover-success: mix($brand-success, $btn-hover-base,50%);
+$btn-hover-info: mix($brand-info, $btn-hover-base,50%);
+$btn-hover-warning: mix($brand-warning, $btn-hover-base,50%);
+$btn-hover-danger: mix($brand-danger, $btn-hover-base,50%);
 
 // miscellaneous
 // ----
