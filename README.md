@@ -10,4 +10,4 @@ A front-end framework for responsive layouts and easy web development created wi
 
 ## License
 
-[MIT License](https://github.com/lucas-carl/mockingbird/LICENSE)
+[MIT License](https://github.com/lucas-carl/mockingbird/blob/master/LICENSE)
