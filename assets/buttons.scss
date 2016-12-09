@@ -6,6 +6,7 @@
 // ----
 
 .btn {
+	background-color: $white;
 	background-image: none;
 	display: inline-block;
 	font-weight: normal;
@@ -15,7 +16,7 @@
 	white-space: nowrap;
 	padding: $padding-base-vert $padding-lg-horiz;
 	margin: 0;
-	border: 1px solid $btn-border-default;
+	border: 1px solid $border-color;
 	box-shadow: 0 0 2px rgba(0,0,0,.2);
 	&:hover,
 	&:focus {
@@ -31,5 +32,29 @@
 	&[disabled],
 	&.disabled {
 		cursor: not-allowed;
+		opacity: .8;
 	}
+}
+
+// button variants
+// ----
+
+.btn-primary {
+	@include button-variant($btn-primary-color,$btn-primary-bg);
+}
+
+.btn-success {
+	@include button-variant($btn-success-color,$btn-success-bg);
+}
+
+.btn-info {
+	@include button-variant($btn-info-color,$btn-info-bg);
+}
+
+.btn-warning {
+	@include button-variant($btn-warning-color,$btn-warning-bg);
+}
+
+.btn-danger {
+	@include button-variant($btn-danger-color,$btn-danger-bg);
 }

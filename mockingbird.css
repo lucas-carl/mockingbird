@@ -131,7 +131,7 @@ th {
  * mockingbird frame.css v1.0.0 12/2016
  */
 html, body {
-  background-color: #fff;
+  background-color: #ffffff;
   color: #343434;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -250,6 +250,7 @@ h1, h2, h3, h4, h5, h6,
  * mockingbird buttons.css v1.0.0 12/2016
  */
 .btn {
+  background-color: #ffffff;
   background-image: none;
   display: inline-block;
   font-weight: normal;
@@ -259,7 +260,7 @@ h1, h2, h3, h4, h5, h6,
   white-space: nowrap;
   padding: 14px 20px;
   margin: 0;
-  border: 1px solid #e6e6e6;
+  border: 1px solid #e5e5e5;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -276,6 +277,87 @@ h1, h2, h3, h4, h5, h6,
 
 .btn[disabled], .btn.disabled {
   cursor: not-allowed;
+  opacity: .8;
+}
+
+.btn-primary {
+  background: #548fdb;
+  color: #fff;
+  border-color: #2c74d0;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+  background-color: #a3c1e7;
+  color: #fff;
+  border-color: #2768bb;
+}
+
+.btn-primary:focus {
+  border-color: #1f5191;
+}
+
+.btn-success {
+  background: #42d17f;
+  color: #fff;
+  border-color: #2cb466;
+}
+
+.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
+  background-color: #9ae2b9;
+  color: #fff;
+  border-color: #27a05a;
+}
+
+.btn-success:focus {
+  border-color: #1d7743;
+}
+
+.btn-info {
+  background: #19b5fe;
+  color: #fff;
+  border-color: #019be3;
+}
+
+.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
+  background-color: #86d4f8;
+  color: #fff;
+  border-color: #018aca;
+}
+
+.btn-info:focus {
+  border-color: #016797;
+}
+
+.btn-warning {
+  background: #f7ca18;
+  color: #fff;
+  border-color: #d5ab07;
+}
+
+.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active {
+  background-color: #f5de85;
+  color: #fff;
+  border-color: #bc9707;
+}
+
+.btn-warning:focus {
+  border-color: #8b7005;
+}
+
+.btn-danger {
+  background: #ef4836;
+  color: #fff;
+  border-color: #e02612;
+}
+
+.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active {
+  background-color: #f19d94;
+  color: #fff;
+  border-color: #c92210;
+}
+
+.btn-danger:focus {
+  border-color: #991a0c;
 }
 
 /*!

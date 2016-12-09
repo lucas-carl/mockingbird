@@ -12,3 +12,20 @@
     clear: both;
   }
 }
+
+@mixin button-variant($color, $bg) {
+	background: $bg;
+	color: $color;
+	border-color: darken($bg,10%);
+	&:hover,
+	&:focus,
+	&:active,
+	&.active {
+		background-color: mix($bg,$btn-hover-base,50%);
+		color: $color;
+		border-color: darken($bg,15%);
+	}
+	&:focus {
+		border-color: darken($bg,25%);
+	}
+}
