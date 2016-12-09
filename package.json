@@ -1,16 +1,15 @@
 {
-  "name": "mockingbird",
-  "version": "1.0.0",
-  "description": "A front-end framework for responsive layouts and easy web development created with SASS",
+  "name": "mockingbird-sass",
+  "version": "0.1.0",
+  "description": "A front-end framework for responsive layouts and easy web development.",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/lucas-carl/mockingbird.git"
   },
-	"homepage": "http://mockingbird.lucascarl.com",
-  "author": "Lucas Carl (lucascarl.com)",
+  "homepage": "https://github.com/lucas-carl/mockingbird#readme",
+  "author": "Lucas Carl (http://lucascarl.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lucas-carl/mockingbird/issues"
-  },
-  "homepage": "https://github.com/lucas-carl/mockingbird#readme"
+  }
 }
