@@ -1,0 +1,90 @@
+/*!
+ * mockingbird vars.css v1.0.0 12/2016
+ */
+
+ // colors
+ // ----
+
+$gray-base: #000;
+$gray: #555;
+$gray-dark: #333;
+$gray-light: #777;
+
+$brand-primary: #000;
+$brand-success: #000;
+$brand-info: #000;
+$brand-warning: #000;
+$brand-danger: #000;
+
+$body-bg: #fff;
+
+$text-color: #000;
+
+$link-color: $brand-primary;
+
+$link-color-hover: darken($link-color, 15%);
+
+$link-hover-decoration: underline;
+
+// font families
+// ----
+
+$font-fam-sans-serif: "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-fam-serif: Georgia, "Times New Roman", Times, serif;
+$font-fam-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+
+$font-fam-base: $font-fam-sans-serif;
+
+// font sizes
+// ----
+
+$font-size-base: 16px;
+
+$font-size-lg: ceil(($font-size-base * 1.25));
+$font-size-xl: ceil(($font-size-base * 1.7));
+$font-size-xl2: floor(($font-size-base * 2.15));
+$font-size-xl3: floor(($font-size-base * 2.6));
+$font-size-sm: ceil(($font-size-base * 0.85));
+$font-size-xs: ceil(($font-size-base * 0.75));
+$font-size-xs2: ceil(($font-size-base * 0.5));
+
+$font-size-h1: $font-size-xl3;
+$font-size-h2: $font-size-xl2;
+$font-size-h3: $font-size-xl;
+$font-size-h4: $font-size-lg;
+$font-size-h5: $font-size-base;
+$font-size-h6: $font-size-sm;
+
+// padding prefabs
+// ----
+
+$paddig-base-vert: $font-size-xs;
+$paddig-base-vert: $font-size-sm;
+
+$padding-lg-vert: $font-size-h5;
+$padding-lg-horiz: $font-size-h4;
+
+$paddig-sm-vert: $font-size-xs2;
+$paddig-sm-vert: $font-size-xs;
+
+// responsive
+// ----
+
+$res-break-1: 1200px;
+$res-break-2: 960px;
+$res-break-3: 720px;
+$res-break-4: 600px;
+$res-break-5: 480px;
+$res-break-6: 360px;
+
+// miscellaneous
+// ----
+
+$line-height-base: 1.25;
+$line-height-lg: 1.7;
+$line-height-sm: 1;
+
+$headings-font-family: inherit;
+$headings-font-weight: 500;
+$headings-line-height: 1.1;
+$headings-color: inherit;
