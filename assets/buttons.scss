@@ -1,3 +1,20 @@
 /*!
  * mockingbird buttons.css v1.0.0 12/2016
  */
+
+// variables
+// ----
+
+$border-color-default: darken($body-bg,10%);
+$border-color-primary: darken($brand-primary,10%);
+$border-color-success: darken($brand-success,10%);
+$border-color-info: darken($brand-info,10%);
+$border-color-warning: darken($brand-warning,10%);
+$border-color-danger: darken($brand-danger,10%);
+
+$hover-color-base: #f2f2f2;
+$hover-color-primary: mix($brand-primary, $hover-color-base,50%);
+$hover-color-success: mix($brand-success, $hover-color-base,50%);
+$hover-color-info: mix($brand-info, $hover-color-base,50%);
+$hover-color-warning: mix($brand-warning, $hover-color-base,50%);
+$hover-color-danger: mix($brand-danger, $hover-color-base,50%);
