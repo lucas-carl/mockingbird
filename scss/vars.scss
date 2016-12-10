@@ -37,41 +37,21 @@ $font-fam-base: $font-fam-sans-serif;
 // font sizes
 // ----
 
-$font-size-base: 16px;
+$font-size-0: 1rem;
+$font-size-1: 0.5rem;
+$font-size-2: 0.75rem;
+$font-size-3: 0.85rem;
+$font-size-4: 1.25rem;
+$font-size-5: 1.7rem;
+$font-size-6: 2.15rem;
+$font-size-7: 2.6rem;
 
-$font-size-lg: ceil(($font-size-base * 1.25));
-$font-size-xl: ceil(($font-size-base * 1.7));
-$font-size-xl2: floor(($font-size-base * 2.15));
-$font-size-xl3: floor(($font-size-base * 2.6));
-$font-size-sm: ceil(($font-size-base * 0.85));
-$font-size-xs: ceil(($font-size-base * 0.75));
-$font-size-xs2: ceil(($font-size-base * 0.5));
-
-$font-size-h1: $font-size-xl3;
-$font-size-h2: $font-size-xl2;
-$font-size-h3: $font-size-xl;
-$font-size-h4: $font-size-lg;
-$font-size-h5: $font-size-base;
-$font-size-h6: $font-size-sm;
-
-// padding prefabs
-// ----
-
-$padding-base-vert: $font-size-xs;
-$padding-base-vert: $font-size-sm;
-
-$padding-lg-vert: $font-size-h5;
-$padding-lg-horiz: $font-size-h4;
-
-$padding-sm-vert: $font-size-xs2;
-$padding-sm-vert: $font-size-xs;
-
-// border radius
-// ----
-
-$border-radius-base: 4px;
-$border-radius-lg: 6px;
-$border-radius-sm: 3px;
+$font-size-h1: $font-size-7;
+$font-size-h2: $font-size-6;
+$font-size-h3: $font-size-5;
+$font-size-h4: $font-size-4;
+$font-size-h5: $font-size-0;
+$font-size-h6: $font-size-3;
 
 // responsive breakpoints
 // ----
@@ -106,20 +86,30 @@ $btn-danger-bg: $brand-danger;
 
 $btn-hover-base: #f2f2f2;
 
+// spacing
+// ----
+
+$spacer-0: 1rem;
+$spacer-1: .25rem;
+$spacer-2: .5rem;
+$spacer-3: .75rem;
+$spacer-4: 1.5rem;
+$spacer-5: 2rem;
+$spacer-6: 3rem;
+
 // miscellaneous
 // ----
 
-$line-height-base: 1.25;
-$line-height-lg: 1.7;
-$line-height-sm: 1;
-
-$headings-font-family: inherit;
-$headings-font-weight: 500;
-$headings-line-height: 1.1;
-$headings-color: inherit;
+$line-height-0: 1.25;
+$line-height-1: 1;
+$line-height-2: 1.7;
 
 $link-color: $brand-primary;
 
 $link-color-hover: darken($link-color, 15%);
 
 $link-hover-decoration: underline;
+
+$border-radius-0: .25rem;
+$border-radius-1: .15rem;
+$border-radius-2: .5rem;

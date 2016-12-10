@@ -15,10 +15,10 @@
 	color: inherit;
 	cursor: pointer;
 	white-space: nowrap;
-	padding: $padding-sm-vert $padding-lg-horiz;
+	padding: $spacer-3 $spacer-4;
 	margin: 0;
 	border: 1px solid $border-color;
-	border-radius: $border-radius-lg;
+	border-radius: $border-radius-2;
 	box-shadow: 0 0 2px rgba(0,0,0,.2);
 	&:hover,
 	&:focus {

@@ -1,17 +1,15 @@
 /*!
- * mockingbird grid v1.0.0
+ * mockingbird grid v0.1.0
  * (http://mockingbird.lucascarl.com/grid/)
  * last update 12/2016
  */
 /*!
- * mockingbird vars.css v1.0.0 12/2016
- */
-/*!
- * mockingbird mixins.css v1.0.0 12/2016
- */
-/*!
  * mockingbird reset.css v1.0.0 12/2016
  */
+:root {
+  font-size: 16px;
+}
+
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -127,6 +125,12 @@ th {
   padding: 0;
 }
 
+/*!
+ * mockingbird vars.css v1.0.0 12/2016
+ */
+/*!
+ * mockingbird mixins.css v1.0.0 12/2016
+ */
 /*!
  * mockingbird grid.css v1.0.0 12/2016
  */
