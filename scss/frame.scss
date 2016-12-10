@@ -31,6 +31,34 @@ img {
 	vertical-align: middle;
 }
 
+figure {
+	margin: 0 0 $spacer-0;
+}
+
+pre {
+	margin-top: 0;
+	margin-bottom: $spacer-0;
+	overflow: auto;
+}
+
+blockquote {
+	margin: 0 0 $spacer-0;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: $spacer-0;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
 .img-responsive {
 	max-height: 100%;
 	max-width: 100%;
@@ -65,6 +93,10 @@ img {
     overflow: visible;
     clip: auto;
   }
+}
+
+abbr[title] {
+	cursor: help;
 }
 
 [role="button"] {
