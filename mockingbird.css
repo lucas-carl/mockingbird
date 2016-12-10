@@ -163,6 +163,34 @@ img {
   vertical-align: middle;
 }
 
+figure {
+  margin: 0 0 1rem;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+
+blockquote {
+  margin: 0 0 1rem;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
 .img-responsive {
   max-height: 100%;
   max-width: 100%;
@@ -196,6 +224,10 @@ img {
   clip: auto;
 }
 
+abbr[title] {
+  cursor: help;
+}
+
 [role="button"] {
   cursor: pointer;
 }
@@ -206,7 +238,8 @@ img {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: bold;
-  margin: 1.5rem 0;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
 }
 
 h1, .h1 {
@@ -231,6 +264,11 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 0.85rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .text-center {

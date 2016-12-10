@@ -15,11 +15,11 @@
  */
 /*!
  * mockingbird frame.css v1.0.0 12/2016
- */body,html{background-color:#ffffff;color:#343434;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;font-size:1rem;line-height:1.25;margin:0}*,:after,:before{box-sizing:border-box}a{color:#548fdb;text-decoration:none}a:focus,a:hover{color:#2768bb;text-decoration:underline}img{vertical-align:middle}.img-responsive{max-height:100%;max-width:100%}.img-rounded{border-radius:4px}.img-circle{border-radius:50%}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}[role=button]{cursor:pointer}
+ */body,html{background-color:#ffffff;color:#343434;font-family:"Helvetica Neue", Helvetica, Arial, sans-serif;font-size:1rem;line-height:1.25;margin:0}*,:after,:before{box-sizing:border-box}a{color:#548fdb;text-decoration:none}a:focus,a:hover{color:#2768bb;text-decoration:underline}img{vertical-align:middle}figure{margin:0 0 1rem}pre{margin-top:0;margin-bottom:1rem;overflow:auto}blockquote{margin:0 0 1rem}dl,ol,ul{margin-top:0;margin-bottom:1rem}ol ol,ol ul,ul ol,ul ul{margin-bottom:0}.img-responsive{max-height:100%;max-width:100%}.img-rounded{border-radius:4px}.img-circle{border-radius:50%}.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);border:0}.sr-only-focusable:active,.sr-only-focusable:focus{position:static;width:auto;height:auto;margin:0;overflow:visible;clip:auto}abbr[title]{cursor:help}[role=button]{cursor:pointer}
 
 /*!
  * mockingbird type.css v1.0.0 12/2016
- */.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-weight:bold;margin:1.5rem 0}.h1,h1{font-size:2.6rem}.h2,h2{font-size:2.15rem}.h3,h3{font-size:1.7rem}.h4,h4{font-size:1.25rem}.h5,h5{font-size:1rem}.h6,h6{font-size:0.85rem}.text-center{text-align:center}.text-right{text-align:right}.text-justify{text-align:justify}.text-overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+ */.h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6{font-weight:bold;margin-top:0;margin-bottom:0.75rem}.h1,h1{font-size:2.6rem}.h2,h2{font-size:2.15rem}.h3,h3{font-size:1.7rem}.h4,h4{font-size:1.25rem}.h5,h5{font-size:1rem}.h6,h6{font-size:0.85rem}p{margin-top:0;margin-bottom:1rem}.text-center{text-align:center}.text-right{text-align:right}.text-justify{text-align:justify}.text-overflow{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 
 /*!
  * mockingbird grid.css v1.0.0 12/2016
