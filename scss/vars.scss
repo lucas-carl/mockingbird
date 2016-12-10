@@ -21,7 +21,7 @@ $body-bg: $white;
 
 $text-color: $gray-dark;
 
-$text-color-light: #fff;
+$text-color-contrast: #fff;
 
 $border-color: $gray-light;
 
@@ -69,19 +69,19 @@ $res-break-6: 360px;
 $btn-default-color: $text-color;
 $btn-default-bg: $white;
 
-$btn-primary-color: $text-color-light;
+$btn-primary-color: $text-color-contrast;
 $btn-primary-bg: $brand-primary;
 
-$btn-success-color: $text-color-light;
+$btn-success-color: $text-color-contrast;
 $btn-success-bg: $brand-success;
 
-$btn-info-color: $text-color-light;
+$btn-info-color: $text-color-contrast;
 $btn-info-bg: $brand-info;
 
-$btn-warning-color: $text-color-light;
+$btn-warning-color: $text-color-contrast;
 $btn-warning-bg: $brand-warning;
 
-$btn-danger-color: $text-color-light;
+$btn-danger-color: $text-color-contrast;
 $btn-danger-bg: $brand-danger;
 
 $btn-hover-base: #f2f2f2;
