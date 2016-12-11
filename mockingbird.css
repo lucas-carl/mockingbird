@@ -135,8 +135,8 @@ th {
  * mockingbird frame.css v1.0.0 12/2016
  */
 html, body {
-  background-color: #ffffff;
-  color: #343434;
+  background-color: #fff;
+  color: #445;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.25;
@@ -317,7 +317,7 @@ p {
  * mockingbird buttons.css v1.0.0 12/2016
  */
 .btn {
-  background-color: #ffffff;
+  background-color: #fff;
   background-image: none;
   display: inline-block;
   font-weight: normal;
@@ -334,7 +334,7 @@ p {
 
 .btn:hover, .btn:focus {
   background: #f2f2f2;
-  color: #343434;
+  color: #445;
   text-decoration: none;
   outline: none;
 }
@@ -427,6 +427,10 @@ p {
 
 .btn-danger:focus {
   border-color: #991a0c;
+}
+
+.btn-strong {
+  font-weight: bold;
 }
 
 .btn,
