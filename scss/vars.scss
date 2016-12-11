@@ -40,7 +40,7 @@ $font-fam-base: $font-fam-sans-serif;
 $font-size-0: 1rem;
 $font-size-1: 0.5rem;
 $font-size-2: 0.75rem;
-$font-size-3: 0.85rem;
+$font-size-3: 0.875rem;
 $font-size-4: 1.25rem;
 $font-size-5: 1.7rem;
 $font-size-6: 2.15rem;
@@ -111,5 +111,6 @@ $link-color-hover: darken($link-color, 15%);
 $link-hover-decoration: underline;
 
 $border-radius-0: .25rem;
-$border-radius-1: .15rem;
-$border-radius-2: .5rem;
+$border-radius-1: .2rem;
+$border-radius-2: .3rem;
+$border-radius-3: .5rem;
