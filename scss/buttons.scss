@@ -15,7 +15,6 @@
 	color: inherit;
 	cursor: pointer;
 	white-space: nowrap;
-	padding: $spacer-3 $spacer-4;
 	margin: 0;
 	border: 1px solid $border-color;
 	border-radius: $border-radius-2;
@@ -60,4 +59,26 @@
 
 .btn-danger {
 	@include button-variant($btn-danger-color,$btn-danger-bg);
+}
+
+// sizes
+// ----
+
+.btn,
+.btn-md {
+	font-size: $font-size-0;
+	padding: $spacer-2 $spacer-0;
+	border-radius: $border-radius-2;
+}
+
+.btn-sm {
+	font-size: $font-size-3;
+	padding: $spacer-1 $spacer-2;
+	border-radius: $border-radius-1;
+}
+
+.btn-lg {
+	font-size: $font-size-4;
+	padding: $spacer-3 $spacer-4;
+	border-radius: $border-radius-3;
 }

@@ -7,7 +7,7 @@
  * mockingbird reset.css v1.0.0 12/2016
  */
 :root {
-  font-size: 16px;
+  font-size: 14px;
 }
 
 html {
@@ -263,7 +263,7 @@ h5, .h5 {
 }
 
 h6, .h6 {
-  font-size: 0.85rem;
+  font-size: 0.875rem;
 }
 
 p {
@@ -326,10 +326,9 @@ p {
   color: inherit;
   cursor: pointer;
   white-space: nowrap;
-  padding: 0.75rem 1.5rem;
   margin: 0;
   border: 1px solid #d5d5d5;
-  border-radius: 0.5rem;
+  border-radius: 0.3rem;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -428,6 +427,25 @@ p {
 
 .btn-danger:focus {
   border-color: #991a0c;
+}
+
+.btn,
+.btn-md {
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.btn-sm {
+  font-size: 0.875rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.2rem;
+}
+
+.btn-lg {
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
 }
 
 /*!
