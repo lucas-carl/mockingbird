@@ -58,10 +58,37 @@ hr {
   height: 0;
 }
 
+figcaption,
+figure,
+main {
+  display: block;
+}
+
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
 code,
 pre {
   font-family: monospace, monospace;
-  font-size: 1em;
+  font-size: 1rem;
+}
+
+abbr {
+	border: 0;
+	text-decoration: underline;
+	text-decoration-style: dotted;
+	text-decoration: underline dotted;
 }
 
 button,
