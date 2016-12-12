@@ -25,6 +25,9 @@ input,
 button,
 select,
 textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit; }
@@ -142,13 +145,17 @@ th {
   display: block;
   margin: auto; }
 
-.right-block {
+.right-block,
+.pull-right {
   float: right !important; }
 
-.left-block {
+.left-block,
+.pull-left {
   float: left !important; }
 
-.hide {
+.hide,
+.hidden,
+[hidden] {
   display: none !important; }
 
 .show {

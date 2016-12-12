@@ -25,6 +25,9 @@ input,
 button,
 select,
 textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit; }
@@ -114,7 +117,7 @@ th {
 html, body {
   background-color: #fff;
   color: #445;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.25;
   margin: 0; }
@@ -222,6 +225,10 @@ p {
   margin-top: 0;
   margin-bottom: 1rem; }
 
+small,
+.small {
+  font-size: 0.75rem; }
+
 strong,
 .strong,
 b {
@@ -240,6 +247,24 @@ b {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
+
+.text-muted {
+  color: #d5d5d5 !important; }
+
+.text-primary {
+  color: #548fdb !important; }
+
+.text-success {
+  color: #42d17f !important; }
+
+.text-info {
+  color: #19b5fe !important; }
+
+.text-warning {
+  color: #f7ca18 !important; }
+
+.text-danger {
+  color: #ef4836 !important; }
 
 /*!
  * mockingbird grid.css v1.0.0 12/2016
@@ -374,13 +399,17 @@ b {
   display: block;
   margin: auto; }
 
-.right-block {
+.right-block,
+.pull-right {
   float: right !important; }
 
-.left-block {
+.left-block,
+.pull-left {
   float: left !important; }
 
-.hide {
+.hide,
+.hidden,
+[hidden] {
   display: none !important; }
 
 .show {
