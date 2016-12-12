@@ -21,6 +21,8 @@ $body-bg: $white;
 
 $text-color: $gray-base;
 
+$text-color-light: #6c6c79;
+
 $text-color-contrast: #fff;
 
 $border-color: $gray-light;
@@ -66,7 +68,7 @@ $res-break-6: 360px;
 // buttons
 // ----
 
-$btn-default-color: $text-color;
+$btn-default-color: $text-color-light;
 $btn-default-bg: $white;
 
 $btn-primary-color: $text-color-contrast;
@@ -91,11 +93,13 @@ $btn-hover-base: #f2f2f2;
 
 $spacer-0: 1rem;
 $spacer-1: .25rem;
-$spacer-2: .5rem;
-$spacer-3: .75rem;
-$spacer-4: 1.5rem;
-$spacer-5: 2rem;
-$spacer-6: 3rem;
+$spacer-2: .35rem;
+$spacer-3: .5rem;
+$spacer-4: .6rem;
+$spacer-5: .75rem;
+$spacer-6: 1.5rem;
+$spacer-7: 2rem;
+$spacer-8: 3rem;
 
 // miscellaneous
 // ----
@@ -111,6 +115,7 @@ $link-color-hover: darken($link-color, 15%);
 $link-hover-decoration: underline;
 
 $border-radius-0: .25rem;
-$border-radius-1: .2rem;
-$border-radius-2: .3rem;
-$border-radius-3: .5rem;
+$border-radius-1: .15rem;
+$border-radius-2: .2rem;
+$border-radius-3: .3rem;
+$border-radius-4: .5rem;
