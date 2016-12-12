@@ -13,14 +13,17 @@
 
 .container {
 	max-width: $res-break-2;
+	padding: 0 $spacer-5;
 }
 
 .container-sm {
 	max-width: $res-break-3;
+	padding: 0 $spacer-5;
 }
 
 .container-xs {
 	max-width: $res-break-4;
+	padding: 0 $spacer-5;
 }
 
 .row {
