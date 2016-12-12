@@ -7,7 +7,7 @@
  * mockingbird reset.css v1.0.0 12/2016
  */
 :root {
-  font-size: 14px; }
+  font-size: 16px; }
 
 html {
   font-family: sans-serif;
@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 0.75rem; }
+  margin-bottom: 0.5rem; }
 
 h1, .h1 {
   font-size: 2.6rem; }
@@ -268,16 +268,15 @@ b {
   background-color: #fff;
   background-image: none;
   display: inline-block;
+  color: #6c6c79;
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
-  color: inherit;
   cursor: pointer;
   white-space: nowrap;
   margin: 0;
   border: 1px solid #d5d5d5;
-  border-radius: 0.3rem;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); }
+  border-radius: 0.2rem; }
   .btn:hover, .btn:focus {
     background: #f2f2f2;
     color: #445;
@@ -347,19 +346,19 @@ b {
 
 .btn,
 .btn-md {
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 0.3rem; }
+  font-size: 0.875rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem; }
 
 .btn-sm {
-  font-size: 0.875rem;
-  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  padding: 0.35rem 0.75rem;
   border-radius: 0.2rem; }
 
 .btn-lg {
-  font-size: 1.25rem;
-  padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem; }
+  font-size: 1rem;
+  padding: 0.6rem 2rem;
+  border-radius: 0.3rem; }
 
 /*!
  * mockingbird utilities.css v1.0.0 12/2016
