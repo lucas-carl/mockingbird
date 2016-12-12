@@ -22,18 +22,54 @@ p {
 }
 
 hr {
-
+	margin: $spacer-5 0;
+	border: 1px solid $border-color;
 }
 
 small,
 .small {
-	font-size: $font-size-2;
+	font-size: $font-size-3;
 }
 
 strong,
 .strong,
 b {
 	font-weight: bold !important;
+}
+
+mark,
+.mark {
+	background-color: rgba($brand-primary,.5);
+}
+
+i,
+em,
+dfn {
+	font-style: italic;
+}
+
+del {
+	text-decoration: line-through;
+}
+
+ins {
+	text-decoration: underline;
+}
+
+sub,
+sup {
+	position: relative;
+  font-size: $font-size-3;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25rem;
+}
+
+sup {
+  top: -.5rem;
 }
 
 .text-center {
