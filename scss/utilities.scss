@@ -14,11 +14,13 @@
 	margin: auto;
 }
 
-.right-block {
+.right-block,
+.pull-right {
 	float: right !important;
 }
 
-.left-block {
+.left-block,
+.pull-left {
 	float: left !important;
 }
 
@@ -29,7 +31,9 @@
 // toggle content
 // ----
 
-.hide {
+.hide,
+.hidden,
+[hidden] {
 	display: none !important;
 }
 
