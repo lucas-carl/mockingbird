@@ -7,23 +7,19 @@
  * mockingbird reset.css v1.0.0 12/2016
  */
 :root {
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
+  -webkit-text-size-adjust: 100%; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
+  display: block; }
 
 audio, canvas, progress, video {
   display: inline-block;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 input,
 button,
@@ -31,41 +27,33 @@ select,
 textarea {
   font-family: inherit;
   font-size: inherit;
-  line-height: inherit;
-}
+  line-height: inherit; }
 
 a {
-  background-color: transparent;
-}
+  background-color: transparent; }
 
 a:active,
 a:hover {
-  outline: 0;
-}
+  outline: 0; }
 
 b,
 strong {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 img {
-  border: 0;
-}
+  border: 0; }
 
 svg:not(:root) {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 hr {
   box-sizing: content-box;
-  height: 0;
-}
+  height: 0; }
 
 code,
 pre {
   font-family: monospace, monospace;
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 button,
 input,
@@ -74,56 +62,45 @@ select,
 textarea {
   color: inherit;
   font: inherit;
-  margin: 0;
-}
+  margin: 0; }
 
 button {
-  overflow: visible;
-}
+  overflow: visible; }
 
 button,
 select {
-  text-transform: none;
-}
+  text-transform: none; }
 
 button[disabled],
 html input[disabled] {
-  cursor: default;
-}
+  cursor: default; }
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 input {
-  line-height: normal;
-}
+  line-height: normal; }
 
 input[type="search"] {
   -webkit-appearance: textfield;
-  box-sizing: content-box;
-}
+  box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 textarea {
-  overflow: auto;
-}
+  overflow: auto; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 td,
 th {
-  padding: 0;
-}
+  padding: 0; }
 
 /*!
  * mockingbird vars.css v1.0.0 12/2016
@@ -140,69 +117,55 @@ html, body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.25;
-  margin: 0;
-}
+  margin: 0; }
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 a {
   color: #548fdb;
-  text-decoration: none;
-}
-
-a:hover, a:focus {
-  color: #2768bb;
-  text-decoration: underline;
-}
+  text-decoration: none; }
+  a:hover, a:focus {
+    color: #2768bb;
+    text-decoration: underline; }
 
 img {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 figure {
-  margin: 0 0 1rem;
-}
+  margin: 0 0 1rem; }
 
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
-  overflow: auto;
-}
+  overflow: auto; }
 
 blockquote {
-  margin: 0 0 1rem;
-}
+  margin: 0 0 1rem; }
 
 ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
-}
+  margin-bottom: 1rem; }
 
 ol ol,
 ul ul,
 ol ul,
 ul ol {
-  margin-bottom: 0;
-}
+  margin-bottom: 0; }
 
 .img-responsive {
   max-height: 100%;
-  max-width: 100%;
-}
+  max-width: 100%; }
 
 .img-rounded {
-  border-radius: 4px;
-}
+  border-radius: 4px; }
 
 .img-circle {
-  border-radius: 50%;
-}
+  border-radius: 50%; }
 
 .sr-only {
   position: absolute;
@@ -212,8 +175,7 @@ ul ol {
   padding: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
-  border: 0;
-}
+  border: 0; }
 
 .sr-only-focusable:active, .sr-only-focusable:focus {
   position: static;
@@ -221,16 +183,13 @@ ul ol {
   height: auto;
   margin: 0;
   overflow: visible;
-  clip: auto;
-}
+  clip: auto; }
 
 abbr[title] {
-  cursor: help;
-}
+  cursor: help; }
 
 [role="button"] {
-  cursor: pointer;
-}
+  cursor: pointer; }
 
 /*!
  * mockingbird type.css v1.0.0 12/2016
@@ -239,55 +198,48 @@ h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-weight: bold;
   margin-top: 0;
-  margin-bottom: 0.75rem;
-}
+  margin-bottom: 0.75rem; }
 
 h1, .h1 {
-  font-size: 2.6rem;
-}
+  font-size: 2.6rem; }
 
 h2, .h2 {
-  font-size: 2.15rem;
-}
+  font-size: 2.15rem; }
 
 h3, .h3 {
-  font-size: 1.7rem;
-}
+  font-size: 1.7rem; }
 
 h4, .h4 {
-  font-size: 1.25rem;
-}
+  font-size: 1.25rem; }
 
 h5, .h5 {
-  font-size: 1rem;
-}
+  font-size: 1rem; }
 
 h6, .h6 {
-  font-size: 0.875rem;
-}
+  font-size: 0.875rem; }
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
-}
+  margin-bottom: 1rem; }
+
+strong,
+.strong,
+b {
+  font-weight: bold !important; }
 
 .text-center {
-  text-align: center;
-}
+  text-align: center !important; }
 
 .text-right {
-  text-align: right;
-}
+  text-align: right !important; }
 
 .text-justify {
-  text-align: justify;
-}
+  text-align: justify !important; }
 
 .text-overflow {
   overflow: hidden;
   text-overflow: ellipsis;
-  white-space: nowrap;
-}
+  white-space: nowrap; }
 
 /*!
  * mockingbird grid.css v1.0.0 12/2016
@@ -298,20 +250,16 @@ p {
 .container-fluid {
   position: relative;
   display: block;
-  margin: auto;
-}
+  margin: auto; }
 
 .container {
-  max-width: 960px;
-}
+  max-width: 960px; }
 
 .container-sm {
-  max-width: 720px;
-}
+  max-width: 720px; }
 
 .container-xs {
-  max-width: 600px;
-}
+  max-width: 600px; }
 
 /*!
  * mockingbird buttons.css v1.0.0 12/2016
@@ -329,162 +277,115 @@ p {
   margin: 0;
   border: 1px solid #d5d5d5;
   border-radius: 0.3rem;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
-}
-
-.btn:hover, .btn:focus {
-  background: #f2f2f2;
-  color: #445;
-  text-decoration: none;
-  outline: none;
-}
-
-.btn:active, .btn.active {
-  background-image: none;
-  outline: none;
-}
-
-.btn[disabled], .btn.disabled {
-  cursor: not-allowed;
-  opacity: .8;
-}
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2); }
+  .btn:hover, .btn:focus {
+    background: #f2f2f2;
+    color: #445;
+    text-decoration: none;
+    outline: none; }
+  .btn:active, .btn.active {
+    background-image: none;
+    outline: none; }
+  .btn[disabled], .btn.disabled {
+    cursor: not-allowed;
+    opacity: .8; }
 
 .btn-primary {
   background: #548fdb;
   color: #fff;
-  border-color: #2c74d0;
-}
-
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-  background-color: #3f81d7;
-  color: #fff;
-  border-color: #2768bb;
-}
-
-.btn-primary:focus {
-  border-color: #1f5191;
-}
+  border-color: #2c74d0; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    background-color: #3f81d7;
+    color: #fff;
+    border-color: #2768bb; }
+  .btn-primary:focus {
+    border-color: #1f5191; }
 
 .btn-success {
   background: #42d17f;
   color: #fff;
-  border-color: #2cb466;
-}
-
-.btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
-  background-color: #31c972;
-  color: #fff;
-  border-color: #27a05a;
-}
-
-.btn-success:focus {
-  border-color: #1d7743;
-}
+  border-color: #2cb466; }
+  .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
+    background-color: #31c972;
+    color: #fff;
+    border-color: #27a05a; }
+  .btn-success:focus {
+    border-color: #1d7743; }
 
 .btn-info {
   background: #19b5fe;
   color: #fff;
-  border-color: #019be3;
-}
-
-.btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
-  background-color: #01acfc;
-  color: #fff;
-  border-color: #018aca;
-}
-
-.btn-info:focus {
-  border-color: #016797;
-}
+  border-color: #019be3; }
+  .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
+    background-color: #01acfc;
+    color: #fff;
+    border-color: #018aca; }
+  .btn-info:focus {
+    border-color: #016797; }
 
 .btn-warning {
   background: #f7ca18;
   color: #fff;
-  border-color: #d5ab07;
-}
-
-.btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active {
-  background-color: #edbf08;
-  color: #fff;
-  border-color: #bc9707;
-}
-
-.btn-warning:focus {
-  border-color: #8b7005;
-}
+  border-color: #d5ab07; }
+  .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active {
+    background-color: #edbf08;
+    color: #fff;
+    border-color: #bc9707; }
+  .btn-warning:focus {
+    border-color: #8b7005; }
 
 .btn-danger {
   background: #ef4836;
   color: #fff;
-  border-color: #e02612;
-}
-
-.btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active {
-  background-color: #ed321e;
-  color: #fff;
-  border-color: #c92210;
-}
-
-.btn-danger:focus {
-  border-color: #991a0c;
-}
-
-.btn-strong {
-  font-weight: bold;
-}
+  border-color: #e02612; }
+  .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active {
+    background-color: #ed321e;
+    color: #fff;
+    border-color: #c92210; }
+  .btn-danger:focus {
+    border-color: #991a0c; }
 
 .btn,
 .btn-md {
   font-size: 1rem;
   padding: 0.5rem 1rem;
-  border-radius: 0.3rem;
-}
+  border-radius: 0.3rem; }
 
 .btn-sm {
   font-size: 0.875rem;
   padding: 0.25rem 0.5rem;
-  border-radius: 0.2rem;
-}
+  border-radius: 0.2rem; }
 
 .btn-lg {
   font-size: 1.25rem;
   padding: 0.75rem 1.5rem;
-  border-radius: 0.5rem;
-}
+  border-radius: 0.5rem; }
 
 /*!
  * mockingbird utilities.css v1.0.0 12/2016
  */
 .clearfix::before, .clearfix::after {
   content: '';
-  display: table;
-}
+  display: table; }
 
 .clearfix::after {
-  clear: both;
-}
+  clear: both; }
 
 .center-block {
   display: block;
-  margin: auto;
-}
+  margin: auto; }
 
 .right-block {
-  float: right !important;
-}
+  float: right !important; }
 
 .left-block {
-  float: left !important;
-}
+  float: left !important; }
 
 .hide {
-  display: none !important;
-}
+  display: none !important; }
 
 .show {
-  display: block !important;
-}
+  display: block !important; }
 
 .invisible {
-  visibility: hidden;
-}
+  visibility: hidden; }

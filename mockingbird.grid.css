@@ -7,23 +7,19 @@
  * mockingbird reset.css v1.0.0 12/2016
  */
 :root {
-  font-size: 14px;
-}
+  font-size: 14px; }
 
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
+  -webkit-text-size-adjust: 100%; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
-  display: block;
-}
+  display: block; }
 
 audio, canvas, progress, video {
   display: inline-block;
-  vertical-align: baseline;
-}
+  vertical-align: baseline; }
 
 input,
 button,
@@ -31,41 +27,33 @@ select,
 textarea {
   font-family: inherit;
   font-size: inherit;
-  line-height: inherit;
-}
+  line-height: inherit; }
 
 a {
-  background-color: transparent;
-}
+  background-color: transparent; }
 
 a:active,
 a:hover {
-  outline: 0;
-}
+  outline: 0; }
 
 b,
 strong {
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 img {
-  border: 0;
-}
+  border: 0; }
 
 svg:not(:root) {
-  overflow: hidden;
-}
+  overflow: hidden; }
 
 hr {
   box-sizing: content-box;
-  height: 0;
-}
+  height: 0; }
 
 code,
 pre {
   font-family: monospace, monospace;
-  font-size: 1em;
-}
+  font-size: 1em; }
 
 button,
 input,
@@ -74,56 +62,45 @@ select,
 textarea {
   color: inherit;
   font: inherit;
-  margin: 0;
-}
+  margin: 0; }
 
 button {
-  overflow: visible;
-}
+  overflow: visible; }
 
 button,
 select {
-  text-transform: none;
-}
+  text-transform: none; }
 
 button[disabled],
 html input[disabled] {
-  cursor: default;
-}
+  cursor: default; }
 
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 input {
-  line-height: normal;
-}
+  line-height: normal; }
 
 input[type="search"] {
   -webkit-appearance: textfield;
-  box-sizing: content-box;
-}
+  box-sizing: content-box; }
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
+  -webkit-appearance: none; }
 
 textarea {
-  overflow: auto;
-}
+  overflow: auto; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 td,
 th {
-  padding: 0;
-}
+  padding: 0; }
 
 /*!
  * mockingbird vars.css v1.0.0 12/2016
@@ -140,54 +117,42 @@ th {
 .container-fluid {
   position: relative;
   display: block;
-  margin: auto;
-}
+  margin: auto; }
 
 .container {
-  max-width: 960px;
-}
+  max-width: 960px; }
 
 .container-sm {
-  max-width: 720px;
-}
+  max-width: 720px; }
 
 .container-xs {
-  max-width: 600px;
-}
+  max-width: 600px; }
 
 /*!
  * mockingbird utilities.css v1.0.0 12/2016
  */
 .clearfix::before, .clearfix::after {
   content: '';
-  display: table;
-}
+  display: table; }
 
 .clearfix::after {
-  clear: both;
-}
+  clear: both; }
 
 .center-block {
   display: block;
-  margin: auto;
-}
+  margin: auto; }
 
 .right-block {
-  float: right !important;
-}
+  float: right !important; }
 
 .left-block {
-  float: left !important;
-}
+  float: left !important; }
 
 .hide {
-  display: none !important;
-}
+  display: none !important; }
 
 .show {
-  display: block !important;
-}
+  display: block !important; }
 
 .invisible {
-  visibility: hidden;
-}
+  visibility: hidden; }
