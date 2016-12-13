@@ -1,0 +1,49 @@
+/*!
+ * mockingbird forms.css v1.0.0 12/2016
+ */
+
+textarea,
+input[type="url"],
+input[type="tel"],
+input[type="time"],
+input[type="week"],
+input[type="date"],
+input[type="text"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+input[type="datetime-local"] {
+	background-color: $white;
+	background-image: none;
+	display: inline-block;
+	color: inherit;
+	font-weight: normal;
+	vertical-align: middle;
+	white-space: nowrap;
+	margin: 0;
+	font-size: $font-size-3;
+	padding: $spacer-3;
+	border-radius: $border-radius-0;
+	border: 1px solid $border-color;
+	&:focus {
+		outline-width: 0;
+		border: 1px solid $brand-primary;
+		box-shadow: 0 0 2px $brand-primary;
+	}
+}
+
+button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+	@extend .btn;
+}
+
+.input-group {
+	display: block;
+	margin-top: 0;
+	margin-bottom: $spacer-0;
+}
