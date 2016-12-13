@@ -156,6 +156,10 @@ th {
   padding: 0;
 }
 
+figure {
+  margin: 0 0 1rem;
+}
+
 /*!
  * mockingbird vars.css v1.0.0 12/2016
  */
