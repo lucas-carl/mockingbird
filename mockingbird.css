@@ -156,6 +156,10 @@ th {
   padding: 0;
 }
 
+figure {
+  margin: 0 0 1rem;
+}
+
 /*!
  * mockingbird vars.css v1.0.0 12/2016
  */
@@ -442,6 +446,8 @@ input[type="reset"] {
   margin: 0;
   border: 1px solid #d5d5d5;
   border-radius: 0.2rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 .btn:hover, button:hover,
@@ -591,6 +597,10 @@ input[type="reset"],
 /*!
  * mockingbird forms.css v1.0.0 12/2016
  */
+form {
+  margin: 0;
+}
+
 textarea,
 input[type="url"],
 input[type="tel"],
@@ -607,6 +617,7 @@ input[type="datetime-local"] {
   background-color: #fff;
   background-image: none;
   display: inline-block;
+  width: 12rem;
   color: inherit;
   font-weight: normal;
   vertical-align: middle;
@@ -642,10 +653,23 @@ input[type="datetime-local"]:focus {
   margin-bottom: 1rem;
 }
 
+.input-group > * {
+  margin: 0 !important;
+}
+
+textarea {
+  height: auto;
+  resize: vertical;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  overflow: auto;
+}
+
 fieldset {
   border-style: solid;
   border-color: #d5d5d5;
   border-image: none;
+  padding: 0.75rem 0.5rem;
 }
 
 fieldset legend {
@@ -698,6 +722,47 @@ fieldset.danger {
 
 fieldset.danger legend {
   color: #ef4836;
+}
+
+/*!
+ * mockingbird code.css v1.0.0 12/2016
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+code {
+  background-color: #f5f5f7;
+  color: #bd4147;
+  font-size: 0.875rem;
+  vertical-align: middle;
+  padding: 0.35rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+pre {
+  background-color: #f5f5f7;
+  display: block;
+  color: #343434;
+  font-size: 0.875rem;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  padding: 0.75rem 0.5rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  border: 1px solid #d5d5d5;
+  overflow: auto;
+}
+
+pre code {
+  background-color: transparent;
+  color: #bd4147;
+  font-size: inherit;
+  padding: 0;
+  border-radius: 0;
 }
 
 /*!
