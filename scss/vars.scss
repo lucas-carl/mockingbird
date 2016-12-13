@@ -9,6 +9,7 @@ $gray-base: #445;
 $gray: #555;
 $gray-dark: #343434;
 $gray-light: #d5d5d5;
+$gray-lightest: #f5f5f7;
 $white: #fff;
 
 $brand-primary: #548fdb;
@@ -119,3 +120,9 @@ $border-radius-1: .15rem;
 $border-radius-2: .2rem;
 $border-radius-3: .3rem;
 $border-radius-4: .5rem;
+
+$code-color: #bd4147;
+$code-bg: $gray-lightest;
+
+$pre-bg: $gray-lightest;
+$pre-color: $gray-dark;
