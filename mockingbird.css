@@ -425,7 +425,11 @@ sup {
 /*!
  * mockingbird buttons.css v1.0.0 12/2016
  */
-.btn {
+.btn, button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
   background-color: #fff;
   background-image: none;
   display: inline-block;
@@ -440,25 +444,49 @@ sup {
   border-radius: 0.2rem;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover, button:hover,
+[role="button"]:hover,
+input[type="button"]:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover, .btn:focus, button:focus,
+[role="button"]:focus,
+input[type="button"]:focus,
+input[type="submit"]:focus,
+input[type="reset"]:focus {
   background: #f2f2f2;
   color: #445;
   text-decoration: none;
   outline: none;
 }
 
-.btn:active, .btn.active {
+.btn:active, button:active,
+[role="button"]:active,
+input[type="button"]:active,
+input[type="submit"]:active,
+input[type="reset"]:active, .btn.active, button.active,
+.active[role="button"],
+input.active[type="button"],
+input.active[type="submit"],
+input.active[type="reset"] {
   background-image: none;
   outline: none;
 }
 
-.btn[disabled], .btn.disabled {
+.btn[disabled], button[disabled],
+[disabled][role="button"],
+input[disabled][type="button"],
+input[disabled][type="submit"],
+input[disabled][type="reset"], .btn.disabled, button.disabled,
+.disabled[role="button"],
+input.disabled[type="button"],
+input.disabled[type="submit"],
+input.disabled[type="reset"] {
   cursor: not-allowed;
   opacity: .8;
 }
 
 .btn-primary {
-  background: #548fdb;
+  background-color: #548fdb;
   color: #fff;
   border-color: #2c74d0;
 }
@@ -474,7 +502,7 @@ sup {
 }
 
 .btn-success {
-  background: #42d17f;
+  background-color: #42d17f;
   color: #fff;
   border-color: #2cb466;
 }
@@ -490,7 +518,7 @@ sup {
 }
 
 .btn-info {
-  background: #19b5fe;
+  background-color: #19b5fe;
   color: #fff;
   border-color: #019be3;
 }
@@ -506,7 +534,7 @@ sup {
 }
 
 .btn-warning {
-  background: #f7ca18;
+  background-color: #f7ca18;
   color: #fff;
   border-color: #d5ab07;
 }
@@ -522,7 +550,7 @@ sup {
 }
 
 .btn-danger {
-  background: #ef4836;
+  background-color: #ef4836;
   color: #fff;
   border-color: #e02612;
 }
@@ -537,7 +565,11 @@ sup {
   border-color: #991a0c;
 }
 
-.btn,
+.btn, button,
+[role="button"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
 .btn-md {
   font-size: 0.875rem;
   padding: 0.5rem 1.5rem;
@@ -554,6 +586,118 @@ sup {
   font-size: 1rem;
   padding: 0.6rem 2rem;
   border-radius: 0.3rem;
+}
+
+/*!
+ * mockingbird forms.css v1.0.0 12/2016
+ */
+textarea,
+input[type="url"],
+input[type="tel"],
+input[type="time"],
+input[type="week"],
+input[type="date"],
+input[type="text"],
+input[type="email"],
+input[type="month"],
+input[type="number"],
+input[type="search"],
+input[type="password"],
+input[type="datetime-local"] {
+  background-color: #fff;
+  background-image: none;
+  display: inline-block;
+  color: inherit;
+  font-weight: normal;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin: 0;
+  font-size: 0.875rem;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #d5d5d5;
+}
+
+textarea:focus,
+input[type="url"]:focus,
+input[type="tel"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="date"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="month"]:focus,
+input[type="number"]:focus,
+input[type="search"]:focus,
+input[type="password"]:focus,
+input[type="datetime-local"]:focus {
+  outline-width: 0;
+  border: 1px solid #548fdb;
+  box-shadow: 0 0 2px #548fdb;
+}
+
+.input-group {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+fieldset {
+  border-style: solid;
+  border-color: #d5d5d5;
+  border-image: none;
+}
+
+fieldset legend {
+  background: #fff;
+  color: #6c6c79;
+  padding: 0 0.25rem;
+  border-radius: 0.25rem;
+}
+
+fieldset.primary {
+  background-color: rgba(84, 143, 219, 0.075);
+  border-color: #548fdb;
+}
+
+fieldset.primary legend {
+  color: #548fdb;
+}
+
+fieldset.info {
+  background-color: rgba(25, 181, 254, 0.075);
+  border-color: #19b5fe;
+}
+
+fieldset.info legend {
+  color: #19b5fe;
+}
+
+fieldset.success {
+  background-color: rgba(66, 209, 127, 0.075);
+  border-color: #42d17f;
+}
+
+fieldset.success legend {
+  color: #42d17f;
+}
+
+fieldset.warning {
+  background-color: rgba(247, 202, 24, 0.075);
+  border-color: #f7ca18;
+}
+
+fieldset.warning legend {
+  color: #f7ca18;
+}
+
+fieldset.danger {
+  background-color: rgba(239, 72, 54, 0.075);
+  border-color: #ef4836;
+}
+
+fieldset.danger legend {
+  color: #ef4836;
 }
 
 /*!

@@ -47,3 +47,33 @@ input[type="reset"] {
 	margin-top: 0;
 	margin-bottom: $spacer-0;
 }
+
+// fieldset variants
+// ----
+
+fieldset {
+	border-style: solid;
+	border-color: $border-color;
+	border-image: none;
+	legend {
+		background: $body-bg;
+		color: $text-color-light;
+		padding: 0 $spacer-1;
+		border-radius: $border-radius-0;
+	}
+	&.primary {
+		@include fieldset-variant($brand-primary);
+	}
+	&.info {
+		@include fieldset-variant($brand-info);
+	}
+	&.success {
+		@include fieldset-variant($brand-success);
+	}
+	&.warning {
+		@include fieldset-variant($brand-warning);
+	}
+	&.danger {
+		@include fieldset-variant($brand-danger);
+	}
+}

@@ -14,7 +14,7 @@
 }
 
 @mixin button-variant($color, $bg) {
-	background: $bg;
+	background-color: $bg;
 	color: $color;
 	border-color: darken($bg,10%);
 	&:hover,
@@ -27,5 +27,13 @@
 	}
 	&:focus {
 		border-color: darken($bg,25%);
+	}
+}
+
+@mixin fieldset-variant($color) {
+	background-color: rgba($color,.075);
+	border-color: $color;
+	legend {
+		color: $color;
 	}
 }
