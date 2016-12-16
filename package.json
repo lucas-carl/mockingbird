@@ -11,5 +11,14 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lucas-carl/mockingbird/issues"
+  },
+  "devDependencies": {
+    "git-scripts": "^0.2.1",
+    "surge": "^0.18.0"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./build/ --domain mockingbird-cdn.surge.sh"
+    }
   }
 }
