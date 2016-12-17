@@ -44,3 +44,13 @@
 .invisible {
 	visibility: hidden;
 }
+
+// special utilities
+// ----
+
+.copyright-note {
+	color: $gray !important;
+	text-align: center;
+	font-size: $font-size-3;
+	padding: $spacer-4 0;
+}
