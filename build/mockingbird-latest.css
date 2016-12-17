@@ -4,7 +4,7 @@
  * last update 12/2016
  */
 /*!
- * mockingbird reset.css v1.0.0 12/2016
+ * mockingbird reset.css 12/2016
  */
 :root {
   font-size: 16px;
@@ -161,13 +161,13 @@ figure {
 }
 
 /*!
- * mockingbird vars.css v1.0.0 12/2016
+ * mockingbird vars.css 12/2016
  */
 /*!
- * mockingbird mixins.css v1.0.0 12/2016
+ * mockingbird mixins.css 12/2016
  */
 /*!
- * mockingbird frame.css v1.0.0 12/2016
+ * mockingbird frame.css 12/2016
  */
 html, body {
   background-color: #fff;
@@ -268,7 +268,7 @@ abbr[title] {
 }
 
 /*!
- * mockingbird type.css v1.0.0 12/2016
+ * mockingbird type.css 12/2016
  */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -400,7 +400,7 @@ sup {
 }
 
 /*!
- * mockingbird grid.css v1.0.0 12/2016
+ * mockingbird grid.css 12/2016
  */
 .container,
 .container-sm,
@@ -427,7 +427,7 @@ sup {
 }
 
 /*!
- * mockingbird buttons.css v1.0.0 12/2016
+ * mockingbird buttons.css 12/2016
  */
 .btn, button,
 [role="button"],
@@ -595,7 +595,10 @@ input[type="reset"],
 }
 
 /*!
- * mockingbird forms.css v1.0.0 12/2016
+ * mockingbird tables.css 12/2016
+ */
+/*!
+ * mockingbird forms.css 12/2016
  */
 form {
   margin: 0;
@@ -725,7 +728,7 @@ fieldset.danger legend {
 }
 
 /*!
- * mockingbird code.css v1.0.0 12/2016
+ * mockingbird code.css 12/2016
  */
 code,
 kbd,
@@ -766,7 +769,7 @@ pre code {
 }
 
 /*!
- * mockingbird utilities.css v1.0.0 12/2016
+ * mockingbird utilities.css 12/2016
  */
 .clearfix::before, .clearfix::after {
   content: '';

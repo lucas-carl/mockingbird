@@ -4,7 +4,7 @@
  * last update 12/2016
  */
 /*!
- * mockingbird reset.css v1.0.0 12/2016
+ * mockingbird reset.css 12/2016
  */
 :root {
   font-size: 16px;
@@ -161,13 +161,13 @@ figure {
 }
 
 /*!
- * mockingbird vars.css v1.0.0 12/2016
+ * mockingbird vars.css 12/2016
  */
 /*!
- * mockingbird mixins.css v1.0.0 12/2016
+ * mockingbird mixins.css 12/2016
  */
 /*!
- * mockingbird grid.css v1.0.0 12/2016
+ * mockingbird grid.css 12/2016
  */
 .container,
 .container-sm,
@@ -194,7 +194,7 @@ figure {
 }
 
 /*!
- * mockingbird utilities.css v1.0.0 12/2016
+ * mockingbird utilities.css 12/2016
  */
 .clearfix::before, .clearfix::after {
   content: '';
