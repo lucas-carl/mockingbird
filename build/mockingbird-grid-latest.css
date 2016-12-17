@@ -146,13 +146,17 @@ textarea {
   overflow: auto;
 }
 
-table {
+table,
+thead,
+tbody {
+  text-align: left;
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 td,
 th {
+  text-align: inherit;
   padding: 0;
 }
 
@@ -232,4 +236,11 @@ figure {
 
 .invisible {
   visibility: hidden;
+}
+
+.copyright-note {
+  color: #666 !important;
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 0.6rem 0;
 }

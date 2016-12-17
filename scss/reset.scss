@@ -139,13 +139,17 @@ textarea {
   overflow: auto;
 }
 
-table {
+table,
+thead,
+tbody {
+	text-align: left;
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 td,
 th {
+	text-align: inherit;
   padding: 0;
 }
 

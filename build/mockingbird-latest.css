@@ -146,13 +146,17 @@ textarea {
   overflow: auto;
 }
 
-table {
+table,
+thead,
+tbody {
+  text-align: left;
   border-collapse: collapse;
   border-spacing: 0;
 }
 
 td,
 th {
+  text-align: inherit;
   padding: 0;
 }
 
@@ -277,6 +281,25 @@ h1, h2, h3, h4, h5, h6,
   margin-bottom: 0.5rem;
 }
 
+h1 span,
+h1 .sub-heading, h2 span,
+h2 .sub-heading, h3 span,
+h3 .sub-heading, h4 span,
+h4 .sub-heading, h5 span,
+h5 .sub-heading, h6 span,
+h6 .sub-heading,
+.h1 span,
+.h1 .sub-heading, .h2 span,
+.h2 .sub-heading, .h3 span,
+.h3 .sub-heading, .h4 span,
+.h4 .sub-heading, .h5 span,
+.h5 .sub-heading, .h6 span,
+.h6 .sub-heading {
+  display: block;
+  color: #70707c;
+  font-size: 1rem;
+}
+
 h1, .h1 {
   font-size: 2.6rem;
 }
@@ -301,6 +324,20 @@ h6, .h6 {
   font-size: 0.875rem;
 }
 
+h6 span,
+.h6 span,
+h6 .sub-heading,
+.h6 .sub-heading {
+  font-size: 0.75rem;
+}
+
+h5 span,
+.h5 span,
+h5 .sub-heading,
+.h5 .sub-heading {
+  font-size: 0.875rem;
+}
+
 p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -308,7 +345,7 @@ p {
 
 hr {
   margin: 0.75rem 0;
-  border: 1px solid #d5d5d5;
+  border: 1px solid #d5d5d7;
 }
 
 small,
@@ -376,7 +413,7 @@ sup {
 }
 
 .text-muted {
-  color: #d5d5d5 !important;
+  color: #70707c !important;
 }
 
 .text-primary {
@@ -437,14 +474,14 @@ input[type="reset"] {
   background-color: #fff;
   background-image: none;
   display: inline-block;
-  color: #6c6c79;
+  color: #70707c;
   font-weight: normal;
   text-align: center;
   vertical-align: middle;
   cursor: pointer;
   white-space: nowrap;
   margin: 0;
-  border: 1px solid #d5d5d5;
+  border: 1px solid #d5d5d7;
   border-radius: 0.2rem;
   margin-top: 0;
   margin-bottom: 1rem;
@@ -597,6 +634,64 @@ input[type="reset"],
 /*!
  * mockingbird tables.css 12/2016
  */
+table,
+.table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1rem;
+}
+
+th,
+td {
+  vertical-align: top;
+  padding: 0.75rem;
+  border-top: 1px solid #d5d5d7;
+}
+
+thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #d5d5d7;
+}
+
+.table-bordered {
+  border: 1px solid #d5d5d7;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #d5d5d7;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f5f5f7;
+}
+
+.table-sm th,
+.table-sm td {
+  padding: 0.5rem;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #f5f5f7;
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  min-height: 0%;
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.table-responsive.table-bordered {
+  border: 0;
+}
+
 /*!
  * mockingbird forms.css 12/2016
  */
@@ -629,7 +724,7 @@ input[type="datetime-local"] {
   font-size: 0.875rem;
   padding: 0.5rem;
   border-radius: 0.25rem;
-  border: 1px solid #d5d5d5;
+  border: 1px solid #d5d5d7;
 }
 
 textarea:focus,
@@ -670,14 +765,15 @@ textarea {
 
 fieldset {
   border-style: solid;
-  border-color: #d5d5d5;
+  border-color: #d5d5d7;
   border-image: none;
   padding: 0.75rem 0.5rem;
+  margin: 0 !important;
 }
 
 fieldset legend {
   background: #fff;
-  color: #6c6c79;
+  color: #70707c;
   padding: 0 0.25rem;
   border-radius: 0.25rem;
 }
@@ -749,14 +845,14 @@ code {
 pre {
   background-color: #f5f5f7;
   display: block;
-  color: #343434;
+  color: #343436;
   font-size: 0.875rem;
   word-wrap: break-word;
   white-space: pre-wrap;
   padding: 0.75rem 0.5rem;
   margin-top: 0;
   margin-bottom: 1rem;
-  border: 1px solid #d5d5d5;
+  border: 1px solid #d5d5d7;
   overflow: auto;
 }
 
@@ -807,4 +903,11 @@ pre code {
 
 .invisible {
   visibility: hidden;
+}
+
+.copyright-note {
+  color: #666 !important;
+  text-align: center;
+  font-size: 0.875rem;
+  padding: 0.6rem 0;
 }

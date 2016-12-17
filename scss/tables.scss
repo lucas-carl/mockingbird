@@ -1,3 +1,74 @@
 /*!
  * mockingbird tables.css 12/2016
  */
+
+// basic styling
+// ----
+
+table,
+.table {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: $spacer-0;
+}
+
+th,
+td {
+	vertical-align: top;
+	padding: $spacer-5;
+	border-top: 1px solid $border-color;
+}
+
+thead th {
+	vertical-align: bottom;
+	border-bottom: 2px solid $border-color;
+}
+
+// variants
+// ----
+
+.table-bordered {
+  border: 1px solid $border-color;
+  th,
+  td {
+    border: 1px solid $border-color;
+  }
+  thead {
+    th,
+    td {
+      border-bottom-width: 2px;
+    }
+  }
+}
+
+.table-striped {
+  tbody tr:nth-of-type(odd) {
+    background-color: $gray-lightest;
+  }
+}
+
+.table-sm {
+  th,
+  td {
+    padding: $spacer-3;
+  }
+}
+
+.table-hover {
+  tbody tr {
+    &:hover {
+      background-color: $gray-lightest;
+    }
+  }
+}
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  min-height: 0%;
+  overflow-x: auto;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+  &.table-bordered {
+    border: 0;
+  }
+}
