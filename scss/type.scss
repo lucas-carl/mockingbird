@@ -7,6 +7,12 @@ h1, h2, h3, h4, h5, h6,
 	font-weight: bold;
 	margin-top: 0;
 	margin-bottom: $spacer-3;
+	& span,
+	& .sub-heading {
+		display: block;
+		color: $text-color-light;
+		font-size: $font-size-0;
+	}
 }
 
 h1, .h1 { font-size: $font-size-h1; }
@@ -15,6 +21,20 @@ h3, .h3 { font-size: $font-size-h3; }
 h4, .h4 { font-size: $font-size-h4; }
 h5, .h5 { font-size: $font-size-h5; }
 h6, .h6 { font-size: $font-size-h6; }
+
+h6 span,
+.h6 span,
+h6 .sub-heading,
+.h6 .sub-heading {
+	font-size: $font-size-2;
+}
+
+h5 span,
+.h5 span,
+h5 .sub-heading,
+.h5 .sub-heading {
+	font-size: $font-size-3;
+}
 
 p {
 	margin-top: 0;
@@ -90,7 +110,7 @@ sup {
 	white-space: nowrap;
 }
 
-.text-muted { color: $gray-light !important; }
+.text-muted { color: $text-color-light !important; }
 .text-primary { color: $brand-primary !important; }
 .text-success { color: $brand-success !important; }
 .text-info { color: $brand-info !important; }
