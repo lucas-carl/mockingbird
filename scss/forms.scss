@@ -72,6 +72,7 @@ fieldset {
 	border-color: $border-color;
 	border-image: none;
 	padding: $spacer-5 $spacer-3;
+	margin: 0 !important;
 	legend {
 		background: $body-bg;
 		color: $text-color-light;
