@@ -102,6 +102,20 @@ $spacer-6: 1.5rem;
 $spacer-7: 2rem;
 $spacer-8: 3rem;
 
+// grid
+// ----
+
+$grid-columns: 12;
+$grid-gutter: $spacer-0;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: $res-break-4,
+  md: $res-break-3,
+  lg: $res-break-2,
+  xl: $res-break-1
+);
+
 // miscellaneous
 // ----
 

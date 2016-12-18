@@ -37,3 +37,38 @@
 		color: $color;
 	}
 }
+
+@mixin make-columns($columns: $grid-columns, $breakpoints: $grid-breakpoints) {
+
+	%column {
+		position: relative;
+		float: left;
+		min-height: 1px;
+		padding: 0 ($grid-gutter / 2);
+	}
+
+	@each $breakpoint in map-keys($breakpoints) {
+		@for $i from 1 through $columns {
+			.col-#{$breakpoint}-#{$i} {
+
+				@extend %column;
+				width: percentage($i / $columns);
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				&:last-child {
+					padding-right: 0;
+				}
+
+				@media (max-width: map-get($breakpoints, #{$breakpoint})) {
+					width: 100%;
+					padding: ($grid-gutter / 2) 0;
+				}
+
+			}
+		}
+	}
+
+}
