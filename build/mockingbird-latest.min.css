@@ -39,7 +39,7 @@
 
 /*!
  * mockingbird code.css 12/2016
- */code,kbd,pre,samp{font-family:Menlo, Monaco, Consolas, "Courier New", monospace}code{background-color:#f5f5f7;color:#bd4147;font-size:0.875rem;vertical-align:middle;padding:0.35rem 0.5rem;border-radius:0.25rem}pre{background-color:#f5f5f7;display:block;color:#343436;font-size:0.875rem;word-wrap:break-word;white-space:pre-wrap;padding:0.75rem 0.5rem;margin-top:0;margin-bottom:1rem;border:1px solid #d5d5d7;overflow:auto}pre code{background-color:transparent;color:#bd4147;font-size:inherit;padding:0;border-radius:0}
+ */code,kbd,pre,samp{font-family:Menlo, Monaco, Consolas, "Courier New", monospace}code{background-color:#f5f5f7;color:#bd4147;font-size:0.875rem;vertical-align:middle;padding:0.35rem 0.5rem;border-radius:0.15rem}pre{background-color:#f5f5f7;display:block;color:#343436;font-size:0.875rem;word-wrap:break-word;white-space:pre-wrap;padding:0.75rem 0.5rem;margin-top:0;margin-bottom:1rem;border-radius:0.15rem;border:1px solid #d5d5d7;overflow:auto}pre code{background-color:transparent;color:#bd4147;font-size:inherit;padding:0;border-radius:0}
 
 /*!
  * mockingbird cards.css 12/2016
