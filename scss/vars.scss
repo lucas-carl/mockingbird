@@ -56,6 +56,15 @@ $font-size-h4: $font-size-4;
 $font-size-h5: $font-size-0;
 $font-size-h6: $font-size-3;
 
+$heading-size: (
+  h1: $font-size-7,
+	h2: $font-size-6,
+	h3: $font-size-5,
+	h4: $font-size-4,
+	h5: $font-size-0,
+	h6: $font-size-3
+);
+
 // responsive breakpoints
 // ----
 
