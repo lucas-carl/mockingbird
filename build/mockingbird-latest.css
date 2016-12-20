@@ -274,54 +274,17 @@ abbr[title] {
 /*!
  * mockingbird type.css 12/2016
  */
-h1, h2, h3, h4, h5, h6,
-.h1, .h2, .h3, .h4, .h5, .h6 {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: bold;
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
 
-h1 span,
-h1 .sub-heading, h2 span,
-h2 .sub-heading, h3 span,
-h3 .sub-heading, h4 span,
-h4 .sub-heading, h5 span,
-h5 .sub-heading, h6 span,
-h6 .sub-heading,
-.h1 span,
-.h1 .sub-heading, .h2 span,
-.h2 .sub-heading, .h3 span,
-.h3 .sub-heading, .h4 span,
-.h4 .sub-heading, .h5 span,
-.h5 .sub-heading, .h6 span,
-.h6 .sub-heading {
+h1 span, .h1 span, h2 span, .h2 span, h3 span, .h3 span, h4 span, .h4 span, h5 span, .h5 span, h6 span, .h6 span, h1 .sub-heading, .h1 .sub-heading, h2 .sub-heading, .h2 .sub-heading, h3 .sub-heading, .h3 .sub-heading, h4 .sub-heading, .h4 .sub-heading, h5 .sub-heading, .h5 .sub-heading, h6 .sub-heading, .h6 .sub-heading {
   display: block;
+  font-weight: 400;
   color: #70707c;
   font-size: 1rem;
-}
-
-h1, .h1 {
-  font-size: 2.6rem;
-}
-
-h2, .h2 {
-  font-size: 2.15rem;
-}
-
-h3, .h3 {
-  font-size: 1.7rem;
-}
-
-h4, .h4 {
-  font-size: 1.25rem;
-}
-
-h5, .h5 {
-  font-size: 1rem;
-}
-
-h6, .h6 {
-  font-size: 0.875rem;
 }
 
 h6 span,
@@ -1936,7 +1899,8 @@ fieldset {
   border-color: #d5d5d7;
   border-image: none;
   padding: 0.75rem 0.5rem;
-  margin: 0 !important;
+  margin: 0;
+  margin-bottom: 1rem;
 }
 
 fieldset legend {
@@ -2030,6 +1994,39 @@ pre code {
   font-size: inherit;
   padding: 0;
   border-radius: 0;
+}
+
+/*!
+ * mockingbird cards.css 12/2016
+ */
+.card {
+  background: #fff;
+  position: relative;
+  display: block;
+  height: auto;
+  width: 100%;
+  margin-bottom: 1rem;
+  border-radius: 0.25rem;
+  border: 1px solid #d5d5d7;
+  overflow: hidden;
+}
+
+.card * {
+  margin-bottom: 0;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.card-block {
+  padding: 1rem;
+}
+
+.card-img {
+  display: block;
+  height: auto;
+  width: 100%;
 }
 
 /*!

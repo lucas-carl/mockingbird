@@ -1,0 +1,32 @@
+/*!
+ * mockingbird cards.css 12/2016
+ */
+
+.card {
+	background: $body-bg;
+	position: relative;
+	display: block;
+	height: auto;
+	width: 100%;
+	margin-bottom: $spacer-0;
+	border-radius: $border-radius-0;
+	border: 1px solid $border-color;
+	overflow: hidden;
+	* {
+		margin-bottom: 0;
+	}
+}
+
+.card-title {
+	margin-bottom: $spacer-0;
+}
+
+.card-block {
+	padding: $spacer-0;
+}
+
+.card-img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
