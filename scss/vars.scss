@@ -20,9 +20,9 @@ $brand-danger: #ef4836;
 
 $body-bg: $white;
 
-$text-color: $gray-base;
+$text-color: rgba(0,0,0,.8);
 
-$text-color-light: #70707c;
+$text-color-light: rgba(0,0,0,.65);
 
 $text-color-contrast: #fff;
 
@@ -31,7 +31,7 @@ $border-color: $gray-light;
 // font families
 // ----
 
-$font-fam-sans-serif: -apple-system, BlinkMacSystemFont, "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-fam-sans-serif: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-fam-serif: Georgia, "Times New Roman", Times, serif;
 $font-fam-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
 
@@ -56,7 +56,7 @@ $font-size-h4: $font-size-4;
 $font-size-h5: $font-size-0;
 $font-size-h6: $font-size-3;
 
-$heading-size: (
+$heading-sizes: (
   h1: $font-size-7,
 	h2: $font-size-6,
 	h3: $font-size-5,
@@ -128,8 +128,8 @@ $grid-breakpoints: (
 // miscellaneous
 // ----
 
-$line-height-0: 1.25;
-$line-height-1: 1;
+$line-height-0: 1.5;
+$line-height-1: 1.25;
 $line-height-2: 1.7;
 
 $link-color: $brand-primary;
@@ -144,8 +144,5 @@ $border-radius-2: .2rem;
 $border-radius-3: .3rem;
 $border-radius-4: .5rem;
 
-$code-color: #bd4147;
+$code-color: $text-color;
 $code-bg: $gray-lightest;
-
-$pre-bg: $gray-lightest;
-$pre-color: $gray-dark;
