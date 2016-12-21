@@ -6,10 +6,13 @@
 	font-size: 16px;
 }
 
-html {
+html, body {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
+	text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {

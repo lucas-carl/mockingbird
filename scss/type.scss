@@ -9,7 +9,7 @@
 	& span,
 	& .sub-heading {
 		display: block;
-		font-weight: 400;
+		font-weight: normal;
 		color: $text-color-light;
 		font-size: $font-size-0;
 	}
@@ -18,7 +18,7 @@
 @for $i from 1 through 6 {
 	h#{$i}, .h#{$i} {
 		@extend %hN;
-		font-size: map-get($heading-size,h#{i});
+		font-size: map-get($heading-sizes,h#{$i});
 	}
 }
 
