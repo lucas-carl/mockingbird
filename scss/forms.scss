@@ -25,6 +25,7 @@ input[type="datetime-local"] {
 	width: 12rem;
 	color: inherit;
 	font-weight: normal;
+	line-height: normal;
 	vertical-align: middle;
 	white-space: nowrap;
 	margin: 0;
@@ -62,6 +63,13 @@ textarea {
 	word-wrap: break-word;
 	white-space: pre-wrap;
 	overflow: auto;
+}
+
+select {
+	color: inherit;
+	line-height: $line-height-2;
+	border-color: $border-color;
+	padding: 0 $spacer-0;
 }
 
 // fieldset variants

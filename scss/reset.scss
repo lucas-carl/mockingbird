@@ -31,7 +31,7 @@ textarea {
 	appearance: none;
   font-family: inherit;
   font-size: inherit;
-  line-height: inherit;
+  line-height: normal;
 }
 
 a {
@@ -158,4 +158,8 @@ th {
 
 figure {
 	margin: 0 0 1rem;
+}
+
+label {
+	line-height: normal;
 }
