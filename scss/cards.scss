@@ -30,3 +30,9 @@
 	height: auto;
 	width: 100%;
 }
+
+.card-primary { border-color: $brand-primary !important; }
+.card-success { border-color: $brand-success !important; }
+.card-info { border-color: $brand-info !important; }
+.card-warning { border-color: $brand-warning !important; }
+.card-danger { border-color: $brand-danger !important; }

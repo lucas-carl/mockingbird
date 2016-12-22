@@ -43,7 +43,7 @@
 
 /*!
  * mockingbird cards.css 12/2016
- */.card{background:#fff;position:relative;display:block;height:auto;width:100%;margin-bottom:1rem;border-radius:0.25rem;border:1px solid #d5d5d7;overflow:hidden}.card *{margin-bottom:0}.card-title{margin-bottom:1rem}.card-block{padding:1rem}.card-img{display:block;height:auto;width:100%}
+ */.card{background:#fff;position:relative;display:block;height:auto;width:100%;margin-bottom:1rem;border-radius:0.25rem;border:1px solid #d5d5d7;overflow:hidden}.card *{margin-bottom:0}.card-title{margin-bottom:1rem}.card-block{padding:1rem}.card-img{display:block;height:auto;width:100%}.card-primary{border-color:#548fdb!important}.card-success{border-color:#42d17f!important}.card-info{border-color:#19b5fe!important}.card-warning{border-color:#f7ca18!important}.card-danger{border-color:#ef4836!important}
 
 /*!
  * mockingbird utilities.css 12/2016

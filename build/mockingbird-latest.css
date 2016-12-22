@@ -2079,6 +2079,26 @@ pre code {
   width: 100%;
 }
 
+.card-primary {
+  border-color: #548fdb !important;
+}
+
+.card-success {
+  border-color: #42d17f !important;
+}
+
+.card-info {
+  border-color: #19b5fe !important;
+}
+
+.card-warning {
+  border-color: #f7ca18 !important;
+}
+
+.card-danger {
+  border-color: #ef4836 !important;
+}
+
 /*!
  * mockingbird utilities.css 12/2016
  */
