@@ -110,6 +110,14 @@ sup {
 	white-space: nowrap;
 }
 
+.font-fam-serif {
+	font-family: $font-fam-serif;
+}
+
+.font-fam-monospace {
+	font-family: $font-fam-monospace;
+}
+
 .text-muted { color: $text-color-light !important; }
 .text-primary { color: $brand-primary !important; }
 .text-success { color: $brand-success !important; }
