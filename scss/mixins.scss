@@ -21,8 +21,8 @@
 	&:focus,
 	&:active,
 	&.active {
-		background-color: darken($bg,5%);
-		color: $color;
+		background-color: darken($bg,5%) !important;
+		color: $color !important;
 		border-color: darken($bg,15%);
 	}
 	&:focus {

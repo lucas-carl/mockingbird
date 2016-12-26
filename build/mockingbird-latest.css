@@ -284,8 +284,7 @@ abbr[title] {
  */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin: 2rem 0 !important;
 }
 
 h1 span, .h1 span, h2 span, .h2 span, h3 span, .h3 span, h4 span, .h4 span, h5 span, .h5 span, h6 span, .h6 span, h1 .sub-heading, .h1 .sub-heading, h2 .sub-heading, .h2 .sub-heading, h3 .sub-heading, .h3 .sub-heading, h4 .sub-heading, .h4 .sub-heading, h5 .sub-heading, .h5 .sub-heading, h6 .sub-heading, .h6 .sub-heading {
@@ -1707,8 +1706,8 @@ input.disabled[type="reset"] {
 }
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-  background-color: #3f81d7;
-  color: #fff;
+  background-color: #3f81d7 !important;
+  color: #fff !important;
   border-color: #2768bb;
 }
 
@@ -1723,8 +1722,8 @@ input.disabled[type="reset"] {
 }
 
 .btn-success:hover, .btn-success:focus, .btn-success:active, .btn-success.active {
-  background-color: #31c972;
-  color: #fff;
+  background-color: #31c972 !important;
+  color: #fff !important;
   border-color: #27a05a;
 }
 
@@ -1739,8 +1738,8 @@ input.disabled[type="reset"] {
 }
 
 .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
-  background-color: #01acfc;
-  color: #fff;
+  background-color: #01acfc !important;
+  color: #fff !important;
   border-color: #018aca;
 }
 
@@ -1755,8 +1754,8 @@ input.disabled[type="reset"] {
 }
 
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active, .btn-warning.active {
-  background-color: #edbf08;
-  color: #fff;
+  background-color: #edbf08 !important;
+  color: #fff !important;
   border-color: #bc9707;
 }
 
@@ -1771,8 +1770,8 @@ input.disabled[type="reset"] {
 }
 
 .btn-danger:hover, .btn-danger:focus, .btn-danger:active, .btn-danger.active {
-  background-color: #ed321e;
-  color: #fff;
+  background-color: #ed321e !important;
+  color: #fff !important;
   border-color: #c92210;
 }
 
@@ -1918,16 +1917,6 @@ input[type="datetime-local"]:focus {
   box-shadow: 0 0 2px #548fdb;
 }
 
-.input-group {
-  display: block;
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.input-group > * {
-  margin: 0 !important;
-}
-
 textarea {
   height: auto;
   resize: vertical;
@@ -1941,6 +1930,27 @@ select {
   line-height: 1.7;
   border-color: #d5d5d7;
   padding: 0 1rem;
+}
+
+.input-group {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1.5rem !important;
+}
+
+.input-group input, .input-group button, .input-group .btn, .input-group button, .input-group
+[role="button"], .input-group
+input[type="button"], .input-group
+input[type="submit"], .input-group
+input[type="reset"] {
+  margin-bottom: 0 !important;
+}
+
+.input-group .label {
+  display: block;
+  color: rgba(0, 0, 0, 0.65);
+  font-size: 0.875rem;
+  margin-bottom: 0.5rem;
 }
 
 fieldset {
