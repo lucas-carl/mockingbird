@@ -24,8 +24,12 @@
 	float: left !important;
 }
 
-.center-flex {
-	//@include center-flex;
+.flex-center {
+	@include flex-center;
+}
+
+.vertical-center {
+	@include vertical-center;
 }
 
 // toggle content

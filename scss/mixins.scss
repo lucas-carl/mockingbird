@@ -72,3 +72,14 @@
 	}
 
 }
+
+@mixin vertical-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+}
