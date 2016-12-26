@@ -48,15 +48,6 @@ input[type="reset"] {
 	@extend .btn;
 }
 
-.input-group {
-	display: block;
-	margin-top: 0;
-	margin-bottom: $spacer-0;
-	& > * {
-		margin: 0 !important;
-	}
-}
-
 textarea {
 	height: auto;
 	resize: vertical;
@@ -70,6 +61,21 @@ select {
 	line-height: $line-height-2;
 	border-color: $border-color;
 	padding: 0 $spacer-0;
+}
+
+.input-group {
+	display: block;
+	margin-top: 0;
+	margin-bottom: $spacer-6 !important;
+	input, button, .btn {
+		margin-bottom: 0 !important;
+	}
+	.label {
+		display: block;
+		color: $text-color-light;
+		font-size: $font-size-3;
+		margin-bottom: $spacer-3;
+	}
 }
 
 // fieldset variants
