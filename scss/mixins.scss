@@ -13,7 +13,7 @@
   }
 }
 
-@mixin button-variant($color, $bg) {
+@mixin button-variant($color, $bg, $invert: "") {
 	background-color: $bg;
 	color: $color;
 	border-color: darken($bg,10%);
@@ -21,12 +21,22 @@
 	&:focus,
 	&:active,
 	&.active {
-		background-color: darken($bg,5%) !important;
-		color: $color !important;
+		background-color: darken($bg,5%);
+		color: $color;
 		border-color: darken($bg,15%);
+		&.btn-invert {
+			background-color: $bg;
+			color: $color;
+			border-color: darken($bg,10%);
+		}
 	}
 	&:focus {
 		border-color: darken($bg,25%);
+	}
+	&.btn-invert {
+		background-color: $white;
+		color: $bg;
+		color: unquote($invert);
 	}
 }
 

@@ -6,10 +6,8 @@
 // ----
 
 .btn {
-	background-color: $white;
 	background-image: none;
 	display: inline-block;
-	color: $btn-default-color;
 	font-weight: normal;
 	text-align: center;
 	line-height: normal;
@@ -42,6 +40,10 @@
 
 // button variants
 // ----
+
+.btn {
+	@include button-variant($btn-default-color,$white,$btn-default-color);
+}
 
 .btn-primary {
 	@include button-variant($btn-primary-color,$btn-primary-bg);
