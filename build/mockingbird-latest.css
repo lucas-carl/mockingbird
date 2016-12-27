@@ -1870,6 +1870,72 @@ form {
   margin: 0;
 }
 
+textarea.input-sm,
+input.input-sm[type="url"],
+input.input-sm[type="tel"],
+input.input-sm[type="time"],
+input.input-sm[type="week"],
+input.input-sm[type="date"],
+input.input-sm[type="text"],
+input.input-sm[type="email"],
+input.input-sm[type="month"],
+input.input-sm[type="number"],
+input.input-sm[type="search"],
+input.input-sm[type="password"],
+input.input-sm[type="datetime-local"], button.input-sm,
+.input-sm[role="button"],
+input.input-sm[type="button"],
+input.input-sm[type="submit"],
+input.input-sm[type="reset"] {
+  font-size: 0.75rem;
+  padding: 0.35rem 0.75rem;
+  border-radius: 0.2rem;
+}
+
+textarea.input-md,
+input.input-md[type="url"],
+input.input-md[type="tel"],
+input.input-md[type="time"],
+input.input-md[type="week"],
+input.input-md[type="date"],
+input.input-md[type="text"],
+input.input-md[type="email"],
+input.input-md[type="month"],
+input.input-md[type="number"],
+input.input-md[type="search"],
+input.input-md[type="password"],
+input.input-md[type="datetime-local"], button.input-md,
+.input-md[role="button"],
+input.input-md[type="button"],
+input.input-md[type="submit"],
+input.input-md[type="reset"] {
+  font-size: 0.875rem;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.25rem;
+}
+
+textarea.input-lg,
+input.input-lg[type="url"],
+input.input-lg[type="tel"],
+input.input-lg[type="time"],
+input.input-lg[type="week"],
+input.input-lg[type="date"],
+input.input-lg[type="text"],
+input.input-lg[type="email"],
+input.input-lg[type="month"],
+input.input-lg[type="number"],
+input.input-lg[type="search"],
+input.input-lg[type="password"],
+input.input-lg[type="datetime-local"], button.input-lg,
+.input-lg[role="button"],
+input.input-lg[type="button"],
+input.input-lg[type="submit"],
+input.input-lg[type="reset"] {
+  font-size: 1rem;
+  padding: 0.6rem 2rem;
+  border-radius: 0.3rem;
+}
+
 textarea,
 input[type="url"],
 input[type="tel"],

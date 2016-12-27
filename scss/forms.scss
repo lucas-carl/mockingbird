@@ -6,6 +6,26 @@ form {
 	margin: 0;
 }
 
+%inputSizes {
+	&.input-sm {
+		font-size: $font-size-2;
+		padding: $spacer-2 $spacer-5;
+		border-radius: $border-radius-2;
+	}
+
+	&.input-md {
+		font-size: $font-size-3;
+		padding: $spacer-3 $spacer-6;
+		border-radius: $border-radius-0;
+	}
+
+	&.input-lg {
+		font-size: $font-size-0;
+		padding: $spacer-4 $spacer-7;
+		border-radius: $border-radius-3;
+	}
+}
+
 textarea,
 input[type="url"],
 input[type="tel"],
@@ -38,6 +58,7 @@ input[type="datetime-local"] {
 		border: 1px solid $brand-primary;
 		box-shadow: 0 0 2px $brand-primary;
 	}
+	@extend %inputSizes;
 }
 
 button,
@@ -46,6 +67,7 @@ input[type="button"],
 input[type="submit"],
 input[type="reset"] {
 	@extend .btn;
+	@extend %inputSizes;
 }
 
 textarea {
