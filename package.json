@@ -18,7 +18,11 @@
   },
   "git": {
     "scripts": {
-      "pre-push": "surge --project ./build/ --domain mockingbird-cdn.surge.sh"
+      "pre-push": "surge -p ./build/ --domain mockingbird-cdn.surge.sh"
     }
+  },
+  "dependencies": {
+    "git-scripts": "^0.2.1",
+    "surge": "^0.18.0"
   }
 }
