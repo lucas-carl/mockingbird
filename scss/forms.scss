@@ -92,12 +92,22 @@ select {
 	input, button, .btn {
 		margin-bottom: 0 !important;
 	}
-	.label {
-		display: block;
+	label {
 		color: $text-color-light;
 		font-size: $font-size-3;
-		margin-bottom: $spacer-3;
+		.label {
+			display: block;
+			margin-bottom: $spacer-3;
+		}
 	}
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+	position: relative;
+	display: inline-block;
+	margin-right: $spacer-2;
+	margin-bottom: $spacer-3;
 }
 
 // fieldset variants
@@ -110,6 +120,7 @@ fieldset {
 	padding: $spacer-5 $spacer-3;
 	margin: 0;
 	margin-bottom: $spacer-0;
+	border-radius: $border-radius-0;
 	legend {
 		background: $body-bg;
 		color: $text-color-light;

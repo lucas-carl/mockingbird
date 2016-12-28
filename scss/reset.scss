@@ -129,13 +129,21 @@ input {
 }
 
 input[type="search"] {
-  -webkit-appearance: textfield;
+  appearance: textfield;
   box-sizing: content-box;
 }
 
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
+}
+
+input[type="checkbox"] {
+	appearance: checkbox;
+}
+
+input[type="radio"] {
+	appearance: radio;
 }
 
 textarea {
