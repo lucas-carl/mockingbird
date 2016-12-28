@@ -14,29 +14,29 @@
 }
 
 @mixin button-variant($color, $bg, $invert: "") {
-	background-color: $bg;
-	color: $color;
-	border-color: darken($bg,10%);
+	background-color: $bg !important;
+	color: $color !important;
+	border-color: darken($bg,10%) !important;
 	&:hover,
 	&:focus,
 	&:active,
 	&.active {
-		background-color: darken($bg,5%);
-		color: $color;
-		border-color: darken($bg,15%);
+		background-color: darken($bg,5%) !important;
+		color: $color !important;
+		border-color: darken($bg,15%) !important;
 		&.btn-invert {
-			background-color: $bg;
-			color: $color;
-			border-color: darken($bg,10%);
+			background-color: $bg !important;
+			color: $color !important;
+			border-color: darken($bg,10%) !important;
 		}
 	}
 	&:focus {
-		border-color: darken($bg,25%);
+		border-color: darken($bg,25%) !important;
 	}
 	&.btn-invert {
-		background-color: $white;
-		color: $bg;
-		color: unquote($invert);
+		background-color: $white !important;
+		color: $bg !important;
+		color: unquote($invert) !important;
 	}
 }
 
