@@ -1,0 +1,23 @@
+/*!
+ * mockingbird lists.css 12/2016
+ */
+
+ol,
+ul,
+dl {
+	margin-top: 0;
+	margin-bottom: $spacer-0;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: $spacer-1 0;
+	margin-left: $spacer-0;
+}
+
+li {
+	margin: $spacer-1 0;
+}

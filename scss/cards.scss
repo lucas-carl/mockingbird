@@ -23,6 +23,7 @@
 
 .card-block {
 	padding: $spacer-0;
+	@include clearfix;
 }
 
 .card-img {
