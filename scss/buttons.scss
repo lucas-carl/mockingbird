@@ -19,6 +19,7 @@
 	border-radius: $border-radius-2;
 	margin-top: 0;
 	margin-bottom: 1rem;
+	transition: all .25s;
 	&:hover,
 	&:focus {
 		background: $btn-hover-base;
