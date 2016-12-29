@@ -455,7 +455,7 @@ sup {
 /*!
  * mockingbird grid.css 12/2016
  */
-.container,
+.container, .navbar .navbar-content,
 .container-sm,
 .container-xs,
 .container-lg,
@@ -476,7 +476,7 @@ sup {
   padding: 0 0.75rem;
 }
 
-.container {
+.container, .navbar .navbar-content {
   max-width: 720px;
   padding: 0 0.75rem;
 }
@@ -2362,6 +2362,90 @@ dd {
 
 li {
   margin: 0.25rem 0;
+}
+
+/*!
+ * mockingbird reset.css 12/2016
+ */
+.navbar {
+  width: 100%;
+  overflow: hidden;
+  border-bottom: 1px solid #d5d5d7;
+}
+
+.navbar.navbar-bordered li {
+  border-left: 1px solid #d5d5d7;
+}
+
+.navbar.navbar-bordered li:last-child {
+  border-right: 1px solid #d5d5d7;
+}
+
+.navbar.navbar-fixed {
+  /*
+		position: absolute;
+		top: 0;
+		left: 0;
+		*/
+}
+
+.navbar .navbar-content::before, .navbar .navbar-content::after {
+  content: '';
+  display: table;
+}
+
+.navbar .navbar-content::after {
+  clear: both;
+}
+
+.navbar .navbar-content.pull-right li {
+  float: right;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar li {
+  float: left;
+  line-height: 1;
+  margin: 0;
+}
+
+.navbar a {
+  display: block;
+  color: inherit;
+  text-decoration: none !important;
+  padding: 1rem;
+}
+
+.navbar a:hover, .navbar a:focus {
+  background: #f5f5f7;
+  outline: none;
+}
+
+.navbar .brand-logo a {
+  padding: 0.5rem;
+}
+
+.navbar .brand-logo img {
+  height: 2rem;
+  width: 2rem;
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    border: none;
+  }
+  .navbar .navbar-content {
+    padding: 0;
+  }
+  .navbar li, .navbar li:last-child {
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-bottom: 1px solid #d5d5d7;
+  }
 }
 
 /*!

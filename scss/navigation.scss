@@ -1,0 +1,73 @@
+/*!
+ * mockingbird reset.css 12/2016
+ */
+
+.navbar {
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid $border-color;
+	&.navbar-bordered {
+		li {
+			border-left: 1px solid $border-color;
+			&:last-child {
+				border-right: 1px solid $border-color;
+			}
+		}
+	}
+	&.navbar-fixed {
+		/*
+		position: absolute;
+		top: 0;
+		left: 0;
+		*/
+	}
+	.navbar-content {
+		@extend .container;
+		@include clearfix;
+		&.pull-right li {
+			float: right;
+		}
+	}
+	ul {
+		list-style: none;
+	}
+	li {
+		float: left;
+		line-height: 1;
+		margin: 0;
+	}
+	a {
+		display: block;
+		color: inherit;
+		text-decoration: none !important;
+		padding: $spacer-0;
+		&:hover,
+		&:focus {
+			background: $gray-lightest;
+			outline: none;
+		}
+	}
+	.brand-logo {
+		a {
+			padding: $spacer-3;
+		}
+		img {
+			height: 2rem;
+			width: 2rem;
+		}
+	}
+	@media (max-width: $res-break-5) {
+		& {
+			border: none;
+		}
+		.navbar-content {
+			padding: 0;
+		}
+		li, li:last-child {
+			width: 100%;
+			text-align: center;
+			border: none;
+			border-bottom: 1px solid $border-color;
+		}
+	}
+}
