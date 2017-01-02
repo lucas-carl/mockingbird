@@ -1,5 +1,5 @@
 /*!
- * mockingbird utilities.css 12/2016
+ * mockingbird utilities.css 01/2017
  */
 
 // floats
@@ -30,6 +30,10 @@
 
 .vertical-center {
 	@include vertical-center;
+}
+
+.vertical-flex-center {
+	@include vertical-flex-center;
 }
 
 // toggle content

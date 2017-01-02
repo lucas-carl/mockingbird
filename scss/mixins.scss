@@ -1,5 +1,5 @@
 /*!
- * mockingbird mixins.css 12/2016
+ * mockingbird mixins.css 01/2017
  */
 
 @mixin clearfix() {
@@ -89,7 +89,14 @@
 	transform: translateY(-50%);
 }
 
+@mixin vertical-flex-center {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
 @mixin flex-center {
 	display: flex;
 	justify-content: center;
+	align-items: center;
 }
