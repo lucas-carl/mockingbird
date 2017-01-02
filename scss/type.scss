@@ -1,5 +1,5 @@
 /*!
- * mockingbird type.css 12/2016
+ * mockingbird type.css 01/2017
  */
 
 %hN {
@@ -42,7 +42,8 @@ p {
 
 hr {
 	margin: $spacer-5 0;
-	border: 1px solid $border-color;
+	border: none;
+	border-bottom: 1px solid $border-color;
 }
 
 small,
@@ -97,6 +98,10 @@ sup {
 
 .text-right {
 	text-align: right !important;
+}
+
+.text-left {
+	text-align: left !important;
 }
 
 .text-justify {
