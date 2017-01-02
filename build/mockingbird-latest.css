@@ -4,7 +4,7 @@
  * last update 01/2017
  */
 /*!
- * mockingbird reset.css 12/2016
+ * mockingbird reset.css 01/2017
  */
 :root {
   font-size: 16px;
@@ -111,10 +111,6 @@ textarea {
   margin: 0;
 }
 
-button {
-  overflow: visible;
-}
-
 button,
 select {
   text-transform: none;
@@ -160,6 +156,7 @@ input[type="radio"] {
 }
 
 textarea {
+  min-height: 3rem;
   overflow: auto;
 }
 
@@ -189,7 +186,7 @@ label {
  * mockingbird vars.css 12/2016
  */
 /*!
- * mockingbird mixins.css 12/2016
+ * mockingbird mixins.css 01/2017
  */
 /*!
  * mockingbird frame.css 12/2016
@@ -294,7 +291,7 @@ abbr[title] {
 }
 
 /*!
- * mockingbird type.css 12/2016
+ * mockingbird type.css 01/2017
  */
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-weight: bold;
@@ -353,7 +350,8 @@ p {
 
 hr {
   margin: 0.75rem 0;
-  border: 1px solid #d5d5d7;
+  border: none;
+  border-bottom: 1px solid #d5d5d7;
 }
 
 small,
@@ -408,6 +406,10 @@ sup {
 
 .text-right {
   text-align: right !important;
+}
+
+.text-left {
+  text-align: left !important;
 }
 
 .text-justify {
@@ -2449,7 +2451,7 @@ li {
 }
 
 /*!
- * mockingbird utilities.css 12/2016
+ * mockingbird utilities.css 01/2017
  */
 .clearfix::before, .clearfix::after {
   content: '';
@@ -2482,6 +2484,9 @@ li {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .vertical-center {
@@ -2490,6 +2495,18 @@ li {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+}
+
+.vertical-flex-center {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .hide,
