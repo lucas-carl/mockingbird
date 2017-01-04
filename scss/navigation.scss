@@ -47,6 +47,12 @@
 			outline: none;
 		}
 	}
+	.btn {
+		margin: calc(.5rem - 1px) $spacer-0;
+	}
+	.btn-sm {
+		margin: calc(.7rem - 1px) $spacer-0;
+	}
 	.brand-logo {
 		a {
 			padding: $spacer-3;

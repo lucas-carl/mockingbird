@@ -72,18 +72,18 @@
 .btn,
 .btn-md {
 	font-size: $font-size-3;
-	padding: $spacer-3 $spacer-6;
+	padding: $spacer-3 $spacer-6 !important;
 	border-radius: $border-radius-0;
 }
 
 .btn-sm {
 	font-size: $font-size-2;
-	padding: $spacer-2 $spacer-5;
+	padding: $spacer-2 $spacer-5 !important;
 	border-radius: $border-radius-2;
 }
 
 .btn-lg {
 	font-size: $font-size-0;
-	padding: $spacer-4 $spacer-7;
+	padding: $spacer-4 $spacer-7 !important;
 	border-radius: $border-radius-3;
 }
