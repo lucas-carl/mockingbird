@@ -1,5 +1,5 @@
 /*!
- * mockingbird cards.css 12/2016
+ * mockingbird cards.css 01/2017
  */
 
 .card {
@@ -19,6 +19,9 @@
 
 .card-title {
 	margin-bottom: $spacer-0;
+	& > * {
+		margin: 0 !important;
+	}
 }
 
 .card-block {

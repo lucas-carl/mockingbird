@@ -1650,7 +1650,7 @@ sup {
 }
 
 /*!
- * mockingbird buttons.css 12/2016
+ * mockingbird buttons.css 01/2017
  */
 .btn, button,
 [role="button"],
@@ -1933,19 +1933,19 @@ input[type="submit"],
 input[type="reset"],
 .btn-md {
   font-size: 0.875rem;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem !important;
   border-radius: 0.25rem;
 }
 
 .btn-sm {
   font-size: 0.75rem;
-  padding: 0.35rem 0.75rem;
+  padding: 0.35rem 0.75rem !important;
   border-radius: 0.2rem;
 }
 
 .btn-lg {
   font-size: 1rem;
-  padding: 0.6rem 2rem;
+  padding: 0.6rem 2rem !important;
   border-radius: 0.3rem;
 }
 
@@ -2282,7 +2282,7 @@ pre code {
 }
 
 /*!
- * mockingbird cards.css 12/2016
+ * mockingbird cards.css 01/2017
  */
 .card {
   background: #fff;
@@ -2302,6 +2302,10 @@ pre code {
 
 .card-title {
   margin-bottom: 1rem;
+}
+
+.card-title > * {
+  margin: 0 !important;
 }
 
 .card-block {
@@ -2367,7 +2371,7 @@ li {
 }
 
 /*!
- * mockingbird reset.css 12/2016
+ * mockingbird reset.css 01/2017
  */
 .navbar {
   width: 100%;
@@ -2424,6 +2428,18 @@ li {
 .navbar a:hover, .navbar a:focus {
   background: #f5f5f7;
   outline: none;
+}
+
+.navbar .btn, .navbar button, .navbar
+[role="button"], .navbar
+input[type="button"], .navbar
+input[type="submit"], .navbar
+input[type="reset"] {
+  margin: calc(.5rem - 1px) 1rem;
+}
+
+.navbar .btn-sm {
+  margin: calc(.7rem - 1px) 1rem;
 }
 
 .navbar .brand-logo a {
