@@ -56,7 +56,7 @@ input[type="datetime-local"] {
 	&:focus {
 		outline-width: 0;
 		border: 1px solid $brand-primary;
-		box-shadow: 0 0 2px $brand-primary;
+		box-shadow: inset 0 0 2px rgba($brand-primary,.75);
 	}
 	@extend %inputSizes;
 }
@@ -93,12 +93,10 @@ select {
 		margin-bottom: 0 !important;
 	}
 	label {
+		display: block;
 		color: $text-color-light;
 		font-size: $font-size-3;
-		.label {
-			display: block;
-			margin-bottom: $spacer-3;
-		}
+		margin-bottom: $spacer-3;
 	}
 }
 
