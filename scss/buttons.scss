@@ -87,3 +87,31 @@
 	padding: $spacer-4 $spacer-7 !important;
 	border-radius: $border-radius-3;
 }
+
+// button groups
+// ----
+
+.btn-group {
+	@include clearfix;
+	.btn,
+	button {
+		display: block;
+		float: left;
+		border-radius: 0;
+		&:first-child {
+			border-radius: $border-radius-0 0 0 $border-radius-0;
+			border-right: 0;
+		}
+		&:last-child {
+			border-radius: 0 $border-radius-0 $border-radius-0 0;
+			border-left: 0;
+		}
+		&.btn-sm:first-child { border-radius: $border-radius-2 0 0 $border-radius-2; }
+		&.btn-sm:last-child { border-radius: 0 $border-radius-2 $border-radius-2 0; }
+		&.btn-lg:first-child { border-radius: $border-radius-3 0 0 $border-radius-3; }
+		&.btn-lg:last-child { border-radius: 0 $border-radius-3 $border-radius-3 0; }
+		&.active {
+			@extend .btn-primary;
+		}
+	}
+}

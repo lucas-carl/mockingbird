@@ -1786,29 +1786,73 @@ input.btn-invert[type="reset"] {
   color: rgba(0, 0, 0, 0.65) !important;
 }
 
-.btn-primary {
+.btn-primary, .btn-group .btn.active, .btn-group button.active, .btn-group
+.active[role="button"], .btn-group
+input.active[type="button"], .btn-group
+input.active[type="submit"], .btn-group
+input.active[type="reset"] {
   background-color: #548fdb !important;
   color: #fff !important;
   border-color: #2c74d0 !important;
 }
 
-.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+.btn-primary:hover, .btn-group .btn.active:hover, .btn-group button.active:hover, .btn-group
+.active[role="button"]:hover, .btn-group
+input.active[type="button"]:hover, .btn-group
+input.active[type="submit"]:hover, .btn-group
+input.active[type="reset"]:hover, .btn-primary:focus, .btn-group .btn.active:focus, .btn-group button.active:focus, .btn-group
+.active[role="button"]:focus, .btn-group
+input.active[type="button"]:focus, .btn-group
+input.active[type="submit"]:focus, .btn-group
+input.active[type="reset"]:focus, .btn-primary:active, .btn-group .btn.active:active, .btn-group button.active:active, .btn-group
+.active[role="button"]:active, .btn-group
+input.active[type="button"]:active, .btn-group
+input.active[type="submit"]:active, .btn-group
+input.active[type="reset"]:active, .btn-primary.active, .btn-group .active.btn, .btn-group button.active, .btn-group
+.active[role="button"], .btn-group
+input.active[type="button"], .btn-group
+input.active[type="submit"], .btn-group
+input.active[type="reset"] {
   background-color: #3f81d7 !important;
   color: #fff !important;
   border-color: #2768bb !important;
 }
 
-.btn-primary:hover.btn-invert, .btn-primary:focus.btn-invert, .btn-primary:active.btn-invert, .btn-primary.active.btn-invert {
+.btn-primary:hover.btn-invert, .btn-group .btn.active:hover.btn-invert, .btn-group button.active:hover.btn-invert, .btn-group
+.active[role="button"]:hover.btn-invert, .btn-group
+input.active[type="button"]:hover.btn-invert, .btn-group
+input.active[type="submit"]:hover.btn-invert, .btn-group
+input.active[type="reset"]:hover.btn-invert, .btn-primary:focus.btn-invert, .btn-group .btn.active:focus.btn-invert, .btn-group button.active:focus.btn-invert, .btn-group
+.active[role="button"]:focus.btn-invert, .btn-group
+input.active[type="button"]:focus.btn-invert, .btn-group
+input.active[type="submit"]:focus.btn-invert, .btn-group
+input.active[type="reset"]:focus.btn-invert, .btn-primary:active.btn-invert, .btn-group .btn.active:active.btn-invert, .btn-group button.active:active.btn-invert, .btn-group
+.active[role="button"]:active.btn-invert, .btn-group
+input.active[type="button"]:active.btn-invert, .btn-group
+input.active[type="submit"]:active.btn-invert, .btn-group
+input.active[type="reset"]:active.btn-invert, .btn-primary.active.btn-invert, .btn-group .active.btn-invert.btn, .btn-group button.active.btn-invert, .btn-group
+.active.btn-invert[role="button"], .btn-group
+input.active.btn-invert[type="button"], .btn-group
+input.active.btn-invert[type="submit"], .btn-group
+input.active.btn-invert[type="reset"] {
   background-color: #548fdb !important;
   color: #fff !important;
   border-color: #2c74d0 !important;
 }
 
-.btn-primary:focus {
+.btn-primary:focus, .btn-group .btn.active:focus, .btn-group button.active:focus, .btn-group
+.active[role="button"]:focus, .btn-group
+input.active[type="button"]:focus, .btn-group
+input.active[type="submit"]:focus, .btn-group
+input.active[type="reset"]:focus {
   border-color: #1f5191 !important;
 }
 
-.btn-primary.btn-invert {
+.btn-primary.btn-invert, .btn-group .btn-invert.btn.active, .btn-group button.btn-invert.active, .btn-group
+.btn-invert.active[role="button"], .btn-group
+input.btn-invert.active[type="button"], .btn-group
+input.btn-invert.active[type="submit"], .btn-group
+input.btn-invert.active[type="reset"] {
   background-color: #fff !important;
   color: #548fdb !important;
   color:  !important;
@@ -1947,6 +1991,82 @@ input[type="reset"],
   font-size: 1rem;
   padding: 0.6rem 2rem !important;
   border-radius: 0.3rem;
+}
+
+.btn-group::before, .btn-group::after {
+  content: '';
+  display: table;
+}
+
+.btn-group::after {
+  clear: both;
+}
+
+.btn-group .btn, .btn-group button, .btn-group
+[role="button"], .btn-group
+input[type="button"], .btn-group
+input[type="submit"], .btn-group
+input[type="reset"],
+.btn-group button {
+  display: block;
+  float: left;
+  border-radius: 0;
+}
+
+.btn-group .btn:first-child, .btn-group button:first-child, .btn-group
+[role="button"]:first-child, .btn-group
+input[type="button"]:first-child, .btn-group
+input[type="submit"]:first-child, .btn-group
+input[type="reset"]:first-child,
+.btn-group button:first-child {
+  border-radius: 0.25rem 0 0 0.25rem;
+  border-right: 0;
+}
+
+.btn-group .btn:last-child, .btn-group button:last-child, .btn-group
+[role="button"]:last-child, .btn-group
+input[type="button"]:last-child, .btn-group
+input[type="submit"]:last-child, .btn-group
+input[type="reset"]:last-child,
+.btn-group button:last-child {
+  border-radius: 0 0.25rem 0.25rem 0;
+  border-left: 0;
+}
+
+.btn-group .btn.btn-sm:first-child, .btn-group button.btn-sm:first-child, .btn-group
+.btn-sm[role="button"]:first-child, .btn-group
+input.btn-sm[type="button"]:first-child, .btn-group
+input.btn-sm[type="submit"]:first-child, .btn-group
+input.btn-sm[type="reset"]:first-child,
+.btn-group button.btn-sm:first-child {
+  border-radius: 0.2rem 0 0 0.2rem;
+}
+
+.btn-group .btn.btn-sm:last-child, .btn-group button.btn-sm:last-child, .btn-group
+.btn-sm[role="button"]:last-child, .btn-group
+input.btn-sm[type="button"]:last-child, .btn-group
+input.btn-sm[type="submit"]:last-child, .btn-group
+input.btn-sm[type="reset"]:last-child,
+.btn-group button.btn-sm:last-child {
+  border-radius: 0 0.2rem 0.2rem 0;
+}
+
+.btn-group .btn.btn-lg:first-child, .btn-group button.btn-lg:first-child, .btn-group
+.btn-lg[role="button"]:first-child, .btn-group
+input.btn-lg[type="button"]:first-child, .btn-group
+input.btn-lg[type="submit"]:first-child, .btn-group
+input.btn-lg[type="reset"]:first-child,
+.btn-group button.btn-lg:first-child {
+  border-radius: 0.3rem 0 0 0.3rem;
+}
+
+.btn-group .btn.btn-lg:last-child, .btn-group button.btn-lg:last-child, .btn-group
+.btn-lg[role="button"]:last-child, .btn-group
+input.btn-lg[type="button"]:last-child, .btn-group
+input.btn-lg[type="submit"]:last-child, .btn-group
+input.btn-lg[type="reset"]:last-child,
+.btn-group button.btn-lg:last-child {
+  border-radius: 0 0.3rem 0.3rem 0;
 }
 
 /*!
