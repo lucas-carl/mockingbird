@@ -24,6 +24,11 @@
 	}
 }
 
+.card-title-sm {
+	@extend .card-title;
+	margin-bottom: $spacer-5;
+}
+
 .card-block {
 	padding: $spacer-0;
 	@include clearfix;
@@ -40,3 +45,15 @@
 .card-info { border-color: $brand-info !important; }
 .card-warning { border-color: $brand-warning !important; }
 .card-danger { border-color: $brand-danger !important; }
+
+// callout
+// ----
+
+.callout,
+.card-callout {
+	@extend .card;
+	border-left: .5rem solid $gray;
+	border-top-color: $border-color !important;
+	border-right-color: $border-color !important;
+	border-bottom-color: $border-color !important;
+}

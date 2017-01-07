@@ -2401,7 +2401,8 @@ pre code {
 /*!
  * mockingbird cards.css 01/2017
  */
-.card {
+.card, .callout,
+.card-callout {
   background: #fff;
   position: relative;
   display: block;
@@ -2413,16 +2414,21 @@ pre code {
   overflow: hidden;
 }
 
-.card * {
+.card *, .callout *,
+.card-callout * {
   margin-bottom: 0;
 }
 
-.card-title {
+.card-title, .card-title-sm {
   margin-bottom: 1rem;
 }
 
-.card-title > * {
+.card-title > *, .card-title-sm > * {
   margin: 0 !important;
+}
+
+.card-title-sm {
+  margin-bottom: 0.75rem;
 }
 
 .card-block {
@@ -2464,8 +2470,16 @@ pre code {
   border-color: #ef4836 !important;
 }
 
+.callout,
+.card-callout {
+  border-left: 0.5rem solid #666;
+  border-top-color: #d5d5d7 !important;
+  border-right-color: #d5d5d7 !important;
+  border-bottom-color: #d5d5d7 !important;
+}
+
 /*!
- * mockingbird lists.css 12/2016
+ * mockingbird lists.css 01/2017
  */
 ol,
 ul,

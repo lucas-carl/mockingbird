@@ -43,10 +43,10 @@
 
 /*!
  * mockingbird cards.css 01/2017
- */.card{background:#fff;position:relative;display:block;height:auto;width:100%;margin-bottom:1rem;border-radius:0.25rem;border:1px solid #d5d5d7;overflow:hidden}.card *{margin-bottom:0}.card-title{margin-bottom:1rem}.card-title>*{margin:0!important}.card-block{padding:1rem}.card-block:after,.card-block:before{content:'';display:table}.card-block:after{clear:both}.card-img{display:block;height:auto;width:100%}.card-primary{border-color:#548fdb!important}.card-success{border-color:#42d17f!important}.card-info{border-color:#19b5fe!important}.card-warning{border-color:#f7ca18!important}.card-danger{border-color:#ef4836!important}
+ */.callout,.card,.card-callout{background:#fff;position:relative;display:block;height:auto;width:100%;margin-bottom:1rem;border-radius:0.25rem;border:1px solid #d5d5d7;overflow:hidden}.callout *,.card *,.card-callout *{margin-bottom:0}.card-title,.card-title-sm{margin-bottom:1rem}.card-title-sm>*,.card-title>*{margin:0!important}.card-title-sm{margin-bottom:0.75rem}.card-block{padding:1rem}.card-block:after,.card-block:before{content:'';display:table}.card-block:after{clear:both}.card-img{display:block;height:auto;width:100%}.card-primary{border-color:#548fdb!important}.card-success{border-color:#42d17f!important}.card-info{border-color:#19b5fe!important}.card-warning{border-color:#f7ca18!important}.card-danger{border-color:#ef4836!important}.callout,.card-callout{border-left:0.5rem solid #666;border-top-color:#d5d5d7!important;border-right-color:#d5d5d7!important;border-bottom-color:#d5d5d7!important}
 
 /*!
- * mockingbird lists.css 12/2016
+ * mockingbird lists.css 01/2017
  */dl,ol,ul{margin-top:0;margin-bottom:1rem}dt{font-weight:bold}dd{margin:0.25rem 0;margin-left:1rem}li{margin:0.25rem 0}ul{list-style:circle}
 
 /*!
