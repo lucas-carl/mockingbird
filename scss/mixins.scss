@@ -37,6 +37,17 @@
 		background-color: $white !important;
 		color: $bg !important;
 		color: unquote($invert) !important;
+		&.link-arrow::after,
+		&.link-arrow::after {
+			background: $bg !important;
+		}
+	}
+	&.link-arrow::after {
+		background: $color;
+	}
+	&.link-arrow:hover::after,
+	&.link-arrow:focus::after {
+		background: $color !important;
 	}
 }
 

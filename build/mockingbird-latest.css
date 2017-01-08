@@ -454,6 +454,39 @@ sup {
   color: #ef4836 !important;
 }
 
+.link-arrow {
+  text-decoration: none !important;
+}
+
+.link-arrow::after {
+  content: '';
+  background: #548fdb;
+  position: relative;
+  display: inline-block;
+  height: .75rem;
+  width: .5rem;
+  vertical-align: middle;
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  transition: all .2s;
+  margin-top: -.125rem;
+  margin-left: .5rem;
+  background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="#548fdb" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>');
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="#000" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>');
+  mask-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="#000" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>');
+}
+
+.link-arrow:hover::after,
+.link-arrow:focus::after {
+  background: #2768bb;
+  -webkit-transform: translateX(2px);
+  -ms-transform: translateX(2px);
+  transform: translateX(2px);
+}
+
 /*!
  * mockingbird grid.css 12/2016
  */
@@ -1786,6 +1819,38 @@ input.btn-invert[type="reset"] {
   color: rgba(0, 0, 0, 0.65) !important;
 }
 
+.btn.btn-invert.link-arrow::after, button.btn-invert.link-arrow::after,
+.btn-invert.link-arrow[role="button"]::after,
+input.btn-invert.link-arrow[type="button"]::after,
+input.btn-invert.link-arrow[type="submit"]::after,
+input.btn-invert.link-arrow[type="reset"]::after, .btn.btn-invert.link-arrow::after, button.btn-invert.link-arrow::after,
+.btn-invert.link-arrow[role="button"]::after,
+input.btn-invert.link-arrow[type="button"]::after,
+input.btn-invert.link-arrow[type="submit"]::after,
+input.btn-invert.link-arrow[type="reset"]::after {
+  background: #fff !important;
+}
+
+.btn.link-arrow::after, button.link-arrow::after,
+.link-arrow[role="button"]::after,
+input.link-arrow[type="button"]::after,
+input.link-arrow[type="submit"]::after,
+input.link-arrow[type="reset"]::after {
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.btn.link-arrow:hover::after, button.link-arrow:hover::after,
+.link-arrow[role="button"]:hover::after,
+input.link-arrow[type="button"]:hover::after,
+input.link-arrow[type="submit"]:hover::after,
+input.link-arrow[type="reset"]:hover::after, .btn.link-arrow:focus::after, button.link-arrow:focus::after,
+.link-arrow[role="button"]:focus::after,
+input.link-arrow[type="button"]:focus::after,
+input.link-arrow[type="submit"]:focus::after,
+input.link-arrow[type="reset"]:focus::after {
+  background: rgba(0, 0, 0, 0.65) !important;
+}
+
 .btn-primary, .btn-group .btn.active, .btn-group button.active, .btn-group
 .active[role="button"], .btn-group
 input.active[type="button"], .btn-group
@@ -1858,6 +1923,38 @@ input.btn-invert.active[type="reset"] {
   color:  !important;
 }
 
+.btn-primary.btn-invert.link-arrow::after, .btn-group .btn-invert.link-arrow.btn.active::after, .btn-group button.btn-invert.link-arrow.active::after, .btn-group
+.btn-invert.link-arrow.active[role="button"]::after, .btn-group
+input.btn-invert.link-arrow.active[type="button"]::after, .btn-group
+input.btn-invert.link-arrow.active[type="submit"]::after, .btn-group
+input.btn-invert.link-arrow.active[type="reset"]::after, .btn-primary.btn-invert.link-arrow::after, .btn-group .btn-invert.link-arrow.btn.active::after, .btn-group button.btn-invert.link-arrow.active::after, .btn-group
+.btn-invert.link-arrow.active[role="button"]::after, .btn-group
+input.btn-invert.link-arrow.active[type="button"]::after, .btn-group
+input.btn-invert.link-arrow.active[type="submit"]::after, .btn-group
+input.btn-invert.link-arrow.active[type="reset"]::after {
+  background: #548fdb !important;
+}
+
+.btn-primary.link-arrow::after, .btn-group .link-arrow.btn.active::after, .btn-group button.link-arrow.active::after, .btn-group
+.link-arrow.active[role="button"]::after, .btn-group
+input.link-arrow.active[type="button"]::after, .btn-group
+input.link-arrow.active[type="submit"]::after, .btn-group
+input.link-arrow.active[type="reset"]::after {
+  background: #fff;
+}
+
+.btn-primary.link-arrow:hover::after, .btn-group .link-arrow.btn.active:hover::after, .btn-group button.link-arrow.active:hover::after, .btn-group
+.link-arrow.active[role="button"]:hover::after, .btn-group
+input.link-arrow.active[type="button"]:hover::after, .btn-group
+input.link-arrow.active[type="submit"]:hover::after, .btn-group
+input.link-arrow.active[type="reset"]:hover::after, .btn-primary.link-arrow:focus::after, .btn-group .link-arrow.btn.active:focus::after, .btn-group button.link-arrow.active:focus::after, .btn-group
+.link-arrow.active[role="button"]:focus::after, .btn-group
+input.link-arrow.active[type="button"]:focus::after, .btn-group
+input.link-arrow.active[type="submit"]:focus::after, .btn-group
+input.link-arrow.active[type="reset"]:focus::after {
+  background: #fff !important;
+}
+
 .btn-success {
   background-color: #42d17f !important;
   color: #fff !important;
@@ -1884,6 +1981,18 @@ input.btn-invert.active[type="reset"] {
   background-color: #fff !important;
   color: #42d17f !important;
   color:  !important;
+}
+
+.btn-success.btn-invert.link-arrow::after, .btn-success.btn-invert.link-arrow::after {
+  background: #42d17f !important;
+}
+
+.btn-success.link-arrow::after {
+  background: #fff;
+}
+
+.btn-success.link-arrow:hover::after, .btn-success.link-arrow:focus::after {
+  background: #fff !important;
 }
 
 .btn-info {
@@ -1914,6 +2023,18 @@ input.btn-invert.active[type="reset"] {
   color:  !important;
 }
 
+.btn-info.btn-invert.link-arrow::after, .btn-info.btn-invert.link-arrow::after {
+  background: #19b5fe !important;
+}
+
+.btn-info.link-arrow::after {
+  background: #fff;
+}
+
+.btn-info.link-arrow:hover::after, .btn-info.link-arrow:focus::after {
+  background: #fff !important;
+}
+
 .btn-warning {
   background-color: #f7ca18 !important;
   color: #fff !important;
@@ -1942,6 +2063,18 @@ input.btn-invert.active[type="reset"] {
   color:  !important;
 }
 
+.btn-warning.btn-invert.link-arrow::after, .btn-warning.btn-invert.link-arrow::after {
+  background: #f7ca18 !important;
+}
+
+.btn-warning.link-arrow::after {
+  background: #fff;
+}
+
+.btn-warning.link-arrow:hover::after, .btn-warning.link-arrow:focus::after {
+  background: #fff !important;
+}
+
 .btn-danger {
   background-color: #ef4836 !important;
   color: #fff !important;
@@ -1968,6 +2101,18 @@ input.btn-invert.active[type="reset"] {
   background-color: #fff !important;
   color: #ef4836 !important;
   color:  !important;
+}
+
+.btn-danger.btn-invert.link-arrow::after, .btn-danger.btn-invert.link-arrow::after {
+  background: #ef4836 !important;
+}
+
+.btn-danger.link-arrow::after {
+  background: #fff;
+}
+
+.btn-danger.link-arrow:hover::after, .btn-danger.link-arrow:focus::after {
+  background: #fff !important;
 }
 
 .btn, button,
