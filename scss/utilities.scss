@@ -16,12 +16,12 @@
 
 .right-block,
 .pull-right {
-	float: right !important;
+	float: right;
 }
 
 .left-block,
 .pull-left {
-	float: left !important;
+	float: left;
 }
 
 .flex-center {
@@ -46,7 +46,7 @@
 }
 
 .show {
-	display: block !important;
+	display: block;
 }
 
 .invisible {
@@ -58,7 +58,7 @@
 
 .copyright-note {
 	display: block;
-	color: $text-color-light !important;
+	color: $text-color-light;
 	text-align: center;
 	font-size: $font-size-3;
 	padding: $spacer-4 0;

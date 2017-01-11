@@ -40,11 +40,11 @@
 	width: 100%;
 }
 
-.card-primary { border-color: $brand-primary !important; }
-.card-success { border-color: $brand-success !important; }
-.card-info { border-color: $brand-info !important; }
-.card-warning { border-color: $brand-warning !important; }
-.card-danger { border-color: $brand-danger !important; }
+.card-primary { border-color: $brand-primary; }
+.card-success { border-color: $brand-success; }
+.card-info { border-color: $brand-info; }
+.card-warning { border-color: $brand-warning; }
+.card-danger { border-color: $brand-danger; }
 
 // callout
 // ----
@@ -53,7 +53,7 @@
 .card-callout {
 	@extend .card;
 	border-left: .5rem solid $gray;
-	border-top-color: $border-color !important;
-	border-right-color: $border-color !important;
-	border-bottom-color: $border-color !important;
+	border-top-color: $border-color;
+	border-right-color: $border-color;
+	border-bottom-color: $border-color;
 }

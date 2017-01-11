@@ -14,32 +14,32 @@
 }
 
 @mixin button-variant($color, $bg, $invert: "") {
-	background-color: $bg !important;
-	color: $color !important;
-	border-color: darken($bg,10%) !important;
+	background-color: $bg;
+	color: $color;
+	border-color: darken($bg,10%);
 	&:hover,
 	&:focus,
 	&:active,
 	&.active {
-		background-color: darken($bg,5%) !important;
-		color: $color !important;
-		border-color: darken($bg,15%) !important;
+		background-color: darken($bg,5%);
+		color: $color;
+		border-color: darken($bg,15%);
 		&.btn-invert {
-			background-color: $bg !important;
-			color: $color !important;
-			border-color: darken($bg,10%) !important;
+			background-color: $bg;
+			color: $color;
+			border-color: darken($bg,10%);
 		}
 	}
 	&:focus {
-		border-color: darken($bg,25%) !important;
+		border-color: darken($bg,25%);
 	}
 	&.btn-invert {
-		background-color: $white !important;
-		color: $bg !important;
-		color: unquote($invert) !important;
+		background-color: $white;
+		color: $bg;
+		color: unquote($invert);
 		&.link-arrow::after,
 		&.link-arrow::after {
-			background: $bg !important;
+			background: $bg;
 		}
 	}
 	&.link-arrow::after {
@@ -47,7 +47,7 @@
 	}
 	&.link-arrow:hover::after,
 	&.link-arrow:focus::after {
-		background: $color !important;
+		background: $color;
 	}
 }
 

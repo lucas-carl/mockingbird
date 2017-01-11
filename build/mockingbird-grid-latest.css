@@ -1402,12 +1402,12 @@ label {
 
 .right-block,
 .pull-right {
-  float: right !important;
+  float: right;
 }
 
 .left-block,
 .pull-left {
-  float: left !important;
+  float: left;
 }
 
 .flex-center {
@@ -1449,7 +1449,7 @@ label {
 }
 
 .show {
-  display: block !important;
+  display: block;
 }
 
 .invisible {
@@ -1458,7 +1458,7 @@ label {
 
 .copyright-note {
   display: block;
-  color: rgba(0, 0, 0, 0.65) !important;
+  color: rgba(0, 0, 0, 0.65);
   text-align: center;
   font-size: 0.875rem;
   padding: 0.6rem 0;
