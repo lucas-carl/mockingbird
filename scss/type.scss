@@ -4,7 +4,7 @@
 
 %hN {
 	font-weight: bold;
-	margin: $spacer-7 0 !important;
+	margin: $spacer-7 0;
 	& span,
 	& .sub-heading {
 		display: block;
@@ -54,7 +54,7 @@ small,
 strong,
 .strong,
 b {
-	font-weight: bold !important;
+	font-weight: bold;
 }
 
 mark,
@@ -92,23 +92,34 @@ sup {
   top: -.5rem;
 }
 
+blockquote {
+	display: block;
+	font-style: italic;
+	padding: $spacer-5;
+	padding-left: $spacer-6;
+	border-left: .25rem solid $gray;
+	p {
+		margin: 0;
+	}
+}
+
 // utilities
 // ----
 
 .text-center {
-	text-align: center !important;
+	text-align: center;
 }
 
 .text-right {
-	text-align: right !important;
+	text-align: right;
 }
 
 .text-left {
-	text-align: left !important;
+	text-align: left;
 }
 
 .text-justify {
-	text-align: justify !important;
+	text-align: justify;
 }
 
 .text-overflow {
@@ -131,12 +142,12 @@ sup {
 // color variants
 // ----
 
-.text-muted { color: $text-color-light !important; }
-.text-primary { color: $brand-primary !important; }
-.text-success { color: $brand-success !important; }
-.text-info { color: $brand-info !important; }
-.text-warning { color: $brand-warning !important; }
-.text-danger { color: $brand-danger !important; }
+.text-muted { color: $text-color-light; }
+.text-primary { color: $brand-primary; }
+.text-success { color: $brand-success; }
+.text-info { color: $brand-info; }
+.text-warning { color: $brand-warning; }
+.text-danger { color: $brand-danger; }
 
 // arrow links
 // ----
@@ -157,7 +168,7 @@ sup {
 	transition: all .2s;
 	margin-top: -.125rem;
 	margin-left: .5rem;
-	
+
 	background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="#548fdb" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>');
 	mask-repeat: no-repeat;
   mask-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="#000" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>');
