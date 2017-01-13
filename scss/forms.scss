@@ -88,7 +88,7 @@ select {
 .input-group {
 	display: block;
 	margin-top: 0;
-	margin-bottom: $spacer-6;
+	margin-bottom: $spacer-6 !important;
 	input, button, .btn {
 		margin-bottom: 0;
 	}
