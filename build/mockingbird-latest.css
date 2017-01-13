@@ -2602,6 +2602,10 @@ pre code {
   width: 100%;
 }
 
+.card-borderless {
+  border: none;
+}
+
 .card-primary {
   border-color: #548fdb;
 }

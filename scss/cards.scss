@@ -40,6 +40,10 @@
 	width: 100%;
 }
 
+.card-borderless {
+	border: none;
+}
+
 .card-primary { border-color: $brand-primary; }
 .card-success { border-color: $brand-success; }
 .card-info { border-color: $brand-info; }
