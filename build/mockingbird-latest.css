@@ -2129,19 +2129,19 @@ input[type="submit"],
 input[type="reset"],
 .btn-md {
   font-size: 0.875rem;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem !important;
   border-radius: 0.25rem;
 }
 
 .btn-sm {
   font-size: 0.75rem;
-  padding: 0.35rem 0.75rem;
+  padding: 0.35rem 0.75rem !important;
   border-radius: 0.2rem;
 }
 
 .btn-lg {
   font-size: 1rem;
-  padding: 0.6rem 2rem;
+  padding: 0.6rem 2rem !important;
   border-radius: 0.3rem;
 }
 
@@ -2372,7 +2372,7 @@ input[type="datetime-local"] {
   background-image: none;
   display: inline-block;
   width: 12rem;
-  color: inherit;
+  color: rgba(0, 0, 0, 0.8);
   font-weight: normal;
   line-height: normal;
   vertical-align: middle;
@@ -2419,6 +2419,7 @@ select {
 
 .input-group {
   display: block;
+  color: rgba(0, 0, 0, 0.65);
   margin-top: 0;
   margin-bottom: 1.5rem !important;
 }
@@ -2431,13 +2432,8 @@ input[type="reset"] {
   margin-bottom: 0;
 }
 
-.input-group label:not(.btn):not(button):not(
-[role="button"]):not(
-input[type="button"]):not(
-input[type="submit"]):not(
-input[type="reset"]) {
+.input-group label {
   display: block;
-  color: rgba(0, 0, 0, 0.65);
   font-size: 0.875rem;
   margin-bottom: 0.5rem;
 }

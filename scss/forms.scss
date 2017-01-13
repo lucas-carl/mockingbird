@@ -43,7 +43,7 @@ input[type="datetime-local"] {
 	background-image: none;
 	display: inline-block;
 	width: 12rem;
-	color: inherit;
+	color: $text-color;
 	font-weight: normal;
 	line-height: normal;
 	vertical-align: middle;
@@ -87,14 +87,14 @@ select {
 
 .input-group {
 	display: block;
+	color: $text-color-light;
 	margin-top: 0;
 	margin-bottom: $spacer-6 !important;
 	input, button, .btn {
 		margin-bottom: 0;
 	}
-	label:not(.btn) {
+	label {
 		display: block;
-		color: $text-color-light;
 		font-size: $font-size-3;
 		margin-bottom: $spacer-3;
 	}
