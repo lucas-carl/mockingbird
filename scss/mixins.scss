@@ -34,7 +34,7 @@
 		border-color: darken($bg,25%);
 	}
 	&.btn-invert {
-		background-color: $white;
+		background-color: $body-bg;
 		color: $bg;
 		color: unquote($invert);
 		&.link-arrow::after,

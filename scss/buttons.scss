@@ -43,7 +43,7 @@
 // ----
 
 .btn {
-	@include button-variant($btn-default-color,$white,$btn-default-color);
+	@include button-variant($btn-default-color,$body-bg,$btn-default-color);
 }
 
 .btn-primary {

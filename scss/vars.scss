@@ -1,16 +1,23 @@
 /*!
- * mockingbird vars.css 12/2016
+ * mockingbird vars.css 01/2017
  */
 
 // colors
 // ----
 
-$gray-base: #445;
-$gray: #666;
-$gray-dark: #343436;
-$gray-light: #d5d5d7;
-$gray-lightest: #f5f5f7;
-$white: #fff;
+$gray-0: #334;
+$gray-1: #445;
+$gray-2: #667;
+$gray-3: #e1e1e3;
+$gray-4: #f5f5f7;
+$gray-5: #fbfbfd;
+
+$gray-darker: $gray-0;
+$gray-dark: $gray-1;
+$gray: $gray-2;
+$gray-light: $gray-3;
+$gray-lighter: $gray-4;
+$gray-lightest: $gray-5;
 
 $brand-primary: #548fdb;
 $brand-success: #42d17f;
@@ -18,15 +25,13 @@ $brand-info: #19b5fe;
 $brand-warning: #f7ca18;
 $brand-danger: #ef4836;
 
-$body-bg: $white;
+$body-bg: #fff;
 
 $text-color: rgba(0,0,0,.8);
-
 $text-color-light: rgba(0,0,0,.65);
-
 $text-color-contrast: #fff;
 
-$border-color: $gray-light;
+$border-color: rgba(0,0,0,.15);
 
 // font families
 // ----
@@ -79,7 +84,7 @@ $res-break-6: 360px;
 // ----
 
 $btn-default-color: $text-color-light;
-$btn-default-bg: $white;
+$btn-default-bg: $body-bg;
 
 $btn-primary-color: $text-color-contrast;
 $btn-primary-bg: $brand-primary;
@@ -145,4 +150,4 @@ $border-radius-3: .3rem;
 $border-radius-4: .5rem;
 
 $code-color: $text-color;
-$code-bg: $gray-lightest;
+$code-bg: $gray-lighter;
