@@ -2457,7 +2457,6 @@ fieldset {
 }
 
 fieldset legend {
-  background: #fff;
   color: rgba(0, 0, 0, 0.65);
   padding: 0 0.25rem;
   border-radius: 0.25rem;
@@ -2723,14 +2722,6 @@ ul {
   border-right: 1px solid rgba(0, 0, 0, 0.15);
 }
 
-.navbar.navbar-fixed {
-  /*
-		position: absolute;
-		top: 0;
-		left: 0;
-		*/
-}
-
 .navbar .navbar-content::before, .navbar .navbar-content::after {
   content: '';
   display: table;
@@ -2740,12 +2731,14 @@ ul {
   clear: both;
 }
 
-.navbar .navbar-content.pull-right li {
-  float: right;
+.navbar .navbar-content.pull-right, .navbar .navbar-content.pull-left {
+  float: none;
 }
 
 .navbar ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .navbar li {
@@ -2756,14 +2749,13 @@ ul {
 
 .navbar a {
   display: block;
-  color: inherit;
+  color: rgba(0, 0, 0, 0.8);
   text-decoration: none;
   padding: 1rem;
 }
 
 .navbar a:hover, .navbar a:focus {
-  background: #f5f5f7;
-  outline: none;
+  color: rgba(0, 0, 0, 0.65);
 }
 
 .navbar .btn, .navbar button, .navbar
@@ -2784,7 +2776,7 @@ input[type="reset"] {
 
 .navbar .brand-logo img {
   height: 2rem;
-  width: 2rem;
+  min-width: 2rem;
 }
 
 @media (max-width: 480px) {
@@ -2792,13 +2784,22 @@ input[type="reset"] {
     border: none;
   }
   .navbar .navbar-content {
+    width: 100%;
     padding: 0;
+  }
+  .navbar ul {
+    width: 100%;
   }
   .navbar li, .navbar li:last-child {
     width: 100%;
     text-align: center;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+  }
+  .navbar a:hover,
+  .navbar a:focus {
+    background: #fbfbfd;
+    outline: none;
   }
 }
 
