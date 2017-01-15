@@ -2605,6 +2605,11 @@ pre code {
   border: none;
 }
 
+.callout,
+.card-callout {
+  border-left-color: #667;
+}
+
 .card-primary {
   border-color: #548fdb;
 }
@@ -2627,7 +2632,7 @@ pre code {
 
 .callout,
 .card-callout {
-  border-left: 0.5rem solid #667;
+  border-left-width: .5rem;
   border-top-color: rgba(0, 0, 0, 0.15);
   border-right-color: rgba(0, 0, 0, 0.15);
   border-bottom-color: rgba(0, 0, 0, 0.15);
@@ -2636,7 +2641,6 @@ pre code {
 section,
 .section,
 .card-section {
-  background: #fff;
   position: relative;
   display: block;
   height: auto;
@@ -2656,6 +2660,10 @@ section::after,
 .section::after,
 .card-section::after {
   clear: both;
+}
+
+.section-default {
+  background: #fff;
 }
 
 .section-darker {

@@ -44,6 +44,12 @@
 	border: none;
 }
 
+// reset for callouts
+.callout,
+.card-callout {
+	border-left-color: $gray;
+}
+
 .card-primary { border-color: $brand-primary; }
 .card-success { border-color: $brand-success; }
 .card-info { border-color: $brand-info; }
@@ -56,7 +62,7 @@
 .callout,
 .card-callout {
 	@extend .card;
-	border-left: .5rem solid $gray;
+	border-left-width: .5rem;
 	border-top-color: $border-color;
 	border-right-color: $border-color;
 	border-bottom-color: $border-color;
@@ -68,7 +74,6 @@
 section,
 .section,
 .card-section {
-	background: $body-bg;
 	position: relative;
 	display: block;
 	height: auto;
@@ -76,6 +81,7 @@ section,
 	@include clearfix;
 }
 
+.section-default { background: $body-bg; }
 .section-darker { background: $gray-darker; }
 .section-dark { background: $gray-dark; }
 .section-light { background: $gray-light; }
