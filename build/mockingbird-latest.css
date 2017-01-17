@@ -443,27 +443,27 @@ blockquote p {
 }
 
 .text-muted {
-  color: rgba(0, 0, 0, 0.65);
+  color: rgba(0, 0, 0, 0.65) !important;
 }
 
 .text-primary {
-  color: #548fdb;
+  color: #548fdb !important;
 }
 
 .text-success {
-  color: #42d17f;
+  color: #42d17f !important;
 }
 
 .text-info {
-  color: #19b5fe;
+  color: #19b5fe !important;
 }
 
 .text-warning {
-  color: #f7ca18;
+  color: #f7ca18 !important;
 }
 
 .text-danger {
-  color: #ef4836;
+  color: #ef4836 !important;
 }
 
 .link-arrow {
