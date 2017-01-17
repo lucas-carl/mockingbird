@@ -2565,8 +2565,8 @@ pre code {
   overflow: hidden;
 }
 
-.card *, .callout *,
-.card-callout * {
+.card :last-child, .callout :last-child,
+.card-callout :last-child {
   margin-bottom: 0;
 }
 
