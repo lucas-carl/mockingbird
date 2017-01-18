@@ -1,5 +1,5 @@
 /*!
- * mockingbird frame.css 12/2016
+ * mockingbird frame.css 01/2017
  */
 
 html, body {
@@ -102,4 +102,21 @@ abbr[title] {
 
 [role="button"] {
   cursor: pointer;
+}
+
+// responsive reference size
+// ----
+
+:root {
+	// > 960px
+	@media (min-width: $res-break-2) { font-size: 17px; }
+
+	// < 960px
+	@media (max-width: $res-break-2) { font-size: 16px; }
+
+	// < 720px
+	@media (max-width: $res-break-3) { font-size: 15px; }
+
+	// < 600px
+	@media (max-width: $res-break-4) { font-size: 14px; }
 }
