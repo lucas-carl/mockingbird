@@ -15,13 +15,13 @@ form {
 
 	&.input-md {
 		font-size: $font-size-3;
-		padding: $spacer-3 $spacer-6;
+		padding: $spacer-3 $spacer-5;
 		border-radius: $border-radius-0;
 	}
 
 	&.input-lg {
 		font-size: $font-size-0;
-		padding: $spacer-4 $spacer-7;
+		padding: $spacer-4 $spacer-5;
 		border-radius: $border-radius-3;
 	}
 }
@@ -106,6 +106,10 @@ input[type="radio"] {
 	display: inline-block;
 	margin-right: $spacer-2;
 	margin-bottom: $spacer-3;
+}
+
+.input-responsive {
+	min-width: 100%;
 }
 
 // fieldset variants
