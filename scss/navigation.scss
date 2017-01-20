@@ -12,13 +12,27 @@
 			&:last-child {
 				border-right: 1px solid $border-color;
 			}
+			a:hover,
+			a:focus {
+				background: rgba($gray-light,.25);
+			}
+		}
+	}
+	&.navbar-absolute {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		&,
+		li {
+			border: none;
 		}
 	}
 	&.navbar-fixed {
 
 	}
 	.navbar-content {
-		@extend .container;
+		@extend .container-fluid;
 		@include clearfix;
 		&.pull-right,
 		&.pull-left {
@@ -61,26 +75,27 @@
 		}
 	}
 	@media (max-width: $res-break-5) {
-		& {
+		&.navbar-responsive {
 			border: none;
+			.navbar-content {
+				width: 100%;
+				padding: 0;
+			}
+			ul {
+				width: 100%;
+			}
+			li, li:last-child {
+				width: 100%;
+				text-align: center;
+				border: none;
+				border-bottom: 1px solid $border-color;
+			}
+			a:hover,
+			a:focus {
+				background: $gray-lightest;
+				outline: none;
+			}
 		}
-		.navbar-content {
-			width: 100%;
-			padding: 0;
-		}
-		ul {
-			width: 100%;
-		}
-		li, li:last-child {
-			width: 100%;
-			text-align: center;
-			border: none;
-			border-bottom: 1px solid $border-color;
-		}
-		a:hover,
-		a:focus {
-			background: $gray-lightest;
-			outline: none;
-		}
+
 	}
 }
