@@ -142,6 +142,7 @@ blockquote {
 // color variants
 // ----
 
+.text-light { color: $body-bg !important; }
 .text-muted { color: $text-color-light !important; }
 .text-primary { color: $brand-primary !important; }
 .text-success { color: $brand-success !important; }
