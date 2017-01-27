@@ -2,12 +2,15 @@
 	<head>
 		<title>Mockingbird</title>
 
-		<link rel="stylesheet" href="https://mockingbird-cdn.surge.sh/mockingbird-latest.min.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="https://mockingbird-cdn.surge.sh/latest/mockingbird.css">
 	</head>
 	<body>
 		<header>
 			<nav class="navbar">
-				<ul class="navbar-content">
+				<ul class="navbar-content container">
 					<li>
 						<a class="text-primary" href="/">Welcome</a>
 					</li>
@@ -15,13 +18,13 @@
 						<a href="/download/">Download</a>
 					</li>
 					<li>
+						<a href="/guide/">Guide</a>
+					</li>
+					<li>
 						<a href="/themes/">Themes</a>
 					</li>
 					<li>
-						<a href="/grid/">Grid</a>
-					</li>
-					<li class="text-muted">
-						<a href="https://github.com/lucas-carl/mockingbird">GitHub</a>
+						<a class="text-muted" href="https://github.com/lucas-carl/mockingbird">GitHub</a>
 					</li>
 				</ul>
 			</nav>
@@ -32,6 +35,43 @@
 			<p>
 				A front-end framework for responsive layouts and easy web development created with SASS
 			</p>
+
+			<hr>
+
+			<p>There are three variants of Mockingbird</p>
+
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="card card-block card-info">
+						<div class="card-title">
+							<h4>Mockingbird</h4>
+						</div>
+						<p>
+							The package that includes everything Mockingbird has to offer.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card card-block">
+						<div class="card-title">
+							<h4>Mockingbird Light</h4>
+						</div>
+						<p>
+							Most of the features that you'll need if you need a foundation for your website.
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-4">
+					<div class="card card-block">
+						<div class="card-title">
+							<h4>Mockingbird Grid</h4>
+						</div>
+						<p>
+							If you need the framework just for the containers and columns.
+						</p>
+					</div>
+				</div>
+			</div>
 
 			<div class="input-group">
 				<a class="btn" href="https://github.com/lucas-carl/mockingbird">
@@ -54,23 +94,6 @@
 				<p>
 					If you experience any bugs or if you want to help improve the framework,
 					then feel free to <a href="https://github.com/lucas-carl/mockingbird/issues/new">open an issue</a> on Github.
-				</p>
-			</div>
-
-			<div class="card card-block">
-				<div class="card-title">
-					<h4>Installation</h4>
-				</div>
-				<p>
-					To use the latest version of Mockingbird on your website, simply paste this link in to the &lt;head&gt;&lt;/head&gt; section of your site:
-				</p>
-				<p>
-					<br>
-					<pre>&lt;link rel="stylesheet" href="https://mockingbird-cdn.surge.sh/mockingbird-latest.min.css"&gt;</pre>
-					<br>
-				</p>
-				<p>
-					Alternatively, you can go to the <a href="/download/">download page</a> for other links.
 				</p>
 			</div>
 		</main>
