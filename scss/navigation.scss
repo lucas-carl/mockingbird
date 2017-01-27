@@ -29,7 +29,8 @@
 		}
 	}
 	&.navbar-fixed {
-
+		@extend .navbar-absolute;
+		position: fixed;
 	}
 	.navbar-content {
 		@extend .container-fluid;
@@ -71,7 +72,7 @@
 		}
 		img {
 			height: 2rem;
-			min-width: 2rem;
+			width: auto;
 		}
 	}
 	@media (max-width: $res-break-5) {
