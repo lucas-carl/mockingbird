@@ -1,0 +1,113 @@
+/*!
+ * mockingbird mixins.css 01/2017
+ */
+
+@mixin clearfix() {
+	&::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
+}
+
+@mixin button-variant($color, $bg, $invert: "") {
+	background-color: $bg;
+	color: $color;
+	border-color: darken($bg,10%);
+	&:hover,
+	&:focus,
+	&:active,
+	&.active {
+		background-color: darken($bg,5%);
+		color: $color;
+		border-color: darken($bg,15%);
+		&.btn-invert {
+			background-color: $bg;
+			color: $color;
+			border-color: darken($bg,10%);
+		}
+	}
+	&:focus {
+		border-color: darken($bg,25%);
+	}
+	&.btn-invert {
+		background-color: $body-bg;
+		color: $bg;
+		color: unquote($invert);
+		&.link-arrow::after,
+		&.link-arrow::after {
+			background: $bg;
+		}
+	}
+	&.link-arrow::after {
+		background: $color;
+	}
+	&.link-arrow:hover::after,
+	&.link-arrow:focus::after {
+		background: $color;
+	}
+}
+
+@mixin fieldset-variant($color) {
+	background-color: rgba($color,.075);
+	border-color: $color;
+	legend {
+		color: $color;
+	}
+}
+
+@mixin make-columns($columns: $grid-columns, $breakpoints: $grid-breakpoints) {
+
+	%column {
+		position: relative;
+		float: left;
+		min-height: 1px;
+		padding: 0 ($grid-gutter / 2);
+	}
+
+	@each $breakpoint in map-keys($breakpoints) {
+		@for $i from 1 through $columns {
+			.col-#{$breakpoint}-#{$i} {
+
+				@extend %column;
+				width: percentage($i / $columns);
+
+				&:first-child {
+					padding-left: 0;
+				}
+
+				&:last-child {
+					padding-right: 0;
+				}
+
+				@media (max-width: map-get($breakpoints, #{$breakpoint})) {
+					width: 100%;
+					padding: ($grid-gutter / 2) 0;
+				}
+
+			}
+		}
+	}
+
+}
+
+@mixin vertical-center {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+@mixin vertical-flex-center {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

@@ -1,0 +1,99 @@
+/*!
+ * mockingbird frame.css 01/2017
+ */
+
+html, body {
+	background-color: $body-bg;
+	color: $text-color;
+	font-family: $font-fam-base;
+	font-size: $font-size-0;
+	line-height: $line-height-0;
+	letter-spacing: .015rem;
+	margin: 0;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+	&:hover,
+	&:focus {
+		color: $link-color-hover;
+		text-decoration: $link-hover-decoration;
+	}
+}
+
+img {
+	vertical-align: middle;
+}
+
+figure {
+	margin: 0 0 $spacer-0;
+}
+
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: $spacer-0;
+}
+
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
+
+.sr-only-focusable {
+  &:active,
+  &:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+  }
+}
+
+abbr[title] {
+	cursor: help;
+}
+
+[role="button"] {
+  cursor: pointer;
+}
+
+// responsive reference size
+// ----
+
+:root {
+	// > 960px
+	@media (min-width: $res-break-2) { font-size: 17px; }
+
+	// < 960px
+	@media (max-width: $res-break-2) { font-size: 16px; }
+
+	// < 720px
+	@media (max-width: $res-break-3) { font-size: 15px; }
+
+	// < 600px
+	@media (max-width: $res-break-4) { font-size: 14px; }
+}

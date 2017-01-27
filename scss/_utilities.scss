@@ -1,0 +1,47 @@
+/*!
+ * mockingbird utilities.css 01/2017
+ */
+
+// img
+// ----
+
+.img-responsive {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.img-rounded {
+	border-radius: $border-radius-0;
+}
+
+.img-circle {
+	border-radius: 50%;
+}
+
+.img-absolute {
+	position: absolute;
+	display: block;
+	max-width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.img-parallax {
+	position: fixed;
+	display: block;
+	max-width: 100%;
+	top: 0;
+	left: 0;
+}
+
+// special utilities
+// ----
+
+.copyright-note {
+	display: block;
+	color: $text-color-light !important;
+	text-align: center;
+	font-size: $font-size-3;
+	padding: $spacer-4 0;
+	margin-bottom: $spacer-0;
+}

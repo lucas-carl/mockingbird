@@ -1,0 +1,45 @@
+/*!
+ * mockingbird grid.css 12/2016
+ */
+
+.container,
+.container-sm,
+.container-xs,
+.container-lg,
+.container-xl,
+.container-fluid {
+	position: relative;
+	display: block;
+	margin: auto;
+}
+
+.container-xl {
+	max-width: $res-break-1;
+	padding: 0 $spacer-5;
+}
+
+.container-lg {
+	max-width: $res-break-2;
+	padding: 0 $spacer-5;
+}
+
+.container {
+	max-width: $res-break-3;
+	padding: 0 $spacer-5;
+}
+
+.container-sm {
+	max-width: $res-break-4;
+	padding: 0 $spacer-5;
+}
+
+.container-xs {
+	max-width: $res-break-5;
+	padding: 0 $spacer-5;
+}
+
+.row {
+	@include clearfix;
+}
+
+@include make-columns();

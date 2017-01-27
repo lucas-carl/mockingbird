@@ -1,0 +1,102 @@
+/*!
+ * mockingbird reset.css 01/2017
+ */
+
+.navbar {
+	width: 100%;
+	overflow: hidden;
+	border-bottom: 1px solid $border-color;
+	&.navbar-bordered {
+		li {
+			border-left: 1px solid $border-color;
+			&:last-child {
+				border-right: 1px solid $border-color;
+			}
+			a:hover,
+			a:focus {
+				background: rgba($gray-light,.25);
+			}
+		}
+	}
+	&.navbar-absolute {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 100;
+		&,
+		li {
+			border: none;
+		}
+	}
+	&.navbar-fixed {
+		@extend .navbar-absolute;
+		position: fixed;
+	}
+	.navbar-content {
+		@extend .container-fluid;
+		@include clearfix;
+		&.pull-right,
+		&.pull-left {
+			float: none;
+		}
+	}
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+	}
+	li {
+		float: left;
+		line-height: 1;
+		margin: 0;
+	}
+	a {
+		display: block;
+		color: $text-color;
+		text-decoration: none;
+		padding: $spacer-0;
+		&:hover,
+		&:focus {
+			color: $text-color-light;
+		}
+	}
+	.btn {
+		margin: calc(.5rem - 1px) $spacer-0;
+	}
+	.btn-sm {
+		margin: calc(.7rem - 1px) $spacer-0;
+	}
+	.brand-logo {
+		a {
+			padding: $spacer-3;
+		}
+		img {
+			height: 2rem;
+			width: auto;
+		}
+	}
+	@media (max-width: $res-break-5) {
+		&.navbar-responsive {
+			border: none;
+			.navbar-content {
+				width: 100%;
+				padding: 0;
+			}
+			ul {
+				width: 100%;
+			}
+			li, li:last-child {
+				width: 100%;
+				text-align: center;
+				border: none;
+				border-bottom: 1px solid $border-color;
+			}
+			a:hover,
+			a:focus {
+				background: $gray-lightest;
+				outline: none;
+			}
+		}
+
+	}
+}
