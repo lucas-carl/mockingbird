@@ -87,7 +87,7 @@ select {
 
 .input-group {
 	display: block;
-	color: $text-color-light;
+	color: $text-color-lighter;
 	margin-top: 0;
 	margin-bottom: $spacer-6 !important;
 	input, button, .btn {
@@ -124,7 +124,7 @@ fieldset {
 	margin-bottom: $spacer-0;
 	border-radius: $border-radius-0;
 	legend {
-		color: $text-color-light;
+		color: $text-color-lighter;
 		padding: 0 $spacer-1;
 		border-radius: $border-radius-0;
 	}
