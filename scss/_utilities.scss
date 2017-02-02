@@ -1,6 +1,34 @@
 /*!
- * mockingbird utilities.css 01/2017
+ * mockingbird utilities.css 02/2017
  */
+
+// toggle content
+// ----
+
+.hide,
+.hidden,
+[hidden] {
+	display: none !important;
+}
+
+.show {
+	display: block;
+}
+
+.invisible {
+	visibility: hidden;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  border: 0;
+}
 
 // img
 // ----

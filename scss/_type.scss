@@ -1,6 +1,16 @@
 /*!
- * mockingbird type.css 01/2017
+ * mockingbird type.css 02/2017
  */
+
+a {
+	color: $link-color;
+	text-decoration: none;
+	&:hover,
+	&:focus {
+		color: $link-color-hover;
+		text-decoration: $link-hover-decoration;
+	}
+}
 
 %hN {
 	font-weight: bold;
