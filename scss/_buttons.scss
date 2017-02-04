@@ -15,15 +15,12 @@
 	cursor: pointer;
 	white-space: nowrap;
 	margin: 0;
-	border: 1px solid $border-color;
 	border-radius: $border-radius-2;
 	margin-top: 0;
 	margin-bottom: 1rem;
 	transition: all .25s;
 	&:hover,
 	&:focus {
-		background: $btn-hover-base;
-		color: $text-color;
 		text-decoration: none;
 		outline: none;
 	}
@@ -38,33 +35,8 @@
 		cursor: not-allowed;
 		opacity: .8;
 	}
-}
 
-// button variants
-// ----
-
-.btn {
-	@include button-variant($btn-default-color,$body-bg,$btn-default-color);
-}
-
-.btn-primary {
-	@include button-variant($btn-primary-color,$btn-primary-bg);
-}
-
-.btn-success {
-	@include button-variant($btn-success-color,$btn-success-bg);
-}
-
-.btn-info {
-	@include button-variant($btn-info-color,$btn-info-bg);
-}
-
-.btn-warning {
-	@include button-variant($btn-warning-color,$btn-warning-bg);
-}
-
-.btn-danger {
-	@include button-variant($btn-danger-color,$btn-danger-bg);
+	@include mb-colors(false,true);
 }
 
 // sizes
@@ -112,7 +84,7 @@
 		&.btn-lg:first-child { border-radius: $border-radius-3 0 0 $border-radius-3; }
 		&.btn-lg:last-child { border-radius: 0 $border-radius-3 $border-radius-3 0; }
 		&.active {
-			@extend .btn-primary;
+			background: $mb-primary;
 		}
 	}
 }

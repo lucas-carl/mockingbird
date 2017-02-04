@@ -1,5 +1,5 @@
 /*!
- * mockingbird mixins.css 01/2017
+ * mockingbird mixins.css 02/2017
  */
 
 @mixin clearfix() {
@@ -13,6 +13,42 @@
   }
 }
 
+@mixin mb-colors($is-text: false, $is-btn: false) {
+	@each $mb-color in map-keys($mb-colors) {
+		$color: map-get($mb-colors, #{$mb-color});
+		$text: map-get($mb-text, #{$mb-color});
+
+		@if $is-text {
+
+			&.mb-text-#{$mb-color} {
+				color: $color;
+			}
+
+		} @else {
+
+			&.mb-#{$mb-color} {
+				@if $is-btn {
+					background-color: $color;
+					color: $text;
+					&:hover,
+					&:focus {
+						background-color: darken($color,5%);
+					}
+					&.mb-outline {
+						color: $color;
+						border-color: $color;
+					}
+				} @else {
+					color: $color;
+					border-color: $color;
+				}
+			}
+
+		}
+	}
+}
+
+/*
 @mixin button-variant($color, $bg, $invert: "") {
 	background-color: $bg;
 	color: $color;
@@ -50,6 +86,7 @@
 		background: $color;
 	}
 }
+*/
 
 @mixin fieldset-variant($color) {
 	background-color: rgba($color,.075);

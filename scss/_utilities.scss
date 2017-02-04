@@ -2,6 +2,62 @@
  * mockingbird utilities.css 02/2017
  */
 
+// sizes
+// ----
+
+.mb-sm { }
+
+.mb-md { }
+
+.mb-lg { }
+
+.mb-fullwidth {
+	width: 100%;
+}
+
+// modifiers
+// ----
+
+.mb-outline {
+	background: transparent;
+	border: 1px solid $border-color;
+}
+
+.mb-responsive {
+	max-height: 100%;
+	max-width: 100%;
+}
+
+.mb-no-padding {
+	padding: 0 !important;
+}
+
+.mb-no-margin {
+	margin: 0 !important;
+}
+
+// text
+// ----
+
+.mb-text-center { text-align: center; }
+
+.mb-text-right { text-align: right; }
+
+.mb-text-left { text-align: left; }
+
+.mb-text-justify { text-align: justify; }
+
+.mb-text-wrap {
+	white-space: normal;
+	word-wrap: break-word;
+}
+
+.mb-text-overflow {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
 // toggle content
 // ----
 
@@ -33,20 +89,20 @@
 // img
 // ----
 
-.img-responsive {
+.mb-img-responsive {
 	max-height: 100%;
 	max-width: 100%;
 }
 
-.img-rounded {
+.mb-img-rounded {
 	border-radius: $border-radius-0;
 }
 
-.img-circle {
+.mb-img-circle {
 	border-radius: 50%;
 }
 
-.img-absolute {
+.mb-img-absolute {
 	position: absolute;
 	display: block;
 	max-width: 100%;
@@ -54,7 +110,7 @@
 	left: 0;
 }
 
-.img-parallax {
+.mb-img-parallax {
 	position: fixed;
 	display: block;
 	max-width: 100%;
@@ -65,7 +121,7 @@
 // special utilities
 // ----
 
-.copyright-note {
+.mb-copyright {
 	display: block;
 	color: $text-color-lighter;
 	text-align: center;

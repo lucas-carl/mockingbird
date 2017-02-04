@@ -2,33 +2,19 @@
  * mockingbird responsive-utilities.css 02/2017
  */
 
-.clearfix {
-	@include clearfix;
-}
+.mb-pull-right { float: right; }
 
-.center-block {
+.mb-pull-left { float: left; }
+
+.mb-clearfix { @include clearfix; }
+
+.mb-flex-center { @include flex-center; }
+
+.mb-vertical-center { @include vertical-center; }
+
+.mb-vertical-flex-center { @include vertical-flex-center; }
+
+.mb-center-block {
 	display: block;
 	margin: auto;
-}
-
-.right-block,
-.pull-right {
-	float: right;
-}
-
-.left-block,
-.pull-left {
-	float: left;
-}
-
-.flex-center {
-	@include flex-center;
-}
-
-.vertical-center {
-	@include vertical-center;
-}
-
-.vertical-flex-center {
-	@include vertical-flex-center;
 }

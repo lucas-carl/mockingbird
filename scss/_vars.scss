@@ -19,12 +19,6 @@ $gray-light: $gray-3;
 $gray-lighter: $gray-4;
 $gray-lightest: $gray-5;
 
-$brand-primary: #548fdb;
-$brand-success: #42d17f;
-$brand-info: #19b5fe;
-$brand-warning: #f7ca18;
-$brand-danger: #ef4836;
-
 $body-bg: #fff;
 
 $text-color: rgba(0,0,0,.8);
@@ -33,6 +27,28 @@ $text-color-lighter: rgba(0,0,0,.6);
 $text-color-contrast: #fff;
 
 $border-color: rgba(0,0,0,.15);
+
+$mb-colors: (
+  default: #fff,
+	dark: $gray,
+	light: $gray-lighter,
+	primary: #548fdb,
+	info: #19b5fe,
+	success: #42d17f,
+	warning: #f7ca18,
+	danger: #ef4836
+);
+
+$mb-text: (
+  default: $text-color-light,
+	dark: #fff,
+	light: $text-color,
+	primary: #fff,
+	info: #fff,
+	success: #fff,
+	warning: #fff,
+	danger: #fff
+);
 
 // font families
 // ----
@@ -81,29 +97,6 @@ $res-break-4: 600px;
 $res-break-5: 480px;
 $res-break-6: 360px;
 
-// buttons
-// ----
-
-$btn-default-color: $text-color-light;
-$btn-default-bg: $body-bg;
-
-$btn-primary-color: $text-color-contrast;
-$btn-primary-bg: $brand-primary;
-
-$btn-success-color: $text-color-contrast;
-$btn-success-bg: $brand-success;
-
-$btn-info-color: $text-color-contrast;
-$btn-info-bg: $brand-info;
-
-$btn-warning-color: $text-color-contrast;
-$btn-warning-bg: $brand-warning;
-
-$btn-danger-color: $text-color-contrast;
-$btn-danger-bg: $brand-danger;
-
-$btn-hover-base: #f2f2f2;
-
 // spacing
 // ----
 
@@ -138,7 +131,7 @@ $line-height-0: 1.6;
 $line-height-1: 1.25;
 $line-height-2: 1.75;
 
-$link-color: $brand-primary;
+$link-color: $mb-primary;
 
 $link-color-hover: darken($link-color, 15%);
 
