@@ -1,5 +1,5 @@
 /*!
- * mockingbird tables.css 01/2017
+ * mockingbird tables.css 02/2017
  */
 
 // basic styling
@@ -43,7 +43,7 @@ thead th {
 
 .table-striped {
   tbody tr:nth-of-type(odd) {
-    background-color: $gray-4;
+    background-color: $gray-lighter;
   }
 }
 
@@ -57,7 +57,7 @@ thead th {
 .table-hover {
   tbody tr {
     &:hover {
-      background-color: $gray-4;
+      background-color: $gray-lighter;
     }
   }
 }

@@ -2,6 +2,8 @@
  * mockingbird type.css 02/2017
  */
 
+@include mb-text;
+
 a {
 	color: $link-color;
 	text-decoration: none;
@@ -10,7 +12,6 @@ a {
 		color: $link-color-hover;
 		text-decoration: $link-hover-decoration;
 	}
-	@include mb-colors(true);
 }
 
 %hN {
@@ -23,7 +24,6 @@ a {
 		color: $text-color-lighter;
 		font-size: $font-size-0;
 	}
-	@include mb-colors(true);
 }
 
 @for $i from 1 through 6 {
@@ -49,7 +49,6 @@ h5 .sub-heading,
 
 p {
 	margin: $spacer-0 0;
-	@include mb-colors(true);
 }
 
 hr {

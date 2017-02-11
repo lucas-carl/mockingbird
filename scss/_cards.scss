@@ -1,5 +1,5 @@
 /*!
- * mockingbird cards.css 01/2017
+ * mockingbird cards.css 02/2017
  */
 
 .card {
@@ -15,6 +15,7 @@
 	:last-child {
 		margin-bottom: 0;
 	}
+	@include mb-cards;
 }
 
 .card-title {
@@ -40,32 +41,13 @@
 	width: 100%;
 }
 
-.card-borderless {
-	border: none;
-}
-
-// reset for callouts
-.callout,
-.card-callout {
-	border-left-color: $gray;
-}
-
-.card-primary { border-color: $mb-primary; }
-.card-success { border-color: $mb-success; }
-.card-info { border-color: $mb-info; }
-.card-warning { border-color: $mb-warning; }
-.card-danger { border-color: $mb-danger; }
-
 // callout
 // ----
 
-.callout,
-.card-callout {
+.callout {
 	@extend .card;
 	border-left-width: .5rem;
-	border-top-color: $border-color;
-	border-right-color: $border-color;
-	border-bottom-color: $border-color;
+	border-left-color: $gray;
 }
 
 // section
@@ -81,9 +63,4 @@ section,
 	@include clearfix;
 }
 
-.section-default { background: $body-bg; }
-.section-darker { background: $gray-darker; }
-.section-dark { background: $gray-dark; }
-.section-light { background: $gray-light; }
-.section-lighter { background: $gray-lighter; }
-.section-lightest { background: $gray-lightest; }
+@include mb-sections;

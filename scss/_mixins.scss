@@ -13,40 +13,75 @@
   }
 }
 
-@mixin mb-colors($is-text: false, $is-btn: false) {
+@mixin mb-buttons() {
 	@each $mb-color in map-keys($mb-colors) {
 		$color: map-get($mb-colors, #{$mb-color});
 		$text: map-get($mb-text, #{$mb-color});
 
-		@if $is-text {
-
-			&.mb-text-#{$mb-color} {
+		&.mb-#{$mb-color} {
+			background-color: $color;
+			color: $text;
+			&:hover,
+			&:focus {
+				//background-color: darken($color,5%);
+			}
+			&.mb-outline {
 				color: $color;
+				border-color: $color;
 			}
-
-		} @else {
-
-			&.mb-#{$mb-color} {
-				@if $is-btn {
-					background-color: $color;
-					color: $text;
-					&:hover,
-					&:focus {
-						background-color: darken($color,5%);
-					}
-					&.mb-outline {
-						color: $color;
-						border-color: $color;
-					}
-				} @else {
-					color: $color;
-					border-color: $color;
-				}
-			}
-
 		}
 	}
 }
+
+@mixin mb-cards() {
+	@each $mb-color in map-keys($mb-colors) {
+		$color: map-get($mb-colors, #{$mb-color});
+
+		&.mb-#{$mb-color} {
+			border-color: $color;
+			&.callout {
+				border-color: $border-color $border-color $border-color $color;
+			}
+		}
+	}
+}
+
+@mixin mb-sections() {
+	@each $mb-color in map-keys($mb-colors) {
+		$color: map-get($mb-colors, #{$mb-color});
+		$text: map-get($mb-text, #{$mb-color});
+
+		.mb-section-#{$mb-color} {
+			background-color: $color;
+			color: $text;
+		}
+	}
+}
+
+@mixin mb-text() {
+	@each $mb-color in map-keys($mb-colors) {
+		$color: map-get($mb-colors, #{$mb-color});
+
+		&.mb-text-#{$mb-color} {
+			color: $color;
+		}
+	}
+}
+
+@mixin mb-fieldset() {
+	@each $mb-color in map-keys($mb-colors) {
+		$color: map-get($mb-colors, #{$mb-color});
+
+		&.mb-#{$mb-color} {
+			//background-color: rgba($color,.075);
+			border-color: $color;
+			legend {
+				color: $color;
+			}
+		}
+	}
+}
+
 
 /*
 @mixin button-variant($color, $bg, $invert: "") {
