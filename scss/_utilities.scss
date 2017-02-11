@@ -36,6 +36,23 @@
 	margin: 0 !important;
 }
 
+.mb-no-border {
+	border: none !important;
+}
+
+.mb-absolute {
+	position: absolute;
+	display: block;
+	max-width: 100%;
+	top: 0;
+	left: 0;
+}
+
+.mb-fixed {
+	@extend .mb-absolute;
+	position: fixed;
+}
+
 // text
 // ----
 
@@ -89,28 +106,15 @@
 // img
 // ----
 
-.mb-img-responsive {
-	max-height: 100%;
-	max-width: 100%;
-}
-
-.mb-img-rounded {
+.img-rounded {
 	border-radius: $border-radius-0;
 }
 
-.mb-img-circle {
+.img-circle {
 	border-radius: 50%;
 }
 
-.mb-img-absolute {
-	position: absolute;
-	display: block;
-	max-width: 100%;
-	top: 0;
-	left: 0;
-}
-
-.mb-img-parallax {
+.img-parallax {
 	position: fixed;
 	display: block;
 	max-width: 100%;
