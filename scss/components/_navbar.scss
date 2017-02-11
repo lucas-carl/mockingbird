@@ -1,31 +1,3 @@
-/*!
- * mockingbird reset.css 02/2017
- */
-
-ol,
-ul,
-dl {
-	margin-top: 0;
-	margin-bottom: $spacer-0;
-}
-
-dt {
-	font-weight: bold;
-}
-
-dd {
-	margin: $spacer-1 0;
-	margin-left: $spacer-0;
-}
-
-li {
-	margin: $spacer-1 0;
-}
-
-ul {
-	list-style: circle;
-}
-
 .navbar {
 	width: 100%;
 	overflow: hidden;
