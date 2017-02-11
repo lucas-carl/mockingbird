@@ -1,13 +1,15 @@
 /*!
- * mockingbird buttons.css 01/2017
+ * mockingbird buttons.css 02/2017
  */
 
 // base styling
 // ----
 
 .btn {
+	background-color: $white;
 	background-image: none;
 	display: inline-block !important;
+	color: $text-color-light;
 	font-weight: normal;
 	text-align: center;
 	line-height: normal;
@@ -16,11 +18,14 @@
 	white-space: nowrap;
 	margin: 0;
 	border-radius: $border-radius-2;
+	border: 1px solid $border-color;
 	margin-top: 0;
 	margin-bottom: 1rem;
 	transition: all .25s;
 	&:hover,
 	&:focus {
+		background-color: darken($white,5%);
+		color: $text-color-light;
 		text-decoration: none;
 		outline: none;
 	}
@@ -84,6 +89,8 @@
 		&.btn-lg:last-child { border-radius: 0 $border-radius-3 $border-radius-3 0; }
 		&.active {
 			background: $mb-primary;
+			color: #fff;
+			transform: translateY(0);
 		}
 	}
 }

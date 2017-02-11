@@ -22,12 +22,12 @@ $border-color: rgba(0,0,0,.15);
 
 $mb-colors: (
   default: $body-bg,
-	gray: $gray,
+	dark: $gray,
 	light: $gray-light,
 	lighter: $gray-lighter,
 	lightest: $gray-lightest,
 	primary: #548fdb,
-	secondary: $gray-light,
+	secondary: #eee,
 	success: #42d17f,
 	warning: #f7ca18,
 	danger: #ef4836
@@ -35,12 +35,12 @@ $mb-colors: (
 
 $mb-text: (
   default: $text-color-light,
-	gray: $text-color,
+	dark: #fff,
 	light: $text-color-light,
 	lighter: $text-color-light,
 	lightest: $text-color-light,
 	primary: #fff,
-	secondary: $text-color,
+	secondary: $text-color-light,
 	success: #fff,
 	warning: #fff,
 	danger: #fff

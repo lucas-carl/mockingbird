@@ -23,7 +23,7 @@
 			color: $text;
 			&:hover,
 			&:focus {
-				//background-color: darken($color,5%);
+				background-color: darken($color,5%);
 			}
 			&.mb-outline {
 				color: $color;
