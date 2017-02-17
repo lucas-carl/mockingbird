@@ -1,45 +1,56 @@
 /*!
- * mockingbird grid.css 12/2016
+ * mockingbird grid.css 02/2017
  */
 
-.container,
-.container-sm,
-.container-xs,
-.container-lg,
-.container-xl,
-.container-fluid {
+%container {
 	position: relative;
 	display: block;
+	padding: 0 $spacer-5;
 	margin: auto;
 }
 
-.container-xl {
-	max-width: $res-break-1;
-	padding: 0 $spacer-5;
-}
-
-.container-lg {
-	max-width: $res-break-2;
-	padding: 0 $spacer-5;
+@each $size in map-keys($container-sizes) {
+	.container-#{$size} {
+		@extend %container;
+		max-width: map-get($container-sizes, #{$size});
+	}
 }
 
 .container {
-	max-width: $res-break-3;
-	padding: 0 $spacer-5;
+	@extend .container-md;
 }
 
-.container-sm {
-	max-width: $res-break-4;
-	padding: 0 $spacer-5;
+%column {
+	position: relative;
+	float: left;
+	min-height: 1px;
+	padding: 0 ($grid-gutter / 2);
 }
 
-.container-xs {
-	max-width: $res-break-5;
-	padding: 0 $spacer-5;
+@each $breakpoint in map-keys($grid-breakpoints) {
+	@for $i from 1 through $grid-columns {
+		.col-#{$breakpoint}-#{$i} {
+
+			@extend %column;
+			width: percentage($i / $grid-columns);
+
+			&:first-child {
+				padding-left: 0;
+			}
+
+			&:last-child {
+				padding-right: 0;
+			}
+
+			@media (max-width: map-get($grid-breakpoints, #{$breakpoint})) {
+				width: 100%;
+				padding: ($grid-gutter / 2) 0;
+			}
+
+		}
+	}
 }
 
 .row {
 	@include clearfix;
 }
-
-@include make-columns();

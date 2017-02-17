@@ -70,13 +70,6 @@ $font-size-5: 1.7rem;
 $font-size-6: 2.15rem;
 $font-size-7: 2.6rem;
 
-$font-size-h1: $font-size-7;
-$font-size-h2: $font-size-6;
-$font-size-h3: $font-size-5;
-$font-size-h4: $font-size-4;
-$font-size-h5: $font-size-0;
-$font-size-h6: $font-size-3;
-
 $heading-sizes: (
   h1: $font-size-7,
 	h2: $font-size-6,
@@ -88,6 +81,15 @@ $heading-sizes: (
 
 // responsive breakpoints
 // ----
+
+$container-sizes: (
+	xs: 480px,
+	sm: 600px,
+	md: 720px,
+	lg: 960px,
+	xl: 1200px,
+	fluid: 100%
+);
 
 $res-break-1: 1200px;
 $res-break-2: 960px;
@@ -116,11 +118,12 @@ $grid-columns: 12;
 $grid-gutter: $spacer-0;
 
 $grid-breakpoints: (
-  xs: 0,
-  sm: $res-break-4,
-  md: $res-break-3,
-  lg: $res-break-2,
-  xl: $res-break-1
+	xs: 480px,
+	sm: 600px,
+	md: 720px,
+	lg: 960px,
+	xl: 1200px,
+	fluid: 0
 );
 
 // miscellaneous
