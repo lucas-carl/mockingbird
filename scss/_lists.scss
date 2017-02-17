@@ -1,12 +1,16 @@
 /*!
- * mockingbird reset.css 02/2017
+ * mockingbird lists.css 02/2017
  */
 
 ol,
 ul,
 dl {
-	margin-top: 0;
-	margin-bottom: $spacer-0;
+	padding-left: $spacer-6;
+	margin: $spacer-0 0;
+}
+
+dl {
+	padding: 0;
 }
 
 dt {
@@ -14,8 +18,9 @@ dt {
 }
 
 dd {
-	margin: $spacer-1 0;
-	margin-left: $spacer-0;
+	padding-left: $spacer-0;
+	margin: 0;
+	margin-top: $spacer-1;
 }
 
 li {
@@ -23,5 +28,15 @@ li {
 }
 
 ul {
+	list-style: disc;
+}
+
+ul ul,
+ol ol,
+dl dl {
+	padding-left: $spacer-6;
+}
+
+ul ul {
 	list-style: circle;
 }
