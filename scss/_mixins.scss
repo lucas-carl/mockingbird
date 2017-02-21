@@ -59,8 +59,8 @@
 }
 
 @mixin mb-text() {
-	@each $mb-color in map-keys($mb-colors) {
-		$color: map-get($mb-colors, #{$mb-color});
+	@each $mb-color in map-keys($mb-text) {
+		$color: map-get($mb-text, #{$mb-color});
 
 		&.mb-text-#{$mb-color} {
 			color: $color;
