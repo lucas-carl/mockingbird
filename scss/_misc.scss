@@ -16,8 +16,10 @@ code {
 	background-color: $code-bg;
 	color: $code-color;
 	font-size: $font-size-3;
+	font-weight: normal;
 	vertical-align: middle;
 	padding: $spacer-2 $spacer-3;
+	margin: 0 $spacer-3;
 	border-radius: $border-radius-1;
 }
 
