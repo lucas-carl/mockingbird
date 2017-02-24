@@ -2,8 +2,6 @@
  * mockingbird type.css 02/2017
  */
 
-@include mb-text;
-
 // headings
 // ----
 
@@ -118,16 +116,6 @@ blockquote {
 .font-fam-serif { font-family: $font-fam-serif; }
 
 .font-fam-monospace { font-family: $font-fam-monospace; }
-
-// color variants
-// ----
-
-.text-muted {
-	color: $text-color-lighter;
-	a {
-		color: $text-color-light;
-	}
-}
 
 // arrow links
 // ----

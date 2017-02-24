@@ -5,12 +5,6 @@
 // sizes
 // ----
 
-.mb-sm { }
-
-.mb-md { }
-
-.mb-lg { }
-
 .mb-fullwidth {
 	width: 100%;
 }
@@ -55,6 +49,15 @@
 
 // text
 // ----
+
+@include mb-text;
+
+.mb-text-muted {
+	color: $text-color-lighter !important;
+	a {
+		color: $text-color-light !important;
+	}
+}
 
 .mb-text-center { text-align: center; }
 
