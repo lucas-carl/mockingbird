@@ -1,5 +1,5 @@
 /*!
- * mockingbird utilities.css 02/2017
+ * mockingbird utilities.css 03/2017
  */
 
 // sizes
@@ -59,13 +59,13 @@
 	}
 }
 
-.mb-text-center { text-align: center; }
+.mb-text-center { text-align: center !important; }
 
-.mb-text-right { text-align: right; }
+.mb-text-right { text-align: right !important; }
 
-.mb-text-left { text-align: left; }
+.mb-text-left { text-align: left !important; }
 
-.mb-text-justify { text-align: justify; }
+.mb-text-justify { text-align: justify !important; }
 
 .mb-text-wrap {
 	white-space: normal;
