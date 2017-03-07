@@ -1,5 +1,5 @@
 /*!
- * mockingbird responsive-utilities.css 02/2017
+ * mockingbird responsive-utilities.css 03/2017
  */
 
 .mb-pull-right { float: right; }
@@ -17,4 +17,24 @@
 .mb-center-block {
 	display: block;
 	margin: auto;
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+	.hidden-#{$breakpoint}-down {
+
+		@media (max-width: map-get($grid-breakpoints, #{$breakpoint})) {
+			display: none;
+		}
+
+	}
+}
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+	.hidden-#{$breakpoint}-up {
+
+		@media (min-width: map-get($grid-breakpoints, #{$breakpoint})) {
+			display: none;
+		}
+
+	}
 }
