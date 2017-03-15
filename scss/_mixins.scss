@@ -54,6 +54,9 @@
 		.mb-section-#{$mb-color} {
 			background-color: $color;
 			color: $text !important;
+			a {
+				color: $text !important;
+			}
 		}
 	}
 }
@@ -68,7 +71,20 @@
 	}
 }
 
-@mixin mb-fieldset() {
+@mixin mb-inputs() {
+	@each $mb-color in map-keys($mb-colors) {
+		$color: map-get($mb-colors, #{$mb-color});
+
+		&.mb-#{$mb-color} {
+			border-color: $color;
+			&:focus {
+				box-shadow: inset 0 0 2px rgba($color,.75);
+			}
+		}
+	}
+}
+
+@mixin mb-fieldsets() {
 	@each $mb-color in map-keys($mb-colors) {
 		$color: map-get($mb-colors, #{$mb-color});
 
