@@ -1,5 +1,5 @@
 /*!
- * mockingbird mixins.css 02/2017
+ * mockingbird mixins.css 03/2017
  */
 
 @mixin clearfix() {
@@ -29,6 +29,10 @@
 				color: $color !important;
 				border-color: $color;
 			}
+			&.link-arrow::after,
+			.link-arrow::after {
+				background: $text !important;
+			}
 		}
 	}
 }
@@ -52,10 +56,15 @@
 		$text: map-get($mb-text, #{$mb-color});
 
 		.mb-section-#{$mb-color} {
+			@extend section;
+
 			background-color: $color;
-			color: $text !important;
-			a {
+			&, a {
 				color: $text !important;
+			}
+			&.link-arrow::after,
+			.link-arrow::after {
+				background: $text !important;
 			}
 		}
 	}
@@ -66,7 +75,13 @@
 		$color: map-get($mb-colors, #{$mb-color});
 
 		&.mb-text-#{$mb-color} {
-			color: $color !important;
+			&, a {
+				color: $color !important;
+			}
+			&.link-arrow::after,
+			.link-arrow::after {
+				background: $color !important;
+			}
 		}
 	}
 }
