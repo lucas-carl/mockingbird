@@ -54,12 +54,9 @@
 // ----
 
 section,
-.section,
-.card-section {
+.section {
 	position: relative;
 	display: block;
-	height: auto;
-	width: 100%;
 	@include clearfix;
 }
 
