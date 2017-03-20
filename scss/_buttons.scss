@@ -2,9 +2,6 @@
  * mockingbird buttons.css 02/2017
  */
 
-// base styling
-// ----
-
 .btn {
 	background-color: $white;
 	background-image: none;
@@ -43,9 +40,6 @@
 	@include mb-buttons;
 }
 
-// sizes
-// ----
-
 .btn,
 .btn-md {
 	font-size: $font-size-3;
@@ -64,9 +58,6 @@
 	padding: $spacer-4 $spacer-7 !important;
 	border-radius: $border-radius-3;
 }
-
-// button groups
-// ----
 
 .btn-group {
 	@include clearfix;

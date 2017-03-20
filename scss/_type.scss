@@ -2,9 +2,6 @@
  * mockingbird type.css 02/2017
  */
 
-// headings
-// ----
-
 %hN {
 	font-weight: bold;
 	margin: 1em 0;
@@ -110,15 +107,9 @@ blockquote {
 	}
 }
 
-// font families
-// ----
-
 .font-fam-serif { font-family: $font-fam-serif; }
 
 .font-fam-monospace { font-family: $font-fam-monospace; }
-
-// arrow links
-// ----
 
 .link-arrow {
 	text-decoration: none !important;

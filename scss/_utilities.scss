@@ -2,15 +2,9 @@
  * mockingbird utilities.css 03/2017
  */
 
-// sizes
-// ----
-
 .mb-fullwidth {
 	width: 100% !important;
 }
-
-// modifiers
-// ----
 
 .mb-outline {
 	background: transparent !important;
@@ -47,9 +41,6 @@
 	position: fixed;
 }
 
-// text
-// ----
-
 @include mb-text;
 
 .mb-text-muted {
@@ -82,9 +73,6 @@
 	text-decoration: underline;
 }
 
-// toggle content
-// ----
-
 .hide,
 .hidden,
 [hidden] {
@@ -110,9 +98,6 @@
   border: 0;
 }
 
-// img
-// ----
-
 .img-rounded {
 	border-radius: $border-radius-0;
 }
@@ -128,9 +113,6 @@
 	top: 0;
 	left: 0;
 }
-
-// special utilities
-// ----
 
 .mb-copyright {
 	display: block;

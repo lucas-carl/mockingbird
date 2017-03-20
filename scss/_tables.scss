@@ -2,9 +2,6 @@
  * mockingbird tables.css 03/2017
  */
 
-// basic styling
-// ----
-
 table,
 .table {
 	width: 100%;
@@ -30,9 +27,6 @@ th {
 	font-weight: bold;
 	border-bottom: 1px solid $border-color;
 }
-
-// variants
-// ----
 
 .table-striped {
   tbody tr:nth-of-type(odd) {

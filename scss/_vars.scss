@@ -2,9 +2,6 @@
  * mockingbird vars.css 02/2017
  */
 
-// colors
-// ----
-
 $gray-darker: #334;
 $gray-dark: #445;
 $gray: #667;
@@ -49,8 +46,6 @@ $mb-text: (
 $mb-primary: map-get($mb-colors,primary);
 $mb-secondary: map-get($mb-colors,secondary);
 
-// font families
-// ----
 
 $font-fam-sans-serif: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-fam-serif: Georgia, "Times New Roman", Times, serif;
@@ -58,8 +53,6 @@ $font-fam-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
 
 $font-fam-base: $font-fam-sans-serif;
 
-// font sizes
-// ----
 
 $font-size-0: 1rem;
 $font-size-1: 0.5rem;
@@ -79,8 +72,6 @@ $heading-sizes: (
 	h6: $font-size-3
 );
 
-// responsive breakpoints
-// ----
 
 $container-sizes: (
 	xs: 480px,
@@ -98,8 +89,6 @@ $res-break-4: 600px;
 $res-break-5: 480px;
 $res-break-6: 360px;
 
-// spacing
-// ----
 
 $spacer-0: 1rem;
 $spacer-1: .25rem;
@@ -111,8 +100,6 @@ $spacer-6: 1.5rem;
 $spacer-7: 2rem;
 $spacer-8: 3rem;
 
-// grid
-// ----
 
 $grid-columns: 12;
 $grid-gutter: $spacer-0;
@@ -126,8 +113,6 @@ $grid-breakpoints: (
 	fluid: 0
 );
 
-// miscellaneous
-// ----
 
 $line-height-0: 1.6;
 $line-height-1: 1.25;

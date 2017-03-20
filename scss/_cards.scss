@@ -41,17 +41,11 @@
 	width: 100%;
 }
 
-// callout
-// ----
-
 .callout {
 	@extend .card;
 	border-left-width: .5rem;
 	border-left-color: $gray;
 }
-
-// section
-// ----
 
 section,
 .section {
