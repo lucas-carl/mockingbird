@@ -1,5 +1,5 @@
 /*!
- * mockingbird reset.css 02/2017
+ * mockingbird reset.css 03/2017
  */
 
 :root {
@@ -187,4 +187,15 @@ ul ul,
 ol ul,
 ul ol {
 	margin-bottom: 0;
+}
+
+@mixin clearfix() {
+	&::before,
+  &::after {
+    content: '';
+    display: table;
+  }
+  &::after {
+    clear: both;
+  }
 }
