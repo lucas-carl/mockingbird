@@ -17,7 +17,7 @@ code {
 	vertical-align: middle;
 	padding: $spacer-2 $spacer-3;
 	margin: 0 $spacer-3;
-	border-radius: $border-radius-1;
+	border-radius: $border-radius;
 }
 
 pre {
@@ -29,7 +29,7 @@ pre {
 	white-space: pre-wrap;
 	padding: $spacer-5 $spacer-3;
 	margin: $spacer-0 0;
-	border-radius: $border-radius-1;
+	border-radius: $border-radius;
 	border: 1px solid $border-color;
 	overflow: auto;
   code {

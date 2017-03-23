@@ -1,5 +1,5 @@
 /*!
- * mockingbird vars.css 02/2017
+ * mockingbird vars.css 03/2017
  */
 
 $gray-darker: #334;
@@ -124,11 +124,7 @@ $link-color-hover: darken($link-color, 15%);
 
 $link-hover-decoration: underline;
 
-$border-radius-0: .25rem;
-$border-radius-1: .15rem;
-$border-radius-2: .2rem;
-$border-radius-3: .3rem;
-$border-radius-4: .5rem;
+$border-radius: .25em;
 
 $code-color: $text-color;
 $code-bg: $gray-lighter;
