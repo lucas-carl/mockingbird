@@ -7,6 +7,21 @@ table,
 	width: 100%;
 	max-width: 100%;
 	margin-bottom: $spacer-0;
+	&.table-striped {
+	  tbody tr:nth-of-type(odd) {
+	    background-color: $gray-lighter;
+	  }
+	}
+	&.table-hover {
+	  tr:hover {
+			background-color: $gray-lighter;
+		}
+	}
+	&.mb-sm {
+	  th, td {
+	    padding: $spacer-3;
+	  }
+	}
 }
 
 tr:not(:first-child) {
@@ -26,23 +41,4 @@ th {
 	background-color: $gray-lightest;
 	font-weight: bold;
 	border-bottom: 1px solid $border-color;
-}
-
-.table-striped {
-  tbody tr:nth-of-type(odd) {
-    background-color: $gray-lighter;
-  }
-}
-
-.table-sm {
-  th,
-  td {
-    padding: $spacer-3;
-  }
-}
-
-.table-hover {
-  tr:hover {
-		background-color: $gray-lighter;
-	}
 }
