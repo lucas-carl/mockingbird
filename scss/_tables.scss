@@ -2,11 +2,11 @@
  * mockingbird tables.css 03/2017
  */
 
-table,
-.table {
+table {
 	width: 100%;
 	max-width: 100%;
 	margin-bottom: $spacer-0;
+	border-collapse: collapse;
 	&.table-striped {
 	  tbody tr:nth-of-type(odd) {
 	    background-color: $gray-lighter;

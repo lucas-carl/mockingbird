@@ -22,7 +22,8 @@
 	width: 100% !important;
 }
 
-.mb-outline {
+.mb-outline,
+.mb-bordered {
 	background: transparent !important;
 	border: 1px solid $border-color;
 }
