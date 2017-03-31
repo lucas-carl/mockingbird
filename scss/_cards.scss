@@ -20,7 +20,9 @@
 		$color: map-get($mb-colors, #{$mb-color});
 		$text: map-get($mb-text, #{$mb-color});
 
-		.mb-section-#{$mb-color} {
+		.mb-section-#{$mb-color},
+		.section.mb-#{$mb-color},
+		section.mb-#{$mb-color} {
 			@extend section;
 
 			background-color: $color;
@@ -45,6 +47,9 @@
 	border-radius: $border-radius;
 	border: 1px solid $border-color;
 	overflow: hidden;
+	:first-child {
+		margin-top: 0;
+	}
 	:last-child {
 		margin-bottom: 0;
 	}
@@ -52,15 +57,14 @@
 }
 
 .card-title {
+	margin-top: 0;
 	margin-bottom: $spacer-0;
 	& > * {
 		margin: 0 !important;
 	}
-}
-
-.card-title-sm {
-	@extend .card-title;
-	margin-bottom: $spacer-5;
+	&.mb-sm {
+		margin-bottom: $spacer-5;
+	}
 }
 
 .card-block {
