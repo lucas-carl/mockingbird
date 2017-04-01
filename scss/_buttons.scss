@@ -41,7 +41,7 @@
 	border-radius: $border-radius;
 	border: 1px solid $border-color;
 	margin-top: 0;
-	margin-bottom: 1rem;
+	margin-bottom: 1em;
 	transition: all .25s;
 	&:hover,
 	&:focus {
@@ -54,7 +54,7 @@
 	&.active {
 		background-image: none;
 		outline: none;
-		transform: translateY(.1rem);
+		transform: translateY($spacer-1);
 	}
 	&[disabled],
 	&.disabled {
