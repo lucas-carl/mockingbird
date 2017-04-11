@@ -18,10 +18,6 @@
 	}
 }
 
-.mb-fullwidth {
-	width: 100% !important;
-}
-
 .mb-outline,
 .mb-bordered {
 	background: transparent !important;
@@ -33,17 +29,13 @@
 	max-width: 100%;
 }
 
-.mb-no-padding {
-	padding: 0 !important;
-}
+.mb-fullwidth { width: 100% !important; }
 
-.mb-no-margin {
-	margin: 0 !important;
-}
+.mb-no-padding { padding: 0 !important; }
 
-.mb-no-border {
-	border: none !important;
-}
+.mb-no-margin { margin: 0 !important; }
+
+.mb-no-border { border: none !important; }
 
 .mb-absolute {
 	position: absolute;
@@ -86,9 +78,15 @@
 	white-space: nowrap;
 }
 
-.mb-text-underline {
-	text-decoration: underline;
-}
+.mb-text-underline { text-decoration: underline; }
+
+.mb-text-through { text-decoration: line-through; }
+
+.mb-text-bold { font-weight: bold; }
+
+.mb-text-bolder { font-weight: bolder; }
+
+.mb-text-normal { font-weight: normal; }
 
 .hide,
 .hidden,
