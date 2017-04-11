@@ -2,35 +2,25 @@
  * mockingbird responsive-utilities.css 03/2017
  */
 
-@mixin vertical-center {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
-
-@mixin vertical-flex-center {
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-}
-
 @mixin flex-center {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.mb-pull-right { float: right; }
+.mb-pull-right,
+.pull-right {
+	float: right;
+}
 
-.mb-pull-left { float: left; }
+.mb-pull-left,
+.pull-left {
+	float: left;
+}
 
 .mb-clearfix { @include clearfix; }
 
 .mb-flex-center { @include flex-center; }
-
-.mb-vertical-center { @include vertical-center; }
-
-.mb-vertical-flex-center { @include vertical-flex-center; }
 
 .mb-center {
 	display: block;
