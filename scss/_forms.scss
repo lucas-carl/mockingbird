@@ -1,5 +1,5 @@
 /*!
- * mockingbird forms.css 03/2017
+ * mockingbird forms.css 04/2017
  */
 
 @mixin mb-inputs() {
@@ -69,7 +69,8 @@ input[type="datetime-local"] {
 	white-space: nowrap;
 	margin: 0;
 	font-size: $font-size-3;
-	padding: $spacer-2;
+	padding-left: $spacer-4;
+	padding-right: $spacer-4;
 	border-radius: $border-radius;
 	border: 1px solid $border-color;
 	&:focus {
@@ -104,21 +105,6 @@ select {
 	line-height: $line-height-2;
 	border-color: $border-color;
 	padding: 0 $spacer-0;
-}
-
-.input-group {
-	display: block;
-	color: $text-color-lighter;
-	margin-top: 0;
-	margin-bottom: $spacer-6 !important;
-	input, button, .btn {
-		margin-bottom: 0;
-	}
-	label {
-		display: block;
-		font-size: $font-size-3;
-		margin-bottom: $spacer-3;
-	}
 }
 
 input[type="checkbox"],
