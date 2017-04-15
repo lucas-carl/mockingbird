@@ -1,0 +1,51 @@
+.form-group {
+	display: block;
+	color: $text-color-lighter;
+	margin-top: 0;
+	margin-bottom: $spacer-6;
+
+	input, button, .btn {
+		margin-bottom: 0;
+	}
+
+	label {
+		display: block;
+		font-size: $font-size-3;
+		margin-bottom: $spacer-3;
+	}
+}
+
+.input-group,
+.btn-group {
+	@include clearfix;
+
+	input, button, .btn {
+		display: block;
+		float: left;
+		border-radius: 0;
+		border-collapse: collapse;
+
+		&:first-child {
+			border-radius: $border-radius 0 0 $border-radius;
+			border-right: 0;
+		}
+
+		&:last-child {
+			border-radius: 0 $border-radius $border-radius 0;
+		}
+
+		&:not(:first-child):not(:nth-child(2)) {
+			border-left: 0;
+		}
+
+		&.active {
+			background: $mb-primary;
+			color: #fff;
+			transform: translateY(0);
+		}
+
+		&:active {
+			transform: translateY(0);
+		}
+	}
+}
