@@ -1,5 +1,5 @@
 /*!
- * mockingbird cards.css 03/2017
+ * mockingbird cards.css 04/2017
  */
 
 @mixin mb-cards() {
@@ -47,12 +47,15 @@
 	border-radius: $border-radius;
 	border: 1px solid $border-color;
 	overflow: hidden;
-	:first-child {
+
+	> :first-child {
 		margin-top: 0;
 	}
-	:last-child {
+
+	> :last-child {
 		margin-bottom: 0;
 	}
+
 	@include mb-cards;
 }
 
