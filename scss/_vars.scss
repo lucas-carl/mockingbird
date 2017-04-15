@@ -1,5 +1,5 @@
 /*!
- * mockingbird vars.css 03/2017
+ * mockingbird vars.css 04/2017
  */
 
 $gray-darker: #334;
@@ -105,11 +105,10 @@ $grid-gutter: $spacer-0;
 
 $grid-breakpoints: (
 	xs: 480px,
-	sm: 600px,
+	sm: 576px,
 	md: 720px,
 	lg: 960px,
-	xl: 1200px,
-	fluid: 0
+	xl: 1200px
 );
 
 

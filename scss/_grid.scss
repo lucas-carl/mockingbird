@@ -1,5 +1,5 @@
 /*!
- * mockingbird grid.css 03/2017
+ * mockingbird grid.css 04/2017
  */
 
 %container {
@@ -24,7 +24,9 @@
 	position: relative;
 	float: left;
 	min-height: 1px;
-	padding: 0 ($grid-gutter / 2);
+	width: 100%;
+	padding: ($grid-gutter / 2) 0;
+
 	&:first-child {
 		padding-left: 0;
 	}
@@ -40,11 +42,10 @@
 
 		.col-#{$breakpoint}-#{$i} {
 			@extend %column;
-			width: percentage($i / $grid-columns);
 
-			@media (max-width: map-get($grid-breakpoints, #{$breakpoint})) {
-				width: 100%;
-				padding: ($grid-gutter / 2) 0;
+			@media (min-width: map-get($grid-breakpoints, #{$breakpoint})) {
+				width: percentage($i / $grid-columns);
+				padding: 0 ($grid-gutter / 2);
 			}
 		}
 
@@ -53,6 +54,7 @@
 	.col-#{$i} {
 		@extend %column;
 		width: percentage($i / $grid-columns);
+		padding: 0 ($grid-gutter / 2);
 	}
 
 }

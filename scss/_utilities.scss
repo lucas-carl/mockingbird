@@ -1,5 +1,5 @@
 /*!
- * mockingbird utilities.css 03/2017
+ * mockingbird utilities.css 04/2017
  */
 
 @mixin mb-text() {
@@ -24,31 +24,11 @@
 	border: 1px solid $border-color;
 }
 
-.mb-responsive {
-	max-height: 100%;
-	max-width: 100%;
-}
-
-.mb-fullwidth { width: 100% !important; }
-
 .mb-no-padding { padding: 0 !important; }
 
 .mb-no-margin { margin: 0 !important; }
 
 .mb-no-border { border: none !important; }
-
-.mb-absolute {
-	position: absolute;
-	display: block;
-	max-width: 100%;
-	top: 0;
-	left: 0;
-}
-
-.mb-fixed {
-	@extend .mb-absolute;
-	position: fixed;
-}
 
 @include mb-text;
 
