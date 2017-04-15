@@ -17,6 +17,12 @@
 			&.mb-outline {
 				color: $color !important;
 				border-color: $color;
+
+				&:hover,
+				&:focus {
+					color: $text !important;
+					background-color: $color !important;
+				}
 			}
 			&.link-arrow::after,
 			.link-arrow::after {
