@@ -1,6 +1,6 @@
 {
   "name": "mockingbird-sass",
-  "version": "0.9.5-alpha",
+  "version": "0.9.5",
   "description": "A front-end framework for responsive layouts and easy web development.",
   "repository": {
     "type": "git",
