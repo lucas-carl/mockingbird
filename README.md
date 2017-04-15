@@ -1,5 +1,5 @@
-[![repository on npm](https://img.shields.io/badge/npm-v0.9.4--alpha-blue.svg)](https://www.npmjs.com/package/mockingbird-sass)
-[![download v0.9.4-alpha](https://img.shields.io/badge/download-v0.9.4--alpha-brightgreen.svg)](https://mockingbird.lucascarl.com/download/#v0.9.4)
+[![repository on npm](https://img.shields.io/badge/npm-v0.9.5--alpha-blue.svg)](https://www.npmjs.com/package/mockingbird-sass)
+[![download v0.9.5-alpha](https://img.shields.io/badge/download-v0.9.5--alpha-brightgreen.svg)](https://mockingbird.lucascarl.com/download/#v0.9.5)
 [![download latest version](https://img.shields.io/badge/download-latest-yellow.svg)](https://mockingbird.lucascarl.com/download/#latest)
 
 # [Mockingbird](https://mockingbird.lucascarl.com)
