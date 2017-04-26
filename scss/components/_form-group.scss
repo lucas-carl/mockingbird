@@ -19,7 +19,7 @@
 .btn-group {
 	@include clearfix;
 
-	input, button, .btn {
+	input, select, button, .btn {
 		display: block;
 		float: left;
 		border-radius: 0;
