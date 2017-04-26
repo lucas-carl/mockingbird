@@ -4,35 +4,38 @@
 
 @mixin mb-cards() {
 	@each $mb-color in map-keys($mb-colors) {
+
 		$color: map-get($mb-colors, #{$mb-color});
 
 		&.mb-#{$mb-color} {
 			border-color: $color;
+
 			&.callout {
 				border-color: $border-color $border-color $border-color $color;
 			}
 		}
+		
 	}
 }
 
-@mixin mb-sections() {
-	@each $mb-color in map-keys($mb-colors) {
-		$color: map-get($mb-colors, #{$mb-color});
-		$text: map-get($mb-text, #{$mb-color});
+@each $mb-color in map-keys($mb-colors) {
+	$color: map-get($mb-colors, #{$mb-color});
+	$text: map-get($mb-text, #{$mb-color});
 
-		.mb-section-#{$mb-color},
-		.section.mb-#{$mb-color},
-		section.mb-#{$mb-color} {
-			@extend section;
+	.mb-section-#{$mb-color},
+	.section.mb-#{$mb-color},
+	section.mb-#{$mb-color} {
+		@extend section;
 
-			background-color: $color;
-			&, a {
-				color: $text !important;
-			}
-			&.link-arrow::after,
-			.link-arrow::after {
-				background: $text !important;
-			}
+		background-color: $color;
+
+		&, a {
+			color: $text !important;
+		}
+
+		&.link-arrow::after,
+		.link-arrow::after {
+			background: $text !important;
 		}
 	}
 }
@@ -62,9 +65,11 @@
 .card-title {
 	margin-top: 0;
 	margin-bottom: $spacer-0;
+
 	& > * {
 		margin: 0 !important;
 	}
+
 	&.mb-sm {
 		margin-bottom: $spacer-5;
 	}
@@ -72,6 +77,7 @@
 
 .card-block {
 	padding: $spacer-0;
+
 	@include clearfix;
 }
 
@@ -83,6 +89,7 @@
 
 .callout {
 	@extend .card;
+
 	border-left-width: .5rem;
 	border-left-color: $gray;
 }
@@ -91,7 +98,6 @@ section,
 .section {
 	position: relative;
 	display: block;
+
 	@include clearfix;
 }
-
-@include mb-sections;

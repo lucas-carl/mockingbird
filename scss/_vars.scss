@@ -9,13 +9,14 @@ $gray-light: #e1e1e3;
 $gray-lighter: #f5f5f7;
 $gray-lightest: #fbfbfd;
 $white: #fff;
+$black: #000;
 
 $body-bg: $white;
 
-$text-color: rgba(0,0,0,.8);
-$text-color-light: rgba(0,0,0,.7);
-$text-color-lighter: rgba(0,0,0,.6);
-$border-color: rgba(0,0,0,.15);
+$text-color: rgba($black, .8);
+$text-color-light: rgba($black, .7);
+$text-color-lighter: rgba($black, .6);
+$border-color: rgba($black, .15);
 
 $mb-colors: (
   default: $body-bg,
@@ -43,8 +44,8 @@ $mb-text: (
 	danger: #fff
 );
 
-$mb-primary: map-get($mb-colors,primary);
-$mb-secondary: map-get($mb-colors,secondary);
+$mb-primary: map-get($mb-colors, primary);
+$mb-secondary: map-get($mb-colors, secondary);
 
 
 $font-fam-sans-serif: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -116,7 +117,7 @@ $line-height-0: 1.6;
 $line-height-1: 1.25;
 $line-height-2: 1.75;
 
-$link-color: map-get($mb-colors,primary);
+$link-color: map-get($mb-colors, primary);
 
 $link-color-hover: darken($link-color, 15%);
 

@@ -13,7 +13,7 @@
 
 			a:hover,
 			a:focus {
-				background: rgba($gray-light,.25);
+				background: rgba($gray-light, .25);
 			}
 		}
 	}
@@ -32,17 +32,19 @@
 
 	&.navbar-fixed {
 		@extend .navbar-absolute;
+
 		position: fixed;
 	}
 
 	.navbar-content {
 		@extend .container-fluid;
-		@include clearfix;
 
-		&.pull-right,
-		&.pull-left {
+		&.mb-pull-right, &.pull-right,
+		&.mb-pull-left, &.pull-left {
 			float: none;
 		}
+
+		@include clearfix;
 	}
 
 	ul {

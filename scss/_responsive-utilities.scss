@@ -28,23 +28,23 @@
 }
 
 @each $breakpoint in map-keys($grid-breakpoints) {
-	.hidden-#{$breakpoint}-down {
 
+	.hidden-#{$breakpoint}-down {
 		@media (max-width: map-get($grid-breakpoints, #{$breakpoint})) {
 			display: none;
 		}
-
 	}
+
 }
 
 @each $breakpoint in map-keys($grid-breakpoints) {
-	.hidden-#{$breakpoint}-up {
 
+	.hidden-#{$breakpoint}-up {
 		@media (min-width: map-get($grid-breakpoints, #{$breakpoint})) {
 			display: none;
 		}
-
 	}
+
 }
 
 .mb-responsive {
@@ -64,5 +64,6 @@
 
 .mb-fixed {
 	@extend .mb-absolute;
+	
 	position: fixed;
 }

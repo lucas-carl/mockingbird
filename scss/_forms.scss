@@ -4,28 +4,33 @@
 
 @mixin mb-inputs() {
 	@each $mb-color in map-keys($mb-colors) {
+
 		$color: map-get($mb-colors, #{$mb-color});
 
 		&.mb-#{$mb-color} {
 			border-color: $color;
 
 			&:focus {
-				box-shadow: inset 0 0 2px rgba($color,.75);
+				box-shadow: inset 0 0 2px rgba($color, .75);
 			}
 		}
+
 	}
 }
 
 @mixin mb-fieldsets() {
 	@each $mb-color in map-keys($mb-colors) {
+
 		$color: map-get($mb-colors, #{$mb-color});
 
 		&.mb-#{$mb-color} {
 			border-color: $color;
+
 			legend {
 				color: $color !important;
 			}
 		}
+
 	}
 }
 
@@ -34,16 +39,20 @@ form {
 }
 
 %inputSizes {
+
 	&, &.mb-md {
 		font-size: $font-size-3;
 		padding: $spacer-4 $spacer-6;
 	}
+
 	&.mb-sm {
 		font-size: $font-size-2;
 	}
+
 	&.mb-lg {
 		font-size: $font-size-0;
 	}
+
 }
 
 textarea,
@@ -59,6 +68,8 @@ input[type="number"],
 input[type="search"],
 input[type="password"],
 input[type="datetime-local"] {
+	@extend %inputSizes;
+
 	background-color: $body-bg;
 	background-image: none;
 	display: inline-block;
@@ -77,11 +88,10 @@ input[type="datetime-local"] {
 
 	&:focus {
 		outline-width: 0;
-		border: 1px solid map-get($mb-colors,primary);
-		box-shadow: inset 0 0 2px rgba(map-get($mb-colors,primary),.75);
+		border: 1px solid map-get($mb-colors, primary);
+		box-shadow: inset 0 0 2px rgba(map-get($mb-colors, primary), .75);
 	}
 
-	@extend %inputSizes;
 	@include mb-inputs;
 }
 
@@ -103,6 +113,8 @@ textarea {
 }
 
 select {
+	@extend %inputSizes;
+
 	background: $white $custom-select-bg no-repeat right .75em center;
   background-size: .625em;
 	display: inline-block;
@@ -116,11 +128,10 @@ select {
 	border-color: $border-color;
 
 	&:focus {
+		background-color: darken($white, 5%);
 		outline-width: 0;
-		background-color: darken($white,5%);
 	}
 
-	@extend %inputSizes;
 	@include mb-inputs;
 }
 
@@ -144,10 +155,12 @@ fieldset {
 	margin: 0;
 	margin-bottom: $spacer-0;
 	border-radius: $border-radius;
+
 	legend {
 		color: $text-color-lighter;
 		padding: 0 $spacer-1;
 		border-radius: $border-radius;
 	}
+
 	@include mb-fieldsets;
 }

@@ -10,15 +10,16 @@
 }
 
 @each $size in map-keys($container-sizes) {
+
 	.container-#{$size} {
 		@extend %container;
+		
 		max-width: map-get($container-sizes, #{$size});
 	}
+
 }
 
-.container {
-	@extend .container-md;
-}
+.container { @extend .container-md; }
 
 %column {
 	position: relative;
@@ -30,6 +31,7 @@
 	&:first-child {
 		padding-left: 0;
 	}
+
 	&:last-child {
 		padding-right: 0;
 	}
@@ -53,12 +55,11 @@
 
 	.col-#{$i} {
 		@extend %column;
+
 		width: percentage($i / $grid-columns);
 		padding: 0 ($grid-gutter / 2);
 	}
 
 }
 
-.row {
-	@include clearfix;
-}
+.row { @include clearfix; }

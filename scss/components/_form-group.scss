@@ -17,8 +17,6 @@
 
 .input-group,
 .btn-group {
-	@include clearfix;
-
 	input, select, button, .btn {
 		display: block;
 		float: left;
@@ -48,4 +46,6 @@
 			transform: translateY(0);
 		}
 	}
+
+	@include clearfix;
 }

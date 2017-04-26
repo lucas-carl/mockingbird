@@ -4,21 +4,25 @@
 
 @mixin mb-labels() {
 	@each $mb-color in map-keys($mb-colors) {
+
 		$color: map-get($mb-colors, #{$mb-color});
 		$text: map-get($mb-text, #{$mb-color});
 
 		&.mb-#{$mb-color} {
 			background-color: $color;
 			color: $text !important;
+
 			&:hover,
 			&:focus {
-				background-color: darken($color,5%);
+				background-color: darken($color, 5%);
 			}
+
 			&.mb-outline {
 				color: $color !important;
 				border-color: $color;
 			}
 		}
+
 	}
 }
 
@@ -31,12 +35,14 @@
 	cursor: default;
 	padding: $spacer-1 $spacer-0;
 	border-radius: $border-radius;
+
 	&:hover,
 	&:focus {
-		background-color: darken($gray-light,5%);
+		background-color: darken($gray-light, 5%);
 		text-decoration: none;
 		outline: none;
 	}
+
 	&.mb-sm {
 		font-size: $font-size-2;
 	}

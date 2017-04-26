@@ -7,18 +7,15 @@ table {
 	max-width: 100%;
 	margin-bottom: $spacer-0;
 	border-collapse: collapse;
-	&.table-striped {
-	  tbody tr:nth-of-type(odd) {
-	    background-color: $gray-lighter;
-	  }
+
+	&.table-striped tbody tr:nth-of-type(odd),
+	&.table-hover tr:hover {
+	  background-color: $gray-lighter;
 	}
-	&.table-hover {
-	  tr:hover {
-			background-color: $gray-lighter;
-		}
-	}
+
 	&.mb-sm {
 		font-size: $font-size-3;
+
 	  th, td {
 	    padding: $spacer-3;
 	  }
@@ -29,10 +26,10 @@ tr:not(:first-child) {
 	border-top: 1px solid $border-color;
 }
 
-th,
-td {
+th, td {
 	padding: $spacer-5;
 	border-right: 1px solid $border-color;
+
 	&:last-child {
 		border-right: none;
 	}

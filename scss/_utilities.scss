@@ -2,20 +2,21 @@
  * mockingbird utilities.css 04/2017
  */
 
-@mixin mb-text() {
-	@each $mb-color in map-keys($mb-colors) {
-		$color: map-get($mb-colors, #{$mb-color});
+@each $mb-color in map-keys($mb-colors) {
 
-		.mb-text-#{$mb-color} {
-			&, a {
-				color: $color !important;
-			}
-			&.link-arrow::after,
-			.link-arrow::after {
-				background: $color !important;
-			}
+	$color: map-get($mb-colors, #{$mb-color});
+
+	.mb-text-#{$mb-color} {
+		&, a {
+			color: $color !important;
+		}
+
+		&.link-arrow::after,
+		.link-arrow::after {
+			background: $color !important;
 		}
 	}
+
 }
 
 .mb-outline,
@@ -30,10 +31,9 @@
 
 .mb-no-border { border: none !important; }
 
-@include mb-text;
-
 .mb-text-muted {
 	color: $text-color-lighter !important;
+
 	a {
 		color: $text-color-light !important;
 	}
@@ -116,6 +116,7 @@
 	font-size: $font-size-3;
 	padding: $spacer-4 0;
 	margin-bottom: $spacer-0;
+	
 	&:hover,
 	&:focus {
 		color: $text-color-light;

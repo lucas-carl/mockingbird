@@ -5,9 +5,11 @@
 %hN {
 	font-weight: bold;
 	margin: $spacer-0 0;
+
 	* {
 		font-size: 1em;
 	}
+
 	& span,
 	& .sub-heading {
 		display: block;
@@ -18,10 +20,13 @@
 }
 
 @for $i from 1 through 6 {
+
 	h#{$i}, .h#{$i} {
 		@extend %hN;
-		font-size: map-get($heading-sizes,h#{$i});
+
+		font-size: map-get($heading-sizes, h#{$i});
 	}
+
 }
 
 h5 *, .h6 *,
@@ -32,6 +37,7 @@ h6 *, .h6 * {
 a {
 	color: $link-color;
 	text-decoration: none;
+
 	&:hover,
 	&:focus {
 		color: $link-color-hover;
@@ -62,7 +68,7 @@ b {
 
 mark,
 .mark {
-	background-color: rgba($mb-primary,.5);
+	background-color: rgba($mb-primary, .5);
 }
 
 i,
@@ -102,18 +108,15 @@ blockquote {
 	padding-left: $spacer-6;
 	margin: 0 0 $spacer-0;
 	border-left: .25em solid $gray;
-	p {
-		margin: 0;
-	}
+
+	p { margin: 0; }
 }
 
 .font-fam-serif { font-family: $font-fam-serif; }
 
 .font-fam-monospace { font-family: $font-fam-monospace; }
 
-.link-arrow {
-	text-decoration: none !important;
-}
+.link-arrow { text-decoration: none !important; }
 
 .link-arrow::after {
 	content: '';
