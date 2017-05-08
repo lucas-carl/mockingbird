@@ -1,5 +1,5 @@
 /*!
- * mockingbird tables.css 03/2017
+ * mockingbird tables.css 05/2017
  */
 
 table {
@@ -19,6 +19,12 @@ table {
 	  th, td {
 	    padding: $spacer-3;
 	  }
+	}
+
+	&.mb-no-border {
+		tr, th, td {
+			border: none;
+		}
 	}
 }
 
