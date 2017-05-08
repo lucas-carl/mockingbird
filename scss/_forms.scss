@@ -1,5 +1,5 @@
 /*!
- * mockingbird forms.css 04/2017
+ * mockingbird forms.css 05/2017
  */
 
 @mixin mb-inputs() {
@@ -13,6 +13,14 @@
 			&:focus {
 				box-shadow: inset 0 0 2px rgba($color, .75);
 			}
+		}
+
+		&[disabled],
+		&.disabled {
+			background-color: map-get($mb-colors, lightest) !important;
+			cursor: not-allowed;
+			filter: grayscale(1);
+			opacity: .8;
 		}
 
 	}

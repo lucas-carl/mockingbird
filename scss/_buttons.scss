@@ -1,5 +1,5 @@
 /*!
- * mockingbird buttons.css 04/2017
+ * mockingbird buttons.css 05/2017
  */
 
 @mixin mb-buttons() {
@@ -25,6 +25,7 @@
 				&:focus {
 					color: $text !important;
 					background-color: $color !important;
+					border-color: $border-color;
 				}
 			}
 
@@ -64,8 +65,7 @@
 		outline: none;
 	}
 
-	&:active,
-	&.active {
+	&:active {
 		background-image: none;
 		outline: none;
 		transform: translateY($spacer-1);
@@ -74,7 +74,12 @@
 	&[disabled],
 	&.disabled {
 		cursor: not-allowed;
+		filter: grayscale(1);
 		opacity: .8;
+
+		&:active {
+			transform: translateY(0);
+		}
 	}
 
 	@extend %inputSizes;
