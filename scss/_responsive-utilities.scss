@@ -1,5 +1,5 @@
 /*!
- * mockingbird responsive-utilities.css 04/2017
+ * mockingbird responsive-utilities.css 05/2017
  */
 
 @mixin flex-center {
@@ -47,11 +47,6 @@
 
 }
 
-.mb-responsive {
-	max-height: 100%;
-	max-width: 100%;
-}
-
 .mb-fullwidth { width: 100% !important; }
 
 .mb-absolute {
@@ -64,6 +59,6 @@
 
 .mb-fixed {
 	@extend .mb-absolute;
-	
+
 	position: fixed;
 }

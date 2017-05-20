@@ -26,6 +26,14 @@ table {
 			border: none;
 		}
 	}
+
+	@each $mb-color in map-keys($mb-colors) {
+		$color: map-get($mb-colors, #{$mb-color});
+
+		&.mb-#{$mb-color} {
+			border-color: $color;
+		}
+	}
 }
 
 tr:not(:first-child) {

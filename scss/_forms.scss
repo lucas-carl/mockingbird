@@ -26,22 +26,6 @@
 	}
 }
 
-@mixin mb-fieldsets() {
-	@each $mb-color in map-keys($mb-colors) {
-
-		$color: map-get($mb-colors, #{$mb-color});
-
-		&.mb-#{$mb-color} {
-			border-color: $color;
-
-			legend {
-				color: $color !important;
-			}
-		}
-
-	}
-}
-
 form {
 	margin: 0;
 }
@@ -151,10 +135,6 @@ input[type="radio"] {
 	margin-bottom: $spacer-3;
 }
 
-.input-responsive {
-	min-width: 100%;
-}
-
 fieldset {
 	border-style: solid;
 	border-color: $border-color;
@@ -169,6 +149,4 @@ fieldset {
 		padding: 0 $spacer-1;
 		border-radius: $border-radius;
 	}
-
-	@include mb-fieldsets;
 }

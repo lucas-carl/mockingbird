@@ -1,5 +1,5 @@
 /*!
- * mockingbird cards.css 04/2017
+ * mockingbird cards.css 05/2017
  */
 
 @mixin mb-cards() {
@@ -14,7 +14,7 @@
 				border-color: $border-color $border-color $border-color $color;
 			}
 		}
-		
+
 	}
 }
 
@@ -25,8 +25,6 @@
 	.mb-section-#{$mb-color},
 	.section.mb-#{$mb-color},
 	section.mb-#{$mb-color} {
-		@extend section;
-
 		background-color: $color;
 
 		&, a {

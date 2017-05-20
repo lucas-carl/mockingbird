@@ -1,5 +1,5 @@
 /*!
- * mockingbird type.css 02/2017
+ * mockingbird type.css 05/2017
  */
 
 %hN {
@@ -21,7 +21,7 @@
 
 @for $i from 1 through 6 {
 
-	h#{$i}, .h#{$i} {
+	h#{$i} {
 		@extend %hN;
 
 		font-size: map-get($heading-sizes, h#{$i});
@@ -29,8 +29,7 @@
 
 }
 
-h5 *, .h6 *,
-h6 *, .h6 * {
+h5 *, h6 * {
 	font-size: .875em !important;
 }
 
