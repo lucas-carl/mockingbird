@@ -1,7 +1,3 @@
-/*!
- * mockingbird cards.css 05/2017
- */
-
 @mixin mb-cards() {
 	@each $mb-color in map-keys($mb-colors) {
 
@@ -13,28 +9,12 @@
 			&.callout {
 				border-color: $border-color $border-color $border-color $color;
 			}
+
+			&.mb-outline {
+				background: transparent;
+			}
 		}
 
-	}
-}
-
-@each $mb-color in map-keys($mb-colors) {
-	$color: map-get($mb-colors, #{$mb-color});
-	$text: map-get($mb-text, #{$mb-color});
-
-	.mb-section-#{$mb-color},
-	.section.mb-#{$mb-color},
-	section.mb-#{$mb-color} {
-		background-color: $color;
-
-		&, a {
-			color: $text !important;
-		}
-
-		&.link-arrow::after,
-		.link-arrow::after {
-			background: $text !important;
-		}
 	}
 }
 
@@ -90,12 +70,4 @@
 
 	border-left-width: .5rem;
 	border-left-color: $gray;
-}
-
-section,
-.section {
-	position: relative;
-	display: block;
-
-	@include clearfix;
 }

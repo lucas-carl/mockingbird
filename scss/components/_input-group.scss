@@ -1,20 +1,3 @@
-.form-group {
-	display: block;
-	color: $text-color-lighter;
-	margin-top: 0;
-	margin-bottom: $spacer-6 !important;
-
-	input, button, .btn {
-		margin-bottom: 0;
-	}
-
-	label {
-		display: block;
-		font-size: $font-size-3;
-		margin-bottom: $spacer-3;
-	}
-}
-
 .input-group,
 .btn-group {
 	input, select, button, .btn {

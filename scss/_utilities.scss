@@ -10,11 +10,6 @@
 		&, a {
 			color: $color !important;
 		}
-
-		&.link-arrow::after,
-		.link-arrow::after {
-			background: $color !important;
-		}
 	}
 
 }
@@ -116,7 +111,7 @@
 	font-size: $font-size-3;
 	padding: $spacer-4 0;
 	margin-bottom: $spacer-0;
-	
+
 	&:hover,
 	&:focus {
 		color: $text-color-light;

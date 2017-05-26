@@ -114,29 +114,3 @@ blockquote {
 .font-fam-serif { font-family: $font-fam-serif; }
 
 .font-fam-monospace { font-family: $font-fam-monospace; }
-
-.link-arrow { text-decoration: none !important; }
-
-.link-arrow::after {
-	content: '';
-	background: $link-color;
-	position: relative;
-	display: inline-block;
-	height: .75em;
-	width: .5em;
-	vertical-align: middle;
-	transform: translateX(0);
-	transition: all .2s;
-	margin-top: -.125em;
-	margin-left: .5em;
-
-	background-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="#548fdb" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>');
-	mask-repeat: no-repeat;
-  mask-image: url('data:image/svg+xml,<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 10.0401 17.9909" enable-background="new 0 0 10.0401 17.9909" xml:space="preserve"><path fill="#000" fill-rule="evenodd" clip-rule="evenodd" d="M9.6564,8.04c0.5116,0.5277,0.5116,1.3842,0,1.9121l-7.4175,7.6438c-0.5132,0.5267-1.3433,0.5267-1.8545,0c-0.5125-0.5278-0.5125-1.3845,0-1.9124l6.4901-6.6882L0.3844,2.3072c-0.5125-0.5279-0.5125-1.3845,0-1.9124c0.5112-0.5264,1.3413-0.5264,1.8545,0L9.6564,8.04z"/></svg>');
-}
-
-.link-arrow:hover::after,
-.link-arrow:focus::after {
-	background: $link-color-hover;
-	transform: translateX($spacer-1);
-}
