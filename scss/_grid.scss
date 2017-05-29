@@ -1,5 +1,5 @@
 /*!
- * mockingbird grid.css 04/2017
+ * mockingbird grid.css 05/2017
  */
 
 %container {
@@ -13,7 +13,7 @@
 
 	.container-#{$size} {
 		@extend %container;
-		
+
 		max-width: map-get($container-sizes, #{$size});
 	}
 
@@ -63,3 +63,13 @@
 }
 
 .row { @include clearfix; }
+
+.flex-row {
+	display: flex;
+
+	> .col {
+		@extend %column;
+
+		padding: 0 ($grid-gutter / 2);
+	}
+}
