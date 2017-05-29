@@ -37,7 +37,6 @@
 	}
 }
 
-
 @for $i from 1 through $grid-columns {
 
 	@each $breakpoint in map-keys($grid-breakpoints) {
@@ -62,14 +61,14 @@
 
 }
 
+.col {
+	@extend %column;
+
+	padding: 0 ($grid-gutter / 2);
+}
+
 .row { @include clearfix; }
 
 .flex-row {
 	display: flex;
-
-	> .col {
-		@extend %column;
-
-		padding: 0 ($grid-gutter / 2);
-	}
 }
