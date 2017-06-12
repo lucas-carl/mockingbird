@@ -90,7 +90,7 @@
 		}
 	}
 
-	@media (max-width: $res-break-5) {
+	@media (max-width: map-get($grid-breakpoints, xs)) {
 		&.navbar-responsive {
 			border: none;
 

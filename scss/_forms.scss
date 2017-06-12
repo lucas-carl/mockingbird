@@ -42,7 +42,7 @@ form {
 
 	label {
 		display: block;
-		font-size: $font-size-3;
+		font-size: $font-size-sm;
 		margin-bottom: $spacer-3;
 	}
 }
@@ -50,16 +50,16 @@ form {
 %inputSizes {
 
 	&, &.mb-md {
-		font-size: $font-size-3;
+		font-size: $font-size-sm;
 		padding: $spacer-4 $spacer-6;
 	}
 
 	&.mb-sm {
-		font-size: $font-size-2;
+		font-size: $font-size-xs;
 	}
 
 	&.mb-lg {
-		font-size: $font-size-0;
+		font-size: $font-size-base;
 	}
 
 }
@@ -89,7 +89,7 @@ input[type="datetime-local"] {
 	vertical-align: middle;
 	white-space: nowrap;
 	margin: 0;
-	font-size: $font-size-3;
+	font-size: $font-size-sm;
 	padding-left: $spacer-4;
 	padding-right: $spacer-4;
 	border-radius: $border-radius;
@@ -131,7 +131,7 @@ select {
 	display: inline-block;
 	vertical-align: middle;
 	color: $text-color-light;
-	font-size: $font-size-3;
+	font-size: $font-size-sm;
 	line-height: normal;
 	padding-right: 2em;
 

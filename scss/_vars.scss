@@ -1,25 +1,25 @@
 /*!
- * mockingbird vars.css 04/2017
+ * mockingbird vars.css 06/2017
  */
 
-$gray-darker: #334;
-$gray-dark: #445;
-$gray: #667;
-$gray-light: #e1e1e3;
-$gray-lighter: #f5f5f7;
-$gray-lightest: #fbfbfd;
-$white: #fff;
-$black: #000;
+$gray-darker: #334 !default;
+$gray-dark: #445 !default;
+$gray: #667 !default;
+$gray-light: #e1e1e3 !default;
+$gray-lighter: #f5f5f7 !default;
+$gray-lightest: #fbfbfd !default;
+$white: #fff !default;
+$black: #000 !default;
 
-$body-bg: $white;
+$body-bg: $white !default;
 
-$text-color: rgba($black, .8);
-$text-color-light: rgba($black, .7);
-$text-color-lighter: rgba($black, .6);
-$border-color: rgba($black, .15);
+$text-color: rgba($black, .8) !default;
+$text-color-light: rgba($black, .7) !default;
+$text-color-lighter: rgba($black, .6) !default;
+$border-color: rgba($black, .15) !default;
 
 $mb-colors: (
-  default: $body-bg,
+	default: $body-bg,
 	dark: $gray,
 	light: $gray-light,
 	lighter: $gray-lighter,
@@ -29,10 +29,10 @@ $mb-colors: (
 	success: #42d17f,
 	warning: #f7ca18,
 	danger: #ef4836
-);
+) !default;
 
 $mb-text: (
-  default: $text-color-light,
+	default: $text-color-light,
 	dark: #fff,
 	light: $text-color-light,
 	lighter: $text-color-light,
@@ -42,90 +42,74 @@ $mb-text: (
 	success: #fff,
 	warning: #fff,
 	danger: #fff
-);
+) !default;
 
 $mb-primary: map-get($mb-colors, primary);
 $mb-secondary: map-get($mb-colors, secondary);
 
+$font-fam-sans-serif: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif !default;;
+$font-fam-serif: Georgia, "Times New Roman", Times, serif !default;;
+$font-fam-monospace: Menlo, Monaco, Consolas, "Courier New", monospace !default;;
 
-$font-fam-sans-serif: Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
-$font-fam-serif: Georgia, "Times New Roman", Times, serif;
-$font-fam-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-fam-base: $font-fam-sans-serif !default;
 
-$font-fam-base: $font-fam-sans-serif;
-
-
-$font-size-0: 1rem;
-$font-size-1: 0.5rem;
-$font-size-2: 0.75rem;
-$font-size-3: 0.875rem;
-$font-size-4: 1.25rem;
-$font-size-5: 1.7rem;
-$font-size-6: 2.15rem;
-$font-size-7: 2.6rem;
+$font-size-base: 1rem !default;
+$font-size-xs: .75rem !default;
+$font-size-sm: .875rem !default;
+$font-size-lg: 1.25rem !default;
 
 $heading-sizes: (
-  h1: $font-size-7,
-	h2: $font-size-6,
-	h3: $font-size-5,
-	h4: $font-size-4,
-	h5: $font-size-0,
-	h6: $font-size-3
-);
-
+	h1: 2.6rem,
+	h2: 2.15rem,
+	h3: 1.7rem,
+	h4: 1.25rem,
+	h5: 1rem,
+	h6: .875rem
+) !default;
 
 $container-sizes: (
-	xs: 600px,
+	xs: 576px,
 	sm: 720px,
 	md: 960px,
 	lg: 1200px,
-	fluid: 100%
-);
+		fluid: 100%
+) !default;
 
-$res-break-1: 1200px;
-$res-break-2: 960px;
-$res-break-3: 720px;
-$res-break-4: 600px;
-$res-break-5: 480px;
-$res-break-6: 360px;
+$spacer-0: 1em !default;
+$spacer-1: .15em !default;
+$spacer-2: .25em !default;
+$spacer-3: .375em !default;
+$spacer-4: .5em !default;
+$spacer-5: .75em !default;
+$spacer-6: 1.5em !default;
+$spacer-7: 2em !default;
+$spacer-8: 3em !default;
 
-
-$spacer-0: 1em;
-$spacer-1: .15em;
-$spacer-2: .25em;
-$spacer-3: .375em;
-$spacer-4: .5em;
-$spacer-5: .75em;
-$spacer-6: 1.5em;
-$spacer-7: 2em;
-$spacer-8: 3em;
-
-
-$grid-columns: 12;
-$grid-gutter: $spacer-0;
+$grid-columns: 12 !default;
+$grid-gutter: $spacer-0 !default;
 
 $grid-breakpoints: (
+	tiny: 360px,
 	xs: 480px,
 	sm: 576px,
 	md: 720px,
 	lg: 960px,
 	xl: 1200px
-);
+) !default;
 
+$line-height-base: 1.6 !default;
+$line-height-sm: 1.25 !default;
+$line-height-lg: 1.75 !default;
 
-$line-height-0: 1.6;
-$line-height-1: 1.25;
-$line-height-2: 1.75;
+$link-color: map-get($mb-colors, primary) !default;
 
-$link-color: map-get($mb-colors, primary);
+$link-color-hover: darken($link-color, 15%) !default;
 
-$link-color-hover: darken($link-color, 15%);
+$link-hover-decoration: underline !default;
 
-$link-hover-decoration: underline;
+$border-radius: .25em !default;
 
-$border-radius: .25em;
+$code-color: $text-color !default;
+$code-bg: $gray-lighter !default;
 
-$code-color: $text-color;
-$code-bg: $gray-lighter;
-
-$custom-select-bg: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23667' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E");
+$custom-select-bg: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'%3E%3Cpath fill='%23667' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") !default;
