@@ -2,17 +2,7 @@
  * mockingbird utilities.css 06/2017
  */
 
-@each $mb-color in map-keys($mb-colors) {
-
-	$color: map-get($mb-colors, #{$mb-color});
-
-	.mb-text-#{$mb-color} {
-		&, a {
-			color: $color !important;
-		}
-	}
-
-}
+@include text-variants;
 
 .mb-outline {
 	background: transparent !important;

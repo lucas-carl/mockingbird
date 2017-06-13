@@ -1,12 +1,6 @@
 /*!
- * mockingbird responsive-utilities.css 05/2017
+ * mockingbird responsive-utilities.css 06/2017
  */
-
-@mixin flex-center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
 
 .mb-pull-right,
 .pull-right {
@@ -20,7 +14,11 @@
 
 .mb-clearfix { @include clearfix; }
 
-.mb-flex-center { @include flex-center; }
+.mb-flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
 .mb-center {
 	display: block;

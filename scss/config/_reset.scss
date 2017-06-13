@@ -188,15 +188,3 @@ ol ul,
 ul ol {
 	margin-bottom: 0;
 }
-
-@mixin clearfix() {
-	&::before,
-  &::after {
-    content: '';
-    display: table;
-  }
-
-  &::after {
-    clear: both;
-  }
-}

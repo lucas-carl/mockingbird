@@ -2,30 +2,6 @@
  * mockingbird forms.css 05/2017
  */
 
-@mixin mb-inputs() {
-	@each $mb-color in map-keys($mb-colors) {
-
-		$color: map-get($mb-colors, #{$mb-color});
-
-		&.mb-#{$mb-color} {
-			border-color: $color;
-
-			&:focus {
-				box-shadow: inset 0 0 2px rgba($color, .75);
-			}
-		}
-
-		&[disabled],
-		&.disabled {
-			background-color: map-get($mb-colors, lightest) !important;
-			cursor: not-allowed;
-			filter: grayscale(1);
-			opacity: .8;
-		}
-
-	}
-}
-
 form {
 	margin: 0;
 }
@@ -101,7 +77,7 @@ input[type="datetime-local"] {
 		box-shadow: inset 0 0 2px rgba(map-get($mb-colors, primary), .75);
 	}
 
-	@include mb-inputs;
+	@include input-variants;
 }
 
 button,
@@ -143,7 +119,7 @@ select {
 		outline-width: 0;
 	}
 
-	@include mb-inputs;
+	@include input-variants;
 }
 
 input[type="checkbox"],

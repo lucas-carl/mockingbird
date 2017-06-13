@@ -27,13 +27,7 @@ table {
 		}
 	}
 
-	@each $mb-color in map-keys($mb-colors) {
-		$color: map-get($mb-colors, #{$mb-color});
-
-		&.mb-#{$mb-color} {
-			border-color: $color;
-		}
-	}
+	@include table-variants;
 }
 
 tr:not(:first-child) {
