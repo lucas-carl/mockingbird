@@ -1,5 +1,5 @@
 /*!
- * mockingbird utilities.css 04/2017
+ * mockingbird utilities.css 06/2017
  */
 
 @each $mb-color in map-keys($mb-colors) {
@@ -14,8 +14,7 @@
 
 }
 
-.mb-outline,
-.mb-bordered {
+.mb-outline {
 	background: transparent !important;
 	border: 1px solid $border-color;
 }
