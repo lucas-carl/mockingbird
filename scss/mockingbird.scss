@@ -4,12 +4,12 @@
  * last update 05/2017
  */
 
-@import "vars";
-@import "reset";
+@import "config/variables";
+@import "config/reset";
 
 @import "grid";
 
-@import "type";
+@import "typography";
 @import "forms";
 @import "tables";
 @import "lists";
