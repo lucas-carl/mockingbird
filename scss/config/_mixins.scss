@@ -89,7 +89,7 @@
 		$color: map-get($mb-colors, #{$mb-color});
 
 		&.mb-#{$mb-color} {
-			border-color: $color;
+			background-color: rgba($color, .25);
 		}
 	}
 }

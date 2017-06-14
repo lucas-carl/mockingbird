@@ -1,6 +1,6 @@
 /*!
  * Tables
- * Lucas Carl 05/2017
+ * Lucas Carl 06/2017
  */
 
 table {
@@ -27,12 +27,14 @@ table {
 			border: none;
 		}
 	}
-
-	@include table-variants;
 }
 
-tr:not(:first-child) {
-	border-top: 1px solid $border-color;
+tr {
+	@include table-variants;
+
+	&:not(:first-child) {
+		border-top: 1px solid $border-color;
+	}
 }
 
 th, td {
