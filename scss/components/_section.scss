@@ -7,12 +7,13 @@
 	.section.mb-#{$mb-color},
 	section.mb-#{$mb-color} {
 		background-color: $color;
+		color: $text;
 
-		&, a {
-			color: $text !important;
+		a {
+			color: inherit;
 		}
 	}
-	
+
 }
 
 section,

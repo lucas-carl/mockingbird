@@ -1,6 +1,6 @@
 /*!
  * Grid
- * Lucas Carl 05/2017
+ * Lucas Carl 06/2017
  */
 
 %container {
@@ -43,7 +43,8 @@
 .col {
 	@extend %column;
 
-	padding: 0 ($grid-gutter / 2);
+	// !important override standard padding behaviour of columns
+	padding: 0 ($grid-gutter / 2) !important;
 }
 
 .row { @include clearfix; }

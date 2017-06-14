@@ -6,7 +6,7 @@
 @include text-variants;
 
 .mb-outline {
-	background: transparent !important;
+	background: transparent;
 	border: 1px solid $border-color;
 }
 
@@ -20,7 +20,7 @@
 	color: $text-color-lighter !important;
 
 	a {
-		color: $text-color-light !important;
+		color: inherit;
 	}
 }
 
@@ -61,6 +61,8 @@
 
 .show {
 	display: block;
+	visibility: visible;
+	opacity: 1;
 }
 
 .invisible {
@@ -92,18 +94,4 @@
 	max-width: 100%;
 	top: 0;
 	left: 0;
-}
-
-.mb-copyright {
-	display: block;
-	color: $text-color-lighter;
-	text-align: center;
-	font-size: $font-size-sm;
-	padding: $spacer-4 0;
-	margin-bottom: $spacer-0;
-
-	&:hover,
-	&:focus {
-		color: $text-color-light;
-	}
 }

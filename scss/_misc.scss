@@ -1,6 +1,6 @@
 /*!
  * Miscellaneous
- * Lucas Carl 04/2017
+ * Lucas Carl 06/2017
  */
 
 code,
@@ -46,4 +46,24 @@ pre {
 
 summary {
 	cursor: pointer;
+}
+
+.mb-copyright {
+	display: block;
+	color: $text-color-lighter;
+	text-align: center;
+	font-size: $font-size-sm;
+	padding: $spacer-4 0;
+	margin-bottom: $spacer-0;
+}
+
+a.mb-copyright,
+.mb-copyright a {
+	color: $text-color-lighter;
+
+	&:hover,
+	&:focus {
+		color: $text-color;
+		text-decoration: none;
+	}
 }

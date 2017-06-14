@@ -23,7 +23,7 @@
 
 		&.mb-#{$mb-color} {
 			background-color: $color;
-			color: $text !important;
+			color: $text;
 
 			&:hover,
 			&:focus {
@@ -31,13 +31,14 @@
 			}
 
 			&.mb-outline {
-				color: $color !important;
+				background: transparent;
+				color: $color;
 				border-color: $color;
 
 				&:hover,
 				&:focus {
-					color: $text !important;
-					background-color: $color !important;
+					color: $text;
+					background-color: $color;
 					border-color: $border-color;
 				}
 			}
@@ -61,7 +62,8 @@
 
 		&[disabled],
 		&.disabled {
-			background-color: map-get($mb-colors, lightest) !important;
+			background-color: map-get($mb-colors, lightest);
+			pointer-events: none;
 			cursor: not-allowed;
 			filter: grayscale(1);
 			opacity: .8;
@@ -76,8 +78,10 @@
 		$color: map-get($mb-colors, #{$mb-color});
 
 		.mb-text-#{$mb-color} {
-			&, a {
-				color: $color !important;
+			color: $color !important;
+
+			a {
+				color: inherit;
 			}
 		}
 
