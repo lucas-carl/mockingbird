@@ -1,0 +1,25 @@
+.alert {
+	padding: $spacer-4 $spacer-0;
+	border-radius: $border-radius;
+	border: 1px solid transparent;
+	margin-bottom: $spacer-0;
+
+	.actions {
+		position: relative;
+
+		.close {
+			float: right;
+		}
+
+		a {
+			color: inherit;
+			text-decoration: none;
+		}
+	}
+
+	p {
+		margin: 0;
+	}
+
+	@include alert-variants;
+}

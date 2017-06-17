@@ -167,3 +167,18 @@
 
 	}
 }
+
+@mixin alert-variants() {
+	@each $mb-color in map-keys($mb-colors) {
+
+		$color: map-get($mb-colors, #{$mb-color});
+		$text: map-get($mb-text, #{$mb-color});
+
+		&.mb-#{$mb-color} {
+			background: rgba($color, .9);
+			border-color: $color;
+			color: $text;
+		}
+
+	}
+}
