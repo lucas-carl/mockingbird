@@ -1,6 +1,6 @@
 /*!
  * Form Elements
- * Lucas Carl 05/2017
+ * Lucas Carl 06/2017
  */
 
 form {
@@ -12,10 +12,6 @@ form {
 	color: $text-color-lighter;
 	margin-top: 0;
 	margin-bottom: $spacer-6;
-
-	input, button, .btn {
-		margin-bottom: 0;
-	}
 
 	label {
 		display: block;
@@ -88,8 +84,6 @@ input[type="submit"],
 input[type="reset"] {
 	@extend .btn;
 	@extend %inputSizes;
-
-	margin-bottom: 0;
 }
 
 textarea {
@@ -125,10 +119,8 @@ select {
 
 input[type="checkbox"],
 input[type="radio"] {
-	position: relative;
 	display: inline-block;
-	margin-right: $spacer-2;
-	margin-bottom: $spacer-3;
+	margin-right: $spacer-3;
 }
 
 fieldset {
