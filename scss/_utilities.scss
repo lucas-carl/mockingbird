@@ -53,6 +53,10 @@
 
 .mb-text-normal { font-weight: normal; }
 
+.mb-text-xs { font-size: $font-size-xs; }
+.mb-text-sm { font-size: $font-size-sm; }
+.mb-text-lg { font-size: $font-size-lg; }
+
 .hide,
 .hidden,
 [hidden] {
