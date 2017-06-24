@@ -28,6 +28,7 @@
 			&:hover,
 			&:focus {
 				background-color: darken($color, 5%);
+				color: $text;
 			}
 
 			&.mb-outline {

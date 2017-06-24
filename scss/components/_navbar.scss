@@ -1,120 +1,66 @@
+/*!
+ * Navbar
+ * Lucas Carl 06/2017
+ */
+
 .navbar {
+	position: relative;
+	display: flex;
+	align-items: center;
 	width: 100%;
-	overflow: hidden;
 	border-bottom: 1px solid $border-color;
+	overflow-x: auto;
 
-	&.navbar-bordered {
-		li {
-			border-left: 1px solid $border-color;
+	z-index: 10;
 
-			&:last-child {
-				border-right: 1px solid $border-color;
-			}
-
-			a:hover,
-			a:focus {
-				background: rgba($gray-light, .25);
-			}
-		}
+	.nav-container,
+	> [class^="container"] {
+		background: $navbar-bg;
+		position: relative;
+		display: flex;
+		align-items: stretch;
+		width: 100%;
+		padding: 0 $spacer-5;
+		margin: auto;
 	}
 
-	&.navbar-absolute {
-		position: absolute;
-		top: 0;
-		left: 0;
-		z-index: 100;
-
-		&,
-		li {
-			border: none;
-		}
+	.nav-left,
+	.nav-right {
+		display: flex;
+		width: 100%;
 	}
 
-	&.navbar-fixed {
-		@extend .navbar-absolute;
+	.nav-right { justify-content: flex-end; }
 
-		position: fixed;
+	.nav-center {
+		display: flex;
+		justify-content: center;
+		margin: 0 auto;
 	}
+}
 
-	.navbar-content {
-		@extend .container-fluid;
+.nav-item {
+	display: flex;
+	align-items: center;
+	line-height: $line-height-sm;
+	padding: $navbar-space-y $navbar-space-x;
 
-		&.mb-pull-right, &.pull-right,
-		&.mb-pull-left, &.pull-left {
-			float: none;
-		}
-
-		@include clearfix;
+	img {
+		max-height: 1.5em;
 	}
+}
 
-	ul {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-	}
+.nav-item a,
+a.nav-item {
+	color: $text-color-light;
+	text-decoration: none;
 
-	li {
-		float: left;
-		line-height: 1;
-		margin: 0;
-	}
-
-	a {
-		display: block;
+	&:hover,
+	&:focus {
 		color: $text-color;
-		text-decoration: none;
-		padding: $spacer-0;
-
-		&:hover,
-		&:focus {
-			color: $text-color-light;
-		}
 	}
 
-	.btn {
-		margin: calc(.5rem - 1px) 0;
-	}
-
-	.btn.mb-sm {
-		margin: calc(.7rem - 1px) 0;
-	}
-
-	.brand-logo {
-		a {
-			padding: $spacer-3;
-		}
-
-		img {
-			height: 2rem;
-			width: auto;
-		}
-	}
-
-	@media (max-width: map-get($grid-breakpoints, xs)) {
-		&.navbar-responsive {
-			border: none;
-
-			.navbar-content {
-				width: 100%;
-				padding: 0;
-			}
-
-			ul {
-				width: 100%;
-			}
-
-			li, li:last-child {
-				width: 100%;
-				text-align: center;
-				border: none;
-				border-bottom: 1px solid $border-color;
-			}
-
-			a:hover,
-			a:focus {
-				background: $gray-lightest;
-				outline: none;
-			}
-		}
+	&.active {
+		color: $mb-primary;
 	}
 }
