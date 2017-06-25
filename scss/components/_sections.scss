@@ -1,9 +1,13 @@
+/*!
+ * Sections
+ * Lucas Carl 06/2017
+ */
+
 @each $mb-color in map-keys($mb-colors) {
 
 	$color: map-get($mb-colors, #{$mb-color});
 	$text: map-get($mb-text, #{$mb-color});
 
-	.mb-bg-#{$mb-color},
 	.section.mb-#{$mb-color},
 	section.mb-#{$mb-color} {
 		background-color: $color;

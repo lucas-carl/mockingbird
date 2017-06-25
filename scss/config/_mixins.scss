@@ -183,3 +183,24 @@
 
 	}
 }
+
+@mixin bg-variants() {
+	@each $mb-color in map-keys($mb-colors) {
+
+		$color: map-get($mb-colors, #{$mb-color});
+		$text: map-get($mb-text, #{$mb-color});
+
+		.mb-bg-#{$mb-color} {
+			background-color: $color;
+
+			&, a {
+				color: $text;
+			}
+		}
+
+		// !important colored anchor inside a colored section
+		a.mb-bg-#{$mb-color} {
+			color: $text !important;
+		}
+	}
+}

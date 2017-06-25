@@ -5,6 +5,8 @@
 
 @include text-variants;
 
+@include bg-variants;
+
 .mb-outline {
 	background: transparent;
 	border: 1px solid $border-color;

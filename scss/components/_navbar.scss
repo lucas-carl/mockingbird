@@ -4,6 +4,7 @@
  */
 
 .navbar {
+	background: $navbar-bg;
 	position: relative;
 	display: flex;
 	align-items: center;
@@ -15,7 +16,6 @@
 
 	.nav-container,
 	> [class^="container"] {
-		background: $navbar-bg;
 		position: relative;
 		display: flex;
 		align-items: stretch;
@@ -36,6 +36,10 @@
 		display: flex;
 		justify-content: center;
 		margin: 0 auto;
+	}
+
+	&.mb-transparent {
+		background: transparent;
 	}
 }
 
