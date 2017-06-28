@@ -190,7 +190,8 @@
 		$color: map-get($mb-colors, #{$mb-color});
 		$text: map-get($mb-text, #{$mb-color});
 
-		.mb-bg-#{$mb-color} {
+		.mb-bg-#{$mb-color},
+		input.mb-bg-#{$mb-color} {
 			background-color: $color;
 
 			&, a {

@@ -45,6 +45,20 @@
 		}
 	}
 
+	&.mb-transparent {
+		background: none !important;
+		border: none;
+
+		&:hover,
+		&:focus {
+			opacity: .9;
+		}
+
+		&:active {
+			transform: translateY(0);
+		}
+	}
+
 	@extend %inputSizes;
 	@include button-variants;
 }
