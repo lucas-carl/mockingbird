@@ -99,7 +99,7 @@
 	}
 }
 
-@mixin label-variants() {
+@mixin badge-variants() {
 	@each $mb-color in map-keys($mb-colors) {
 
 		$color: map-get($mb-colors, #{$mb-color});

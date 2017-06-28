@@ -3,7 +3,6 @@
  * Lucas Carl 06/2017
  */
 
-.label,
 .badge {
 	background-color: $gray-light;
 	display: inline-block;
@@ -24,5 +23,5 @@
 		font-size: $font-size-xs;
 	}
 
-	@include label-variants;
+	@include badge-variants;
 }
