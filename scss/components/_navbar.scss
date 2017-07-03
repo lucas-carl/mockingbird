@@ -20,7 +20,7 @@
 		display: flex;
 		align-items: stretch;
 		width: 100%;
-		padding: 0 $spacer-5;
+		padding: 0;
 		margin: auto;
 	}
 
@@ -46,6 +46,7 @@
 .nav-item {
 	display: flex;
 	align-items: center;
+	white-space: nowrap;
 	line-height: $line-height-sm;
 	padding: $navbar-space-y $navbar-space-x;
 
