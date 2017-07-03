@@ -1,6 +1,6 @@
 /*!
  * Sections
- * Lucas Carl 06/2017
+ * Lucas Carl 07/2017
  */
 
 @each $mb-color in map-keys($mb-colors) {
@@ -24,6 +24,16 @@ section,
 .section {
 	position: relative;
 	display: block;
+
+	padding: $spacer-7 0;
+
+	&.mb-sm {
+		padding: $spacer-0 0;
+	}
+
+	&.mb-lg {
+		padding: $spacer-8 0;
+	}
 
 	@include clearfix;
 }
