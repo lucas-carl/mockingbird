@@ -35,5 +35,16 @@ section,
 		padding: $spacer-8 0;
 	}
 
+	&.mb-outline {
+		border: none;
+		border-top: 1px solid $border-color;
+	}
+
+	&.container {
+		max-width: 100%;
+		padding-top: $spacer-7;
+		padding-bottom: $spacer-7;
+	}
+
 	@include clearfix;
 }
