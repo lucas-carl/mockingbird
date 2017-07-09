@@ -8,8 +8,10 @@
 	position: relative;
 	display: flex;
 	align-items: center;
+	height: $navbar-height;
 	width: 100%;
 	border-bottom: 1px solid $border-color;
+	overflow: hidden;
 	overflow-x: auto;
 
 	z-index: 10;
@@ -21,7 +23,7 @@
 		align-items: stretch;
 		width: 100%;
 		padding: 0;
-		margin: auto;
+		margin: 0 auto;
 	}
 
 	.nav-left,
@@ -48,7 +50,7 @@
 	align-items: center;
 	white-space: nowrap;
 	line-height: $line-height-sm;
-	padding: $navbar-space-y $navbar-space-x;
+	padding: 0 $navbar-space-x;
 
 	img {
 		max-height: 1.5em;
