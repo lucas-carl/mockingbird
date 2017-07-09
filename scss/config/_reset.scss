@@ -1,6 +1,6 @@
 /*!
  * Reset
- * Lucas Carl 03/2017
+ * Lucas Carl 07/2017
  */
 
 :root {
@@ -14,7 +14,7 @@ body {
 	font-family: $font-fam-base;
 	font-size: $font-size-base;
 	line-height: $line-height-base;
-	letter-spacing: .015rem;
+	letter-spacing: .015em;
 	margin: 0;
 }
 
@@ -173,10 +173,6 @@ td,
 th {
 	text-align: inherit;
   padding: 0;
-}
-
-figure {
-	margin: 0 0 $spacer-0;
 }
 
 label {
