@@ -1,6 +1,6 @@
 /*!
  * Tables
- * Lucas Carl 06/2017
+ * Lucas Carl 07/2017
  */
 
 table {
@@ -9,8 +9,8 @@ table {
 	margin-bottom: $spacer-0;
 	border-collapse: collapse;
 
-	&.table-striped tbody tr:nth-of-type(odd),
-	&.table-hover tr:hover {
+	&.striped tbody tr:nth-of-type(odd),
+	&.hover tr:hover {
 	  background-color: $gray-lighter;
 	}
 
@@ -50,4 +50,16 @@ th {
 	background-color: $gray-lightest;
 	font-weight: bold;
 	border-bottom: 1px solid $border-color;
+}
+
+.table-wrapper {
+	width: 100%;
+	overflow-x: auto;
+	margin-bottom: $spacer-0;
+	border: 1px solid $border-color;
+	border-radius: $border-radius;
+
+	table {
+		margin-bottom: 0;
+	}
 }
