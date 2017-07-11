@@ -85,6 +85,7 @@ $spacer-5: .75em !default;
 $spacer-6: 1.5em !default;
 $spacer-7: 2em !default;
 $spacer-8: 3em !default;
+$spacer-9: 4em !default;
 
 $grid-columns: 12 !default;
 $grid-gutter: $spacer-0 !default;
@@ -97,6 +98,20 @@ $grid-breakpoints: (
 	lg: 960px,
 	xl: 1200px
 ) !default;
+
+$mb-spacers: (
+	1x: $spacer-0,
+	2x: $spacer-7,
+	3x: $spacer-8,
+	4x: $spacer-9
+) !default;
+
+$positions: (
+	top: top,
+	left: left,
+	right: right,
+	bottom: bottom
+);
 
 $line-height-base: 1.6 !default;
 $line-height-sm: 1.25 !default;

@@ -1,6 +1,6 @@
 /*!
  * Mixins
- * Lucas Carl 06/2017
+ * Lucas Carl 07/2017
  */
 
 @mixin clearfix() {
@@ -203,5 +203,23 @@
 		a.mb-bg-#{$mb-color} {
 			color: $text !important;
 		}
+	}
+}
+
+@mixin margin-spacers() {
+	@each $position in map-keys($positions) {
+
+		.mb-#{$position} {
+			margin-#{$position}: map-get($mb-spacers, 1x);
+		}
+
+		@each $mb-spacer in map-keys($mb-spacers) {
+			.mb-#{$position}-#{$mb-spacer} {
+				$spacer: map-get($mb-spacers, $mb-spacer);
+
+				margin-#{$position}: $spacer;
+			}
+		}
+
 	}
 }
