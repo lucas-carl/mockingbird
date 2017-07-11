@@ -146,24 +146,30 @@
 @mixin make-columns() {
 	@for $i from 1 through $grid-columns {
 
-		@each $breakpoint in map-keys($grid-breakpoints) {
+		.col-#{$i} {
+			@extend %column;
+
+			max-width: percentage($i / $grid-columns);
+			padding: 0 ($grid-gutter / 2);
+		}
+
+	}
+
+	@each $breakpoint in map-keys($grid-breakpoints) {
+
+		$grid-breakpoint: map-get($grid-breakpoints, #{$breakpoint});
+
+		@for $i from 1 through $grid-columns {
 
 			.col-#{$breakpoint}-#{$i} {
 				@extend %column;
 
-				@media (min-width: map-get($grid-breakpoints, #{$breakpoint})) {
-					width: percentage($i / $grid-columns);
+				@media (min-width: $grid-breakpoint) {
+					max-width: percentage($i / $grid-columns);
 					padding: 0 ($grid-gutter / 2);
 				}
 			}
 
-		}
-
-		.col-#{$i} {
-			@extend %column;
-
-			width: percentage($i / $grid-columns);
-			padding: 0 ($grid-gutter / 2);
 		}
 
 	}
