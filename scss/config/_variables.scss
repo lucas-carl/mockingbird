@@ -25,21 +25,21 @@ $mb-colors: (
 	light: $gray-light,
 	lighter: $gray-lighter,
 	lightest: $gray-lightest,
-	primary: #548fdb,
-	secondary: #eee,
-	success: #42d17f,
-	warning: #f7ca18,
-	danger: #ef4836
+	primary: #338bff,
+	secondary: #e9e9ee,
+	success: #2EE67D,
+	warning: #ffd500,
+	danger: #f05030
 ) !default;
 
 $mb-text: (
 	default: $text-color-light,
 	dark: #fff,
-	light: $text-color-light,
-	lighter: $text-color-light,
-	lightest: $text-color-light,
+	light: $text-color,
+	lighter: $text-color,
+	lightest: $text-color,
 	primary: #fff,
-	secondary: $text-color-light,
+	secondary: $text-color,
 	success: #fff,
 	warning: #fff,
 	danger: #fff
