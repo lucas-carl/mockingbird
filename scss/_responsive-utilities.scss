@@ -1,6 +1,6 @@
 /*!
  * Responsive Utilities
- * Lucas Carl 06/2017
+ * Lucas Carl 07/2017
  */
 
 .mb-pull-right,
@@ -28,7 +28,7 @@
 
 @each $breakpoint in map-keys($grid-breakpoints) {
 
-	.hidden-#{$breakpoint}-down {
+	.hide-#{$breakpoint} {
 		@media (max-width: map-get($grid-breakpoints, #{$breakpoint})) {
 			display: none;
 		}
@@ -38,8 +38,8 @@
 
 @each $breakpoint in map-keys($grid-breakpoints) {
 
-	.hidden-#{$breakpoint}-up {
-		@media (min-width: map-get($grid-breakpoints, #{$breakpoint})) {
+	.hide-#{$breakpoint}-up {
+		@media (min-width: map-get($grid-breakpoints, #{$breakpoint}) + 1px) {
 			display: none;
 		}
 	}
