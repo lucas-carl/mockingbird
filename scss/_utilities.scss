@@ -90,19 +90,16 @@
 }
 
 .hover-show {
-	display: none;
 	visibility: hidden;
 }
 
 .hover-item:hover,
 .hover-item:focus {
 	.hover-show {
-		display: block;
 		visibility: visible;
 	}
 
 	.hover-hide {
-		display: none;
 		visibility: hidden;
 	}
 }
