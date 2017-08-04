@@ -8,8 +8,8 @@
 	$color: map-get($mb-colors, #{$mb-color});
 	$text: map-get($mb-text, #{$mb-color});
 
-	.section.mb-#{$mb-color},
-	section.mb-#{$mb-color} {
+	.section.#{$mb-color},
+	section.#{$mb-color} {
 		background-color: $color;
 		color: $text;
 

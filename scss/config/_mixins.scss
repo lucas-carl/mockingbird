@@ -21,7 +21,7 @@
 		$color: map-get($mb-colors, #{$mb-color});
 		$text: map-get($mb-text, #{$mb-color});
 
-		&.mb-#{$mb-color} {
+		&.#{$mb-color} {
 			background-color: $color;
 			color: $text;
 
@@ -31,7 +31,7 @@
 				color: $text;
 			}
 
-			&.mb-outline {
+			&.outline {
 				background: transparent;
 				color: $color;
 				border-color: $color;
@@ -53,7 +53,7 @@
 
 		$color: map-get($mb-colors, #{$mb-color});
 
-		&.mb-#{$mb-color} {
+		&.#{$mb-color} {
 			border-color: $color;
 
 			&:focus {
@@ -93,7 +93,7 @@
 	@each $mb-color in map-keys($mb-colors) {
 		$color: map-get($mb-colors, #{$mb-color});
 
-		&.mb-#{$mb-color} {
+		&.#{$mb-color} {
 			background-color: rgba($color, .25);
 		}
 	}
@@ -105,7 +105,7 @@
 		$color: map-get($mb-colors, #{$mb-color});
 		$text: map-get($mb-text, #{$mb-color});
 
-		&.mb-#{$mb-color} {
+		&.#{$mb-color} {
 			background-color: $color;
 			color: $text !important;
 
@@ -114,7 +114,7 @@
 				background-color: darken($color, 5%);
 			}
 
-			&.mb-outline {
+			&.outline {
 				color: $color !important;
 				border-color: $color;
 			}
@@ -128,14 +128,14 @@
 
 		$color: map-get($mb-colors, #{$mb-color});
 
-		&.mb-#{$mb-color} {
+		&.#{$mb-color} {
 			border-color: $color;
 
 			&.callout {
 				border-color: $border-color $border-color $border-color $color;
 			}
 
-			&.mb-outline {
+			&.outline {
 				background: transparent;
 			}
 		}
@@ -181,7 +181,7 @@
 		$color: map-get($mb-colors, #{$mb-color});
 		$text: map-get($mb-text, #{$mb-color});
 
-		&.mb-#{$mb-color} {
+		&.#{$mb-color} {
 			background: rgba($color, .9);
 			border-color: $color;
 			color: $text;
@@ -196,8 +196,8 @@
 		$color: map-get($mb-colors, #{$mb-color});
 		$text: map-get($mb-text, #{$mb-color});
 
-		.mb-bg-#{$mb-color},
-		input.mb-bg-#{$mb-color} {
+		.bg-#{$mb-color},
+		input.bg-#{$mb-color} {
 			background-color: $color;
 
 			&, a {
@@ -206,7 +206,7 @@
 		}
 
 		// !important colored anchor inside a colored section
-		a.mb-bg-#{$mb-color} {
+		a.bg-#{$mb-color} {
 			color: $text !important;
 		}
 	}
