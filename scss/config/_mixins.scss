@@ -1,6 +1,6 @@
 /*!
  * Mixins
- * Lucas Carl 07/2017
+ * Lucas Carl 08/2017
  */
 
 @mixin clearfix() {
@@ -227,5 +227,40 @@
 			}
 		}
 
+	}
+}
+
+@mixin box-shadows() {
+	%hover {
+		transition: all .25s;
+
+		&:hover,
+		&:focus {
+			box-shadow: none;
+		}
+	}
+
+	@each $name in map-keys($mb-shadows) {
+
+		.mb-shadow-#{$name} {
+			box-shadow: map-get($mb-shadows, $name);
+		}
+
+		.mb-shadow-#{$name}-hover {
+			box-shadow: map-get($mb-shadows, $name);
+
+			@extend %hover;
+		}
+
+	}
+
+	.mb-shadow {
+		box-shadow: map-get($mb-shadows, normal);
+	}
+
+	.mb-shadow-hover {
+		box-shadow: map-get($mb-shadows, normal);
+
+		@extend %hover;
 	}
 }

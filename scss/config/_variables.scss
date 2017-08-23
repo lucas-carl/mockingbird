@@ -1,6 +1,6 @@
 /*!
  * Variables
- * Lucas Carl 07/2017
+ * Lucas Carl 08/2017
  */
 
 $gray-darker: #334 !default;
@@ -18,6 +18,7 @@ $text-color: rgba($black, .8) !default;
 $text-color-light: rgba($black, .7) !default;
 $text-color-lighter: rgba($black, .6) !default;
 $border-color: rgba($black, .15) !default;
+$shadow: rgba($black, .1) !default;
 
 $mb-colors: (
 	default: $body-bg,
@@ -112,6 +113,13 @@ $positions: (
 	right: right,
 	bottom: bottom
 );
+
+$mb-shadows: (
+	normal: 0 .5em 1em $shadow,
+	front: 0 0 1em $shadow,
+	left-top: .5em .5em 1em $shadow,
+	sm: 0 .25em .5em $shadow
+) !default;
 
 $line-height-base: 1.6 !default;
 $line-height-sm: 1.25 !default;
