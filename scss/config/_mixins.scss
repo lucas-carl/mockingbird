@@ -1,6 +1,6 @@
 /*!
  * Mixins
- * Lucas Carl 08/2017
+ * Lucas Carl 09/2017
  */
 
 @mixin clearfix() {
@@ -262,5 +262,21 @@
 		box-shadow: map-get($mb-shadows, normal);
 
 		@extend %hover;
+	}
+}
+
+@mixin code-variants() {
+	@each $mb-color in map-keys($mb-colors) {
+
+		$color: map-get($mb-colors, #{$mb-color});
+		$text: map-get($mb-text, #{$mb-color});
+
+		&.#{$mb-color} {
+			background-color: $color;
+
+			&, a {
+				color: $text;
+			}
+		}
 	}
 }

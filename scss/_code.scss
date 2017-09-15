@@ -1,6 +1,6 @@
 /*!
  * Code
- * Lucas Carl 07/2017
+ * Lucas Carl 09/2017
  */
 
 code,
@@ -12,7 +12,7 @@ samp {
 
 code {
 	background-color: $code-bg;
-	display: inline;
+	display: inline-block;
 	color: $code-color;
 	font-size: .875em;
 	font-weight: normal;
@@ -20,6 +20,12 @@ code {
 	padding: $spacer-2 $spacer-3;
 	margin: 0;
 	border-radius: $border-radius;
+
+	&.mb-lg {
+		padding: $spacer-4 $spacer-5;
+	}
+
+	@include code-variants;
 }
 
 pre {
