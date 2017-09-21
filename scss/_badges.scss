@@ -17,10 +17,25 @@
 		background-color: darken($gray-light, 5%);
 		text-decoration: none;
 		outline: none;
+
+		&.small-dot {
+			background-color: $gray-light;
+		}
 	}
 
 	&.mb-sm {
 		font-size: $font-size-xs;
+	}
+
+	&.round {
+		border-radius: 2em;
+	}
+
+	&.small-dot {
+		width: 1.5em;
+		height: 1.5em;
+		padding: 0;
+		border-radius: 2em;
 	}
 
 	@include badge-variants;

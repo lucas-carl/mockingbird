@@ -112,6 +112,10 @@
 			&:hover,
 			&:focus {
 				background-color: darken($color, 5%);
+
+				&.small-dot {
+					background-color: $color;
+				}
 			}
 
 			&.outline {
