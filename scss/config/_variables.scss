@@ -74,7 +74,7 @@ $container-sizes: (
 	sm: 720px,
 	md: 960px,
 	lg: 1200px,
-		fluid: 100%
+	fluid: 100%
 ) !default;
 
 $spacer-0: 1em !default;
@@ -104,7 +104,8 @@ $mb-spacers: (
 	1x: $spacer-0,
 	2x: $spacer-7,
 	3x: $spacer-8,
-	4x: $spacer-9
+	4x: $spacer-9,
+	0x: $spacer-4
 ) !default;
 
 $positions: (
