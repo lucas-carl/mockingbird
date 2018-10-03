@@ -6,10 +6,20 @@
     "type": "git",
     "url": "git+https://github.com/lucas-carl/mockingbird.git"
   },
+  "scripts": {
+    "build": "node-sass --include-path scss scss/mockingbird.scss build/mockingbird.css --output-style compressed",
+    "build:grid": "node-sass --include-path scss scss/mockingbird-grid.scss build/mockingbird-grid.css --output-style compressed",
+    "build:light": "node-sass --include-path scss scss/mockingbird-light.scss build/mockingbird-light.css --output-style compressed",
+    "dev": "nodemon -e scss -x \"npm run build\""
+   },
   "homepage": "https://mockingbird.lucascarl.com",
   "author": "Lucas Carl (https://lucascarl.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/lucas-carl/mockingbird/issues"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4"
   }
 }

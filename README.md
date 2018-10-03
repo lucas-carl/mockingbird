@@ -14,6 +14,14 @@ A front-end framework for responsive layouts and easy web development created wi
 [Mockingbird on Codepen](https://codepen.io/mockingbird-sass/)
 
 
+## Development Process
+
+- `npm install`: to install the dependecies. 
+- `npm run dev`: to start sass and listen for changes
+- `npm run build`: to just build the css main css file
+- `npm run build:grid`: to build the grid only css file
+- `npm run build:light`: to build the light version of the css file
+
 ## License
 
 [MIT License](https://github.com/lucas-carl/mockingbird/blob/master/LICENSE)
